@@ -1,12 +1,20 @@
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-const BusinessFilterItems = dynamic(() => import('./BusinessFilterItems'), {
+const BusinessFilterItems = dynamic(() => import("./BusinessFilterItems"), {
     ssr: false,
-})
+});
 
 export default function BusinessSection() {
     return (
         <div className="container">
+            <div className="heading align-center">
+                <div className="heading-sub color-navy">
+                    SERVING MULTIPLE BUSINESS SECTORS
+                </div>
+                <h2 className="heading-title size-l">
+                    Ứng Dụng Đa Dạng Cho Nhiều Lĩnh Vực
+                </h2>
+            </div>
             <div className="row">
                 <div className="col-lg-12">
                     <div className="portfolio-middle portfolio-isotope">
