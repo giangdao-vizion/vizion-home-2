@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
-export default function Nft_Section6() {
+export default function HomePage_Live_Demo() {
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -12,7 +12,7 @@ export default function Nft_Section6() {
             <h2 className="heading-title size-l">Trải Nghiệm Ngay Live Demo</h2>
           </div>
           <div className="block-video">
-            <div
+            {/* <div
               className="popup-wrapper ratio br20"
               style={{ aspectRatio: 4 / 2 }}
             >
@@ -30,6 +30,12 @@ export default function Nft_Section6() {
               isOpen={isOpen}
               videoId="vfhzo499OeA"
               onClose={() => setOpen(false)}
+            /> */}
+            <iframe
+              className="homepage-iframe"
+              src="https://view.vizion.space/demo?mode=no-intro&menu-ui=gallery"
+              title="tour-immerse"
+              style={{ height: 540, width: "100%" }}
             />
           </div>
         </div>
