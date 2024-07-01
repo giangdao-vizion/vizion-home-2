@@ -1,11 +1,11 @@
-import { useEffect } from "react";
-import BackToTop from "../elements/BackToTop";
-import SwitchDarkLight from "../elements/SwitchDarkLight";
+import { useEffect } from 'react';
+import BackToTop from '../elements/BackToTop';
+import SwitchDarkLight from '../elements/SwitchDarkLight';
 
-import Footer1 from "./Footer/Footer1";
-import Header1 from "./Header/Header1";
-import PageHead from "./PageHead";
-import Header3 from "./Header/Header3";
+import Footer1 from './Footer/Footer1';
+import Header1 from './Header/Header1';
+import PageHead from './PageHead';
+import Header3 from './Header/Header3';
 
 export default function Layout({
   headerLayout,
@@ -20,7 +20,7 @@ export default function Layout({
   headTitle,
 }) {
   useEffect(() => {
-    const WOW = require("wowjs");
+    const WOW = require('wowjs');
     window.wow = new WOW.WOW({
       live: false,
     });
@@ -44,11 +44,7 @@ export default function Layout({
                   {pageTitleDesc && <p className="desc">{pageTitleDesc}</p>}
                   {pageTitleBtn && (
                     <div className="button-wrap">
-                      <a
-                        href="#"
-                        className="button fullfield"
-                        title="Opportunities"
-                      >
+                      <a href="#" className="button fullfield" title="Opportunities">
                         {pageTitleBtn}
                       </a>
                     </div>
@@ -58,13 +54,7 @@ export default function Layout({
             </section>
           )}
 
-          <div
-            className={`site-content ${
-              siteContentClass ? siteContentClass : ""
-            }`}
-          >
-            {children}
-          </div>
+          <div className={`site-content ${siteContentClass ? siteContentClass : ''}`}>{children}</div>
         </main>
 
         {!footerLayout && <Footer1 />}

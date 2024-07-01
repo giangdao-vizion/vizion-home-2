@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "sass": "sass --watch public/assets/scss/style.scss:public/assets/css/style.css",
-    "prettier:fix": "npx prettier \"pages/**/*.{js,ts,mjs,cjs,json}\" --write"
+    "prettier:fix": "npx prettier \"pages/**/*.{js,ts,mjs,cjs,json}\" \"components/**/*.{js,ts,mjs,cjs,json}\" --write"
   },
   "dependencies": {
     "animate.css": "^4.1.1",

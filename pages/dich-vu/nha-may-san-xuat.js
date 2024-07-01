@@ -39,7 +39,7 @@ export default function NhaMaySX() {
   return (
     <Layout siteContentClass="pt0 pb0">
       <Banner
-        title="Nâng Cao Quản Lý Nhà Máy, Đào Tạo Và Giới Thiệu Sản Phẩm Bằng Tour 360°" 
+        title="Nâng Cao Quản Lý Nhà Máy, Đào Tạo Và Giới Thiệu Sản Phẩm Bằng Tour 360°"
         imageDisplayUrl="/assets/images/phone-honepage-v2.png"
       />
       <TourIframe iframeUrl="https://view.vizion.space/demo?mode=no-intro&menu-ui=gallery" />

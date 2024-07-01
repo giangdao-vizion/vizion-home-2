@@ -1,7 +1,7 @@
-import HeaderRight from "./HeaderRight";
-import Logo from "./Logo";
-import Menu from "./Menu";
-import CanvasMenu from "./CanvasMenu";
+import HeaderRight from './HeaderRight';
+import Logo from './Logo';
+import Menu from './Menu';
+import CanvasMenu from './CanvasMenu';
 
 export default function Header({ headerClass }) {
   return (
