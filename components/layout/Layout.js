@@ -5,6 +5,7 @@ import SwitchDarkLight from "../elements/SwitchDarkLight";
 import Footer1 from "./Footer/Footer1";
 import Header1 from "./Header/Header1";
 import PageHead from "./PageHead";
+import Header3 from "./Header/Header3";
 
 export default function Layout({
   headerLayout,
@@ -29,6 +30,7 @@ export default function Layout({
     <>
       <PageHead headTitle={headTitle} />
       <div id="wrapper">
+        <Header3 />
         {!headerLayout && <Header1 headerClass={headerClass} />}
         {headerLayout == 1 ? <Header1 headerClass={headerClass} /> : null}
 

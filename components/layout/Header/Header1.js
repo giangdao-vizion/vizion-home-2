@@ -20,7 +20,9 @@ export default function Header({ headerClass }) {
                 <Menu />
               </div>
             </div>
-            <div className="col-lg-3 col-6">{/* <HeaderRight /> */}</div>
+            <div className="col-lg-3 col-6">
+              <HeaderRight />
+            </div>
           </div>
         </div>
       </header>

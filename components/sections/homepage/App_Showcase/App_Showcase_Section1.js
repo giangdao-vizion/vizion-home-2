@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function App_Showcase_Section1() {
   return (
     <>
@@ -8,23 +10,20 @@ export default function App_Showcase_Section1() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <div className="heading heading-alway-white wow animate__animated animate__fadeInLeft ">
-                {/* <div className="heading-sub">App showcase</div> */}
-                <h2 className="heading-title size-xl">
+              <div className="heading wow animate__animated animate__fadeInLeft ">
+                <h2 className="heading-title size-xl vz-text-red">
                   Nâng Cao Năng Lực Bán Hàng Cho Doanh Nghiệp
                 </h2>
-                {/* <div
-                  className="heading-desc"
-                  data-wow
-                  animate__animated-delay="0.5s"
-                >
-                  Most Trending, Clean and Elegant Design based on deeply
-                  research
-                </div> */}
               </div>
-              <div className="apps m220 wow animate__animated animate__fadeInLeft ">
-                <img src="/assets/images/achievement.png" alt="Achievement" />
-                {/* <img src="/assets/images/google-play.png" alt="Google Play" /> */}
+
+              <div className="button-wrap">
+                <Link
+                  href="/contact-01"
+                  className="button fullfield-dark"
+                  title="Buy Now"
+                >
+                  Liên hệ ngay
+                </Link>
               </div>
             </div>
             <div className="col-lg-6">

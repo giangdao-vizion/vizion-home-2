@@ -8,6 +8,16 @@ export default function Fitness_Section5_Vz() {
     <>
       <div className="section spdt">
         <div className="container">
+          <div className="section spdt mb60">
+            <div className="container">
+              <div className="heading align-center">
+                {/* <div className="heading-sub color-navy">Khám Phá</div> */}
+                <h2 className="heading-title size-l">
+                  Tại sao chọn <span className="vz-span">Vizion</span>?
+                </h2>
+              </div>
+            </div>
+          </div>
           <div className="block-tab tab-wrap layout-02">
             <div className="row flex-align-c">
               <div className="col-xl-3 col-lg-6">
@@ -20,7 +30,7 @@ export default function Fitness_Section5_Vz() {
                         }
                       >
                         <i className="las la-hands-helping" />
-                        Custom Course
+                        Tốc độ load
                       </a>
                     </li>
                     <li onClick={() => handleOnClick(2)}>
@@ -30,7 +40,7 @@ export default function Fitness_Section5_Vz() {
                         }
                       >
                         <i className="las la-cog" />
-                        Settings
+                        Giao diện
                       </a>
                     </li>
                     <li onClick={() => handleOnClick(3)}>
@@ -40,7 +50,7 @@ export default function Fitness_Section5_Vz() {
                         }
                       >
                         <i className="las la-life-ring" />
-                        Helps
+                        Hỗ trợ
                       </a>
                     </li>
                   </ul>
@@ -49,21 +59,6 @@ export default function Fitness_Section5_Vz() {
               <div className="col-xl-4 col-lg-6">
                 <div className="images layout-12 pt30 pb30">
                   <div className="inner">
-                    <img
-                      className="img01"
-                      src="/assets/images/hf-10.png"
-                      alt="Image"
-                    />
-                    <img
-                      className="img02"
-                      src="/assets/images/hf-09.png"
-                      alt="Image"
-                    />
-                    <img
-                      className="img04 xs-hidden"
-                      src="/assets/images/hf-11.png"
-                      alt="Image"
-                    />
                     <div
                       id="custom-course"
                       className={
@@ -73,8 +68,8 @@ export default function Fitness_Section5_Vz() {
                       }
                     >
                       <img
-                        className="img03"
-                        src="/assets/images/hf-05.png"
+                        className="vizion-img03"
+                        src="/assets/images/vizion-fast.png"
                         alt="Image"
                       />
                     </div>
@@ -87,8 +82,8 @@ export default function Fitness_Section5_Vz() {
                       }
                     >
                       <img
-                        className="img03"
-                        src="/assets/images/hf-06.png"
+                        className="vizion-img03"
+                        src="/assets/images/vizion-easy.png"
                         alt="Image"
                       />
                     </div>
@@ -101,8 +96,8 @@ export default function Fitness_Section5_Vz() {
                       }
                     >
                       <img
-                        className="img03"
-                        src="/assets/images/hf-07.png"
+                        className="vizion-img03"
+                        src="/assets/images/vizion-smart.png"
                         alt="Image"
                       />
                     </div>
@@ -111,54 +106,54 @@ export default function Fitness_Section5_Vz() {
               </div>
               <div
                 className={`col-xl-5 col-lg-12 ${
-                  activeIndex === 1 ? "vz-is-active  " : "vz-discover"
+                  activeIndex === 1 ? "vz-is-active" : "vz-discover"
                 }`}
               >
                 <div className="heading align-left mb24">
-                  <h2 className="heading-title size-l">Discover now</h2>
+                  <h2 className="heading-title size-l">
+                    Tốc độ load <span className="vz-span">siêu nhanh</span>
+                  </h2>
                   <div className="heading-desc">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    Tôi ưu hóa hiệu suất của tour để có thể hoạt động mượt mà
+                    trên nhiều thiết bị thông minh, đảm bảo tính khả dụng và
+                    tiện lợi cho khách hàng của bạn.
                   </div>
                 </div>
-                {/* <div className="apps m220">
-                  <img src="/assets/images/app-store.png" alt="App Store" />
-                  <img src="/assets/images/google-play.png" alt="Google Play" />
-                </div> */}
               </div>
 
               <div
                 className={`col-xl-5 col-lg-12 ${
-                  activeIndex === 2 ? "vz-is-active  " : "vz-discover"
+                  activeIndex === 2 ? "vz-is-active" : "vz-discover"
                 }`}
               >
                 <div className="heading align-left mb24">
-                  <h2 className="heading-title size-l">Discover now</h2>
+                  <h2 className="heading-title size-l">
+                    Giao diện <span className="vz-span">dễ dàng sử dụng</span>
+                  </h2>
                   <div className="heading-desc">
-                   sdfsdfsd
+                    Luôn nổ lực hướng đến sự tiện lợi và dễ dàng cho cả người
+                    xem lẫn người tạo nội dung. Chỉ trong 5 phút, với các thao
+                    tác đơn giản, bạn đã có ngay 1 tour 360 chuyên nghiệp.
                   </div>
                 </div>
-                {/* <div className="apps m220">
-                  <img src="/assets/images/app-store.png" alt="App Store" />
-                  <img src="/assets/images/google-play.png" alt="Google Play" />
-                </div> */}
               </div>
 
               <div
                 className={`col-xl-5 col-lg-12 ${
-                  activeIndex === 3 ? "vz-is-active  " : "vz-discover"
+                  activeIndex === 3 ? "vz-is-active" : "vz-discover"
                 }`}
               >
                 <div className="heading align-left mb24">
-                  <h2 className="heading-title size-l">Discover now</h2>
+                  <h2 className="heading-title size-l">
+                    Dữ liệu phân tích{" "}
+                    <span className="vz-span">thông minh</span>
+                  </h2>
                   <div className="heading-desc">
-                 4534
+                    Cung cấp dữ liệu phân tích quan trọng về hành vi của khách
+                    hàng xem tour, giúp doanh nghiệp nắm bắt được nhu cầu khách
+                    hàng để đưa ra những định hướng sáng suốt nhất.
                   </div>
                 </div>
-                {/* <div className="apps m220">
-                  <img src="/assets/images/app-store.png" alt="App Store" />
-                  <img src="/assets/images/google-play.png" alt="Google Play" />
-                </div> */}
               </div>
             </div>
           </div>
