@@ -8,11 +8,11 @@ export default function BusinessSection() {
     return (
         <div className="container">
             <div className="heading align-center">
-                <div className="heading-sub color-navy">
+                <div className="heading-sub color-vizion">
                     SERVING MULTIPLE BUSINESS SECTORS
                 </div>
                 <h2 className="heading-title size-l">
-                    Ứng Dụng Đa Dạng Cho Nhiều Lĩnh Vực
+                    <strong className="color-vizion">Ứng Dụng Đa Dạng</strong> Cho Nhiều Lĩnh Vực
                 </h2>
             </div>
             <div className="row">

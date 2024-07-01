@@ -5,8 +5,8 @@ export default function Our_Services_Section() {
             <section className="section spdt">
                 <div className="container">
                     <div className="heading align-center">
-                        <div className="heading-sub">Our services</div>
-                        <h2 className="heading-title w500 size-l">What we do for you</h2>
+                        <div className="heading-sub color-vizion">TRẢI NGHIỆM SỰ KHÁC BIỆT</div>
+                        <h2 className="heading-title w500 size-l"><strong className="color-vizion">Dịch Vụ</strong> Của Chúng Tôi</h2>
                     </div>
                     <div className="block-image-box layout-04">
                         <div className="image-box">
