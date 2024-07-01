@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "sass": "sass --watch public/assets/scss/style.scss:public/assets/css/style.css"
+    "sass": "sass --watch public/assets/scss/style.scss:public/assets/css/style.css",
+    "prettier:fix": "npx prettier \"pages/**/*.{js,ts,mjs,cjs,json}\" --write"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
@@ -34,5 +35,8 @@
   },
   "resolutions": {
     "react-countup/countup.js": "2.5.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.2"
   }
 }
