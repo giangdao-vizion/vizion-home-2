@@ -12,7 +12,7 @@ export default function BusinessSection() {
                     SERVING MULTIPLE BUSINESS SECTORS
                 </div>
                 <h2 className="heading-title size-l">
-                    <strong className="color-vizion">Ứng Dụng Đa Dạng</strong> Cho Nhiều Lĩnh Vực
+                    <span className="heading-title-hightlight color-vizion">Ứng Dụng Đa Dạng</span> Cho Nhiều Lĩnh Vực
                 </h2>
             </div>
             <div className="row">

@@ -1,15 +1,13 @@
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
-export default function HomePage_Live_Demo() {
-  const [isOpen, setOpen] = useState(false);
-
+export default function HomePage_Live_Demo({ iframeUrl }) {
   return (
     <>
       <div className="section spdt mb60">
         <div className="container">
           <div className="heading align-center">
             <div className="heading-sub color-vizion">Khám Phá</div>
-            <h2 className="heading-title size-l">Trải Nghiệm Ngay <strong className="color-vizion">Live Demo</strong></h2>
+            <h2 className="heading-title size-l">Trải Nghiệm Ngay <span className="heading-title-hightlight color-vizion">Live Demo</span></h2>
           </div>
           <div>
             {/* <div
@@ -33,7 +31,7 @@ export default function HomePage_Live_Demo() {
             /> */}
             <iframe
               className="homepage-iframe"
-              src="https://view.vizion.space/demo?mode=no-intro&menu-ui=gallery"
+              src={iframeUrl}
               title="tour-immerse"
               style={{ height: 540, width: "100%" }}
             />
