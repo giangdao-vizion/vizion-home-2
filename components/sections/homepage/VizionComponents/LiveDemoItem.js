@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { Autoplay, Navigation, Pagination } from "swiper";
 
-export default function LiveDemoItem({ dataLiveDemo }) {
+export default function LiveDemoItem({ dataLiveDemo, swiperCustom = {} }) {
     
     return (
         <>
@@ -52,12 +52,16 @@ export default function LiveDemoItem({ dataLiveDemo }) {
                     },
                 }}
                 className="swiper-wrapper"
+                {...swiperCustom}
             >
                 {dataLiveDemo.map((data, index) => (
                     <SwiperSlide key={index} >
                         <div className="item">
                             <img src={data.imageUrl} alt="Gallery" />
-                            <h3 className="title">{data.title}</h3>
+                            <div className="title">
+                                <h3 className="title-content">{data.title?.toLowerCase()}</h3>
+                                <p className="desc">{data.desc}</p>
+                            </div>
                         </div>
                     </SwiperSlide>
                 ))}

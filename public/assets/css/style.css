@@ -13163,8 +13163,19 @@ form.checkout-coupon input[type=text] {
   height: 100%;
   object-fit: cover;
 }
-.block-gallery.layout-04 .item .title {
+.block-gallery.layout-04 .item .title-content {
   text-transform: capitalize;
+  color: var(--sala-alway-white, #ffffff);
+}
+.block-gallery.layout-04 .item .desc {
+  color: var(--sala-alway-white, #ffffff);
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.block-image-box.layout-04 .image-box {
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 import LiveDemoItem from "./LiveDemoItem";
 
-export default function LiveDemo({ dataLiveDemo }) {
+export default function LiveDemo({ dataLiveDemo, swiperCustom }) {
 
     return (
         <>
@@ -11,7 +11,7 @@ export default function LiveDemo({ dataLiveDemo }) {
                         <div className="row row-full">
                             <div className="col-lg-12 col-full-right">
                                 <div className="swiper uxp-swiper-slider">
-                                    <LiveDemoItem dataLiveDemo={dataLiveDemo} />
+                                    <LiveDemoItem dataLiveDemo={dataLiveDemo} swiperCustom={swiperCustom} />
                                 </div>
                             </div>
                         </div>
