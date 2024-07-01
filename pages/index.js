@@ -12,8 +12,8 @@ export default function Index() {
   return (
     <Layout siteContentClass="pt0 pb0">
       <Banner
-        title="Nâng Cao Năng Lực Bán Hàng Cho Doanh Nghiệp" 
-        imageDisplayUrl="/assets/images/phone-honepage-v2.png" 
+        title="Nâng Cao Năng Lực Bán Hàng Cho Doanh Nghiệp"
+        imageDisplayUrl="/assets/images/phone-honepage-v2.png"
       />
       <GenericStatistic />
       <Discover />

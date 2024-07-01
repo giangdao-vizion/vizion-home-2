@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Menu() {
   return (
@@ -24,9 +24,7 @@ export default function Menu() {
                   <div className="mega-menu-item">
                     <ul className="sub-menu">
                       <li>
-                        <Link href="/dich-vu/nha-may-san-xuat">
-                          Sản Xuất & Nhà Máy
-                        </Link>
+                        <Link href="/dich-vu/nha-may-san-xuat">Sản Xuất & Nhà Máy</Link>
                       </li>
                       <li>
                         <Link href="/dich-vu/bat-dong-san">Bất Động Sản</Link>
@@ -40,9 +38,7 @@ export default function Menu() {
                   <div className="mega-menu-item">
                     <ul className="sub-menu">
                       <li>
-                        <Link href="/">
-                          Bán Lẻ & Thương Mại
-                        </Link>
+                        <Link href="/">Bán Lẻ & Thương Mại</Link>
                       </li>
                       <li>
                         <Link href="/">Nội Thất Và Đồ Gỗ</Link>
@@ -74,9 +70,7 @@ export default function Menu() {
                         <Link href="/">Gym & Spa</Link>
                       </li>
                       <li>
-                        <Link href="/">
-                          Bệnh Viện & TTCS Sức Khỏe
-                        </Link>
+                        <Link href="/">Bệnh Viện & TTCS Sức Khỏe</Link>
                       </li>
                     </ul>
                   </div>
@@ -94,9 +88,7 @@ export default function Menu() {
                   <div className="mega-menu-item">
                     <ul className="sub-menu">
                       <li>
-                        <Link href="/virtual-solution-360">
-                          Giải Pháp Virtual 360
-                        </Link>
+                        <Link href="/virtual-solution-360">Giải Pháp Virtual 360</Link>
                       </li>
                     </ul>
                     <ul className="sub-menu">

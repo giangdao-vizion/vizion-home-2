@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 export default function Maintainance() {
   return (
     <>
@@ -50,17 +50,12 @@ export default function Maintainance() {
                     Under <br /> Construction!
                   </h2>
                   <div className="heading-desc">
-                    To make somethings right we need some time to rebuild. Get
-                    notified when we are done.
+                    To make somethings right we need some time to rebuild. Get notified when we are done.
                   </div>
                 </div>
                 <form action="#">
                   <div className="field-input">
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Enter your email"
-                    />
+                    <input type="email" name="email" placeholder="Enter your email" />
                   </div>
                   <div className="field-submit">
                     <input type="submit" defaultValue="Submit" name="submit" />
