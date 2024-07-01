@@ -70,7 +70,10 @@ export default function BatDongSan() {
     return (
         <Layout siteContentClass="pt0 pb0">
             <section>
-                <App_Showcase_Section1 />
+                <App_Showcase_Section1
+                    title="Tăng Cường Doanh Số Bán Hàng Bất Động Sản Với Tour 360°" 
+                    imageDisplayUrl="/assets/images/vizion/tours/real-estate-v2.png" 
+                />
             </section>
 
             <section>

@@ -19,7 +19,10 @@ export default function Index() {
     <>
       <Layout siteContentClass="pt0 pb0">
         <section>
-          <App_Showcase_Section1 />
+          <App_Showcase_Section1
+            title="Nâng Cao Năng Lực Bán Hàng Cho Doanh Nghiệp" 
+            imageDisplayUrl="/assets/images/phone-honepage-v2.png" 
+          />
         </section>
 
         <section>

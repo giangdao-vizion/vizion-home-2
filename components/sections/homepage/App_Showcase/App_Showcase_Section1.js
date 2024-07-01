@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function App_Showcase_Section1() {
+export default function App_Showcase_Section1({ title, imageDisplayUrl }) {
   return (
     <>
       <section
@@ -12,7 +12,7 @@ export default function App_Showcase_Section1() {
             <div className="col-lg-6">
               <div className="heading wow animate__animated animate__fadeInLeft ">
                 <h2 className="heading-title size-xl vz-text-red">
-                  Nâng Cao Năng Lực Bán Hàng Cho Doanh Nghiệp
+                  {title}
                 </h2>
               </div>
 
@@ -37,7 +37,7 @@ export default function App_Showcase_Section1() {
                 />
                 <img
                   className="img02 wow animate__animated animate__fadeInUp "
-                  src="/assets/images/phone-honepage-v2.png"
+                  src={imageDisplayUrl}
                   alt="Image"
                 />
               </div>
