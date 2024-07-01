@@ -8,10 +8,10 @@ export default function HomePage_Live_Demo() {
       <div className="section spdt mb60">
         <div className="container">
           <div className="heading align-center">
-            <div className="heading-sub color-navy">Khám Phá</div>
-            <h2 className="heading-title size-l">Trải Nghiệm Ngay Live Demo</h2>
+            <div className="heading-sub color-vizion">Khám Phá</div>
+            <h2 className="heading-title size-l">Trải Nghiệm Ngay <strong className="color-vizion">Live Demo</strong></h2>
           </div>
-          <div className="block-video">
+          <div>
             {/* <div
               className="popup-wrapper ratio br20"
               style={{ aspectRatio: 4 / 2 }}

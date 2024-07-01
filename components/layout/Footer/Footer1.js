@@ -13,7 +13,7 @@ export default function Footer() {
                                         <div className="logo">
                                             <Link href="/">
                                                 <img
-                                                    src="/assets/images/vizion/logos/vizion-logo.webp"
+                                                    src="/assets/images/vizion/logos/vz-logo-white.png"
                                                     alt="logo-vizion"
                                                     style={{
                                                         width: 100,

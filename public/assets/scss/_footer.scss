@@ -1,5 +1,6 @@
 .footer-top {
-    border-top: 1px solid var(--sala-border-line, #eeeeee);
+    background-color: #080C1F;
+    // border-top: 1px solid var(--sala-border-line, #eeeeee);
     padding: 60px 0;
 
     .footer-about {
@@ -15,7 +16,7 @@
 
         p {
             font-size: 18px;
-            color: var(--sala-neutral-normal, #555555);
+            color: #757575;
             line-height: 1.44;
         }
     }
@@ -26,6 +27,7 @@
             font-size: 18px;
             font-weight: 500;
             margin-bottom: 24px;
+            color: #fff;
         }
     }
 
@@ -40,6 +42,7 @@
             a {
                 font-size: 16px;
                 font-weight: 400;
+                color: #757575;
             }
         }
     }
@@ -91,6 +94,7 @@
 }
 
 .footer-bottom {
+    background-color: #080C1F;
     .inner {
         border-top: 1px solid var(--sala-border-line, #eeeeee);
         padding: 40px 0;
@@ -98,7 +102,7 @@
 
     .copyright {
         font-size: 14px;
-        color: var(--sala-neutral-dark, #111111);
+        color: #757575;
     }
 
     .menu {
