@@ -1,5 +1,5 @@
 import { useState } from "react";
-export default function Fitness_Section5() {
+export default function Fitness_Section5_Vz() {
   const [activeIndex, setActiveIndex] = useState(1);
   const handleOnClick = (index) => {
     setActiveIndex(index); // remove the curly braces
@@ -43,16 +43,6 @@ export default function Fitness_Section5() {
                         Helps
                       </a>
                     </li>
-                    <li onClick={() => handleOnClick(4)}>
-                      <a
-                        className={
-                          activeIndex === 4 ? "tab-nav is-active" : "tab-nav"
-                        }
-                      >
-                        <i className="las la-user-circle" />
-                        Profile
-                      </a>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -74,7 +64,6 @@ export default function Fitness_Section5() {
                       src="/assets/images/hf-11.png"
                       alt="Image"
                     />
-
                     <div
                       id="custom-course"
                       className={
@@ -117,24 +106,14 @@ export default function Fitness_Section5() {
                         alt="Image"
                       />
                     </div>
-                    <div
-                      id="profile"
-                      className={
-                        activeIndex === 4
-                          ? "tab-content is-active"
-                          : "tab-content"
-                      }
-                    >
-                      <img
-                        className="img03"
-                        src="/assets/images/hf-08.png"
-                        alt="Image"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
-              <div className="col-xl-5 col-lg-12">
+              <div
+                className={`col-xl-5 col-lg-12 ${
+                  activeIndex === 1 ? "vz-is-active  " : "vz-discover"
+                }`}
+              >
                 <div className="heading align-left mb24">
                   <h2 className="heading-title size-l">Discover now</h2>
                   <div className="heading-desc">
@@ -142,10 +121,44 @@ export default function Fitness_Section5() {
                     typesetting industry.
                   </div>
                 </div>
-                <div className="apps m220">
+                {/* <div className="apps m220">
                   <img src="/assets/images/app-store.png" alt="App Store" />
                   <img src="/assets/images/google-play.png" alt="Google Play" />
+                </div> */}
+              </div>
+
+              <div
+                className={`col-xl-5 col-lg-12 ${
+                  activeIndex === 2 ? "vz-is-active  " : "vz-discover"
+                }`}
+              >
+                <div className="heading align-left mb24">
+                  <h2 className="heading-title size-l">Discover now</h2>
+                  <div className="heading-desc">
+                   sdfsdfsd
+                  </div>
                 </div>
+                {/* <div className="apps m220">
+                  <img src="/assets/images/app-store.png" alt="App Store" />
+                  <img src="/assets/images/google-play.png" alt="Google Play" />
+                </div> */}
+              </div>
+
+              <div
+                className={`col-xl-5 col-lg-12 ${
+                  activeIndex === 3 ? "vz-is-active  " : "vz-discover"
+                }`}
+              >
+                <div className="heading align-left mb24">
+                  <h2 className="heading-title size-l">Discover now</h2>
+                  <div className="heading-desc">
+                 4534
+                  </div>
+                </div>
+                {/* <div className="apps m220">
+                  <img src="/assets/images/app-store.png" alt="App Store" />
+                  <img src="/assets/images/google-play.png" alt="Google Play" />
+                </div> */}
               </div>
             </div>
           </div>

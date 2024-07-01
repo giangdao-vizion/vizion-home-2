@@ -16,7 +16,12 @@
       span {
         display: inline-block;
         letter-spacing: normal;
+
+        &.vz-number {
+          color: #f83f40;
+        }
       }
+
       .first {
         position: relative;
         &:after {

@@ -7062,7 +7062,7 @@ form.checkout-coupon input[type=text] {
   letter-spacing: 2px;
 }
 .heading .heading-sub.color-navy {
-  color: var(--sala-primary-navy, #0057fc);
+  color: #f83f40;
 }
 .heading .heading-sub + .heading-title {
   margin-top: 12px;
@@ -10308,9 +10308,6 @@ form.checkout-coupon input[type=text] {
     font-size: 18px;
   }
 }
-.block-video {
-  position: relative;
-}
 .block-video img {
   width: 100%;
 }
@@ -10385,6 +10382,10 @@ form.checkout-coupon input[type=text] {
   animation-delay: 0s;
   animation-delay: 0.5s;
   z-index: -1;
+}
+.block-video .homepage-iframe {
+  height: 540px;
+  width: 100%;
 }
 
 @keyframes ripple-1 {
@@ -11576,6 +11577,12 @@ form.checkout-coupon input[type=text] {
   line-height: 1.33;
   font-weight: 400;
 }
+.block-tab.layout-02 .vz-is-active {
+  display: flex;
+}
+.block-tab.layout-02 .vz-discover {
+  display: none;
+}
 .block-tab.layout-02 .tab-navs .tab-nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -12104,6 +12111,10 @@ form.checkout-coupon input[type=text] {
   }
   .block-project .item .title {
     right: calc(100% - 30px);
+    color: yellow;
+  }
+  .block-project .item .number .red {
+    color: red;
   }
 }
 .block-infinite {
@@ -12410,6 +12421,9 @@ form.checkout-coupon input[type=text] {
 .block-number .item .number span {
   display: inline-block;
   letter-spacing: normal;
+}
+.block-number .item .number span.vz-number {
+  color: #f83f40;
 }
 .block-number .item .number .first {
   position: relative;

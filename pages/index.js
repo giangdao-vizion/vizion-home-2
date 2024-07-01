@@ -6,6 +6,7 @@ import App_Showcase_Section6 from "@/components/sections/homepage/App_Showcase/A
 import App_Showcase_Section_01_Vz from "@/components/sections/homepage/App_Showcase/App_Showcase_Section_01_Vz";
 import App_Showcase_Section_02_Vz from "@/components/sections/homepage/App_Showcase/App_Showcase_Section_02_Vz";
 import App_Showcase_Section_03_Vz from "@/components/sections/homepage/App_Showcase/App_Showcase_Section_03_Vz";
+import Fitness_Section5_Vz from "@/components/sections/homepage/Fitness/Fitness_Section5_Vz";
 
 import Ico_Section3 from "@/components/sections/homepage/Ico/Ico_Section3";
 import HomePage_Live_Demo from "@/components/sections/homepage/Nft/HomePage_Live_Demo";
@@ -29,7 +30,7 @@ export default function Index() {
           <Ico_Section3 />
         </section>
 
-        <section>
+        {/* <section>
           <App_Showcase_Section_01_Vz />
         </section>
 
@@ -39,7 +40,9 @@ export default function Index() {
 
         <section>
           <App_Showcase_Section_03_Vz />
-        </section>
+        </section> */}
+
+        <Fitness_Section5_Vz />
 
         <section>
           <HomePage_Live_Demo />

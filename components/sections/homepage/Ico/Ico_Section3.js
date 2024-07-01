@@ -9,7 +9,7 @@ export default function Ico_Section3() {
                 <div className="item">
                   <h4 className="title">Thời Gian Tương Tác</h4>
                   <div className="number">
-                    <span className="">10x</span>
+                    <span className="vz-number">10x</span>
                   </div>
                 </div>
               </div>
@@ -17,7 +17,7 @@ export default function Ico_Section3() {
                 <div className="item">
                   <h4 className="title">Tỉ Lệ Tương Tác</h4>
                   <div className="number">
-                    <span className="">+90%</span>
+                    <span className="vz-number">+90%</span>
                   </div>
                 </div>
               </div>
@@ -25,7 +25,7 @@ export default function Ico_Section3() {
                 <div className="item">
                   <h4 className="title">Tỉ Lệ Chuyển Đổi</h4>
                   <div className="number">
-                    <span className="">200%</span>
+                    <span className="vz-number">200%</span>
                   </div>
                 </div>
               </div>

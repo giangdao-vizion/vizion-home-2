@@ -13,14 +13,14 @@ export default function App_Showcase_Section1() {
                 <h2 className="heading-title size-xl">
                   Nâng Cao Năng Lực Bán Hàng Cho Doanh Nghiệp
                 </h2>
-                <div
+                {/* <div
                   className="heading-desc"
                   data-wow
                   animate__animated-delay="0.5s"
                 >
                   Most Trending, Clean and Elegant Design based on deeply
                   research
-                </div>
+                </div> */}
               </div>
               <div className="apps m220 wow animate__animated animate__fadeInLeft ">
                 <img src="/assets/images/achievement.png" alt="Achievement" />
@@ -33,7 +33,7 @@ export default function App_Showcase_Section1() {
                   className="img01 wow animate__animated animate__fadeInUp "
                   data-wow
                   animate__animated-delay="0.5s"
-                  src="/assets/images/asc1.png"
+                  src="/assets/images/vz-asc1.png"
                   alt="Image"
                 />
                 <img
