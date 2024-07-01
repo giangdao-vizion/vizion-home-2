@@ -22,7 +22,10 @@ export default function ShowroomXeHoi() {
     return (
         <Layout siteContentClass="pt0 pb0">
             <section>
-                <App_Showcase_Section1 />
+                <App_Showcase_Section1
+                    title="Khám Phá Từng Chi Tiết Của Chiếc Xe Thông Qua Tour 360°" 
+                    imageDisplayUrl="/assets/images/vizion/tours/car-v2.png" 
+                />
             </section>
 
             <section>
