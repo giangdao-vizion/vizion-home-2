@@ -41,7 +41,7 @@ export default function Index() {
         <Fitness_Section5_Vz />
 
         <section>
-          <HomePage_Live_Demo />
+          <HomePage_Live_Demo iframeUrl="https://view.vizion.space/demo?mode=no-intro&menu-ui=gallery" />
         </section>
 
         <BusinessSection />

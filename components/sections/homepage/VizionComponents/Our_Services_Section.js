@@ -6,7 +6,7 @@ export default function Our_Services_Section() {
                 <div className="container">
                     <div className="heading align-center">
                         <div className="heading-sub color-vizion">TRẢI NGHIỆM SỰ KHÁC BIỆT</div>
-                        <h2 className="heading-title w500 size-l"><strong className="color-vizion">Dịch Vụ</strong> Của Chúng Tôi</h2>
+                        <h2 className="heading-title w500 size-l"><span className="heading-title-hightlight color-vizion">Dịch Vụ</span> Của Chúng Tôi</h2>
                     </div>
                     <div className="block-image-box layout-04">
                         <div className="image-box">

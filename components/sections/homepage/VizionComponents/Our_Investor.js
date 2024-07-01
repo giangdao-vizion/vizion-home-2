@@ -8,34 +8,32 @@ export default function OurInvestor() {
                             Khách Hàng Của Chúng Tôi
                         </h2>
                     </div>
-                    <div className="row flex-align-c">
-                        <div className="col-lg-3 col-6 align-center pb30">
+                    <div className="grid-container our-investor-container">
+                        <div className="grid-item">
                             <img
                                 src="/assets/images/vizion/logos/sslog-1536x1295.png"
                                 alt="Partner"
                             />
                         </div>
-                        <div className="col-lg-3 col-6 align-center pb30">
+                        <div className="grid-item">
                             <img
                                 src="/assets/images/vizion/logos/vietsopetro-logo-v2-1536x1294.png"
                                 alt="Partner"
                             />
                         </div>
-                        <div className="col-lg-3 col-6 align-center pb30">
+                        <div className="grid-item">
                             <img
                                 src="/assets/images/vizion/logos/logo-aa-v7-1536x1294.png"
                                 alt="Partner"
                             />
                         </div>
-                        <div className="col-lg-3 col-6 align-center pb30">
+                        <div className="grid-item">
                             <img
                                 src="/assets/images/vizion/logos/dtw-logo-1536x1294.png"
                                 alt="Partner"
                             />
                         </div>
-                    </div>
-                    <div className="row flex-align-c">
-                        <div className="col-lg-3 col-6 align-center pb30">
+                        <div className="grid-item">
                             <img
                                 src="/assets/images/vizion/logos/rr-removebg-preview.png"
                                 alt="Partner"

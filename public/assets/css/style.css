@@ -195,6 +195,10 @@ a:hover {
   color: var(--sala-primary-navy, #0057fc);
 }
 
+.grid-container {
+  display: grid;
+}
+
 .flex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -13141,6 +13145,26 @@ form.checkout-coupon input[type=text] {
   background: #fff;
   border-radius: 5px;
   margin-top: -6px;
+}
+
+.heading-title-hightlight::after {
+  display: none;
+}
+
+.our-investor-container {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: center;
+}
+
+.block-gallery.layout-04 .item {
+  height: 450px;
+}
+.block-gallery.layout-04 .item img {
+  height: 100%;
+  object-fit: cover;
+}
+.block-gallery.layout-04 .item .title {
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */

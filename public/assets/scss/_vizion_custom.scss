@@ -1,0 +1,21 @@
+.heading-title-hightlight {
+    &::after {
+        display: none;
+    }
+}
+
+.our-investor-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: center;
+}
+
+.block-gallery.layout-04 .item {
+    height: 450px;
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .title {
+        text-transform: capitalize;
+    }
+}
