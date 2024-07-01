@@ -9,7 +9,7 @@ export default function HomePage_Live_Demo({ iframeUrl }) {
             <div className="heading-sub color-vizion">Khám Phá</div>
             <h2 className="heading-title size-l">Trải Nghiệm Ngay <span className="heading-title-hightlight color-vizion">Live Demo</span></h2>
           </div>
-          <div>
+          <div className="iframe-container">
             {/* <div
               className="popup-wrapper ratio br20"
               style={{ aspectRatio: 4 / 2 }}

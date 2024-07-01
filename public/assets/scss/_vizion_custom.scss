@@ -35,6 +35,13 @@
   }
 }
 
+.iframe-container {
+    iframe {
+        border: 1px solid #c9c9c9;
+        border-radius: 6px;
+    }
+}
+
 .block-image-box.layout-04 .image-box {
   border: none;
 }
