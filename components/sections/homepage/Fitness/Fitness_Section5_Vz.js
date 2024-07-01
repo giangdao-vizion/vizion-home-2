@@ -29,8 +29,8 @@ export default function Fitness_Section5_Vz() {
                           activeIndex === 1 ? "tab-nav is-active" : "tab-nav"
                         }
                       >
-                        <i className="las la-hands-helping" />
-                        Tốc độ load
+                        <i className="la la-paper-plane" />
+                        Nhanh
                       </a>
                     </li>
                     <li onClick={() => handleOnClick(2)}>
@@ -39,8 +39,8 @@ export default function Fitness_Section5_Vz() {
                           activeIndex === 2 ? "tab-nav is-active" : "tab-nav"
                         }
                       >
-                        <i className="las la-cog" />
-                        Giao diện
+                        <i className="la la-smile-o" />
+                        Dễ
                       </a>
                     </li>
                     <li onClick={() => handleOnClick(3)}>
@@ -49,8 +49,8 @@ export default function Fitness_Section5_Vz() {
                           activeIndex === 3 ? "tab-nav is-active" : "tab-nav"
                         }
                       >
-                        <i className="las la-life-ring" />
-                        Hỗ trợ
+                        <i className="la la-line-chart" />
+                        Thông minh
                       </a>
                     </li>
                   </ul>
