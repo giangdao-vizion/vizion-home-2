@@ -16,6 +16,7 @@ export default function Layout({
   pageTitleDesc,
   pageTitleBtn,
   headerClass,
+  headTitle,
 }) {
   useEffect(() => {
     const WOW = require("wowjs");
@@ -26,7 +27,7 @@ export default function Layout({
   });
   return (
     <>
-      <PageHead />
+      <PageHead headTitle={headTitle} />
       <div id="wrapper">
         {!headerLayout && <Header1 headerClass={headerClass} />}
         {headerLayout == 1 ? <Header1 headerClass={headerClass} /> : null}
