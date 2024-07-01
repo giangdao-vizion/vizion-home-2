@@ -15,7 +15,18 @@
         height: 100%;
         object-fit: cover;
     }
-    .title {
+    .title-content {
         text-transform: capitalize;
+        color: var(--sala-alway-white, $neutral_white);
     }
+    .desc {
+        color: var(--sala-alway-white, $neutral_white);
+        font-size: 12px;
+        margin-top: 5px;
+        font-weight: 400;
+    }
+}
+
+.block-image-box.layout-04 .image-box {
+    border: none;
 }

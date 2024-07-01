@@ -24,57 +24,57 @@ export default function Menu() {
                   <div className="mega-menu-item">
                     <ul className="sub-menu">
                       <li>
-                        <Link href="/home/home-app-showcase">
+                        <Link href="/dich-vu/nha-may-san-xuat">
                           Sản Xuất & Nhà Máy
                         </Link>
                       </li>
                       <li>
-                        <Link href="/home/home-shopify-app">Bất Động Sản</Link>
+                        <Link href="/dich-vu/bat-dong-san">Bất Động Sản</Link>
                       </li>
 
                       <li>
-                        <Link href="/home/home-music-app">Showroom Xe Hơi</Link>
+                        <Link href="/dich-vu/showroom-xe-hoi">Showroom Xe Hơi</Link>
                       </li>
                     </ul>
                   </div>
                   <div className="mega-menu-item">
                     <ul className="sub-menu">
                       <li>
-                        <Link href="/home/home-hr-maganement">
+                        <Link href="/">
                           Bán Lẻ & Thương Mại
                         </Link>
                       </li>
                       <li>
-                        <Link href="/home/home-saas">Nội Thất Và Đồ Gỗ</Link>
+                        <Link href="/">Nội Thất Và Đồ Gỗ</Link>
                       </li>
                       <li>
-                        <Link href="/home/home-nft">Du Lịch Và Khám Phá</Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="mega-menu-item">
-                    <ul className="sub-menu">
-                      <li>
-                        <Link href="/home/home-saas">Khách Sạn & Resort</Link>
-                      </li>
-                      <li>
-                        <Link href="/home/home-nft">Cơ Sở Giáo Dục</Link>
-                      </li>
-                      <li>
-                        <Link href="/home/home-saas">Nhà Hàng & Quán Ăn</Link>
+                        <Link href="/">Du Lịch Và Khám Phá</Link>
                       </li>
                     </ul>
                   </div>
                   <div className="mega-menu-item">
                     <ul className="sub-menu">
                       <li>
-                        <Link href="/home/home-nft">Giải Trí & Văn Hóa</Link>
+                        <Link href="/">Khách Sạn & Resort</Link>
                       </li>
                       <li>
-                        <Link href="/home/home-saas">Gym & Spa</Link>
+                        <Link href="/">Cơ Sở Giáo Dục</Link>
                       </li>
                       <li>
-                        <Link href="/home/home-nft">
+                        <Link href="/">Nhà Hàng & Quán Ăn</Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="mega-menu-item">
+                    <ul className="sub-menu">
+                      <li>
+                        <Link href="/">Giải Trí & Văn Hóa</Link>
+                      </li>
+                      <li>
+                        <Link href="/">Gym & Spa</Link>
+                      </li>
+                      <li>
+                        <Link href="/">
                           Bệnh Viện & TTCS Sức Khỏe
                         </Link>
                       </li>
@@ -101,12 +101,12 @@ export default function Menu() {
                     </ul>
                     <ul className="sub-menu">
                       <li>
-                        <Link href="/about-company">VR Room</Link>
+                        <Link href="/">VR Room</Link>
                       </li>
                     </ul>
                     <ul className="sub-menu">
                       <li>
-                        <Link href="/about-company">Showroom 3D</Link>
+                        <Link href="/">Showroom 3D</Link>
                       </li>
                     </ul>
                   </div>
