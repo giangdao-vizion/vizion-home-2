@@ -1,0 +1,15 @@
+.bussiness-discover {
+  &--spdtb {
+    padding: 0;
+  }
+  &--thumbnail {
+    height: 210px;
+    padding: 15px 15px 0 15px;
+  }
+
+  &--img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

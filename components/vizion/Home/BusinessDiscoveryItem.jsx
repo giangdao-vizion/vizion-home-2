@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 import Isotope from 'isotope-layout';
 
 export default function BusinessDiscoveryItem() {
-  const dataSections = [
+  const industries = [
     {
       entryTitle: 'Lĩnh vực',
       title: 'Sản xuất & Nhà máy',
@@ -100,31 +100,53 @@ export default function BusinessDiscoveryItem() {
   }, []);
 
   return (
-    <div className={`grid style-minimal`}>
-      <div className="grid-sizer" />
-      {dataSections.map((data, index) => (
-        <div className={`portfolio-item grid-item--width2 portfolio-grid mockup`} key={index}>
-          <article className="portfolio">
-            <div className="entry-thumbnail">
-              <Link href={data.linkUrl} title={data.title}>
-                <img src={data.imageUrl} alt={data.title} />
+    // <div className={`grid style-minimal`}>
+    //   <div className="grid-sizer" />
+    //   {dataSections.map((data, index) => (
+    //     <div className={`portfolio-item grid-item--width2 portfolio-grid mockup`} key={index}>
+    //       <article className="portfolio">
+    //         <div className="entry-thumbnail">
+    //           <Link href={data.linkUrl} title={data.title}>
+    //             <img src={data.imageUrl} alt={data.title} />
+    //           </Link>
+    //         </div>
+    //         <div className="entry-content">
+    //           <div className="entry-category">
+    //             <Link href={data.title} title="Mockup">
+    //               {data.entryTitle}
+    //             </Link>
+    //           </div>
+    //           <div className="entry-title">
+    //             <h3>
+    //               <Link href="/" title="DX SAMPLE FACTORY">
+    //                 {data.title}
+    //               </Link>
+    //             </h3>
+    //           </div>
+    //         </div>
+    //       </article>
+    //     </div>
+    //   ))}
+    // </div>
+
+    <div className="row">
+      {industries.map((item, index) => (
+        <div className="col-lg-4 col-md-6" key={index}>
+          <div className="image-box">
+            <div className="thumbnail bussiness-discover--thumbnail">
+              <Link href="/home/home-startup" title="Industries">
+                <img className="bussiness-discover--img" src={item.imageUrl} alt="industries-thumbnail" />
               </Link>
+              <div className="badge badge-hot">Hot</div>
             </div>
-            <div className="entry-content">
-              <div className="entry-category">
-                <Link href={data.title} title="Mockup">
-                  {data.entryTitle}
+            <div className="content">
+              <h3 className="title">
+                <Link href="/home/home-startup" title="Startup">
+                  {item.title}
                 </Link>
-              </div>
-              <div className="entry-title">
-                <h3>
-                  <Link href="/" title="DX SAMPLE FACTORY">
-                    {data.title}
-                  </Link>
-                </h3>
-              </div>
+              </h3>
             </div>
-          </article>
+          </div>
         </div>
       ))}
     </div>

@@ -13281,4 +13281,17 @@ form.checkout-coupon input[type=text] {
   padding-bottom: 0px;
 }
 
+.bussiness-discover--spdtb {
+  padding: 0;
+}
+.bussiness-discover--thumbnail {
+  height: 210px;
+  padding: 15px 15px 0 15px;
+}
+.bussiness-discover--img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=style.css.map */
