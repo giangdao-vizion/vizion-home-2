@@ -316,7 +316,7 @@
     );
     position: relative;
     &:before {
-      content: "";
+      content: '';
       background: radial-gradient(
         circle at 224% 25%,
         rgba(255, 255, 255, 0) 67%,
@@ -343,7 +343,7 @@
     background-size: 45% 100%;
     position: relative;
     &:before {
-      content: "";
+      content: '';
       background: radial-gradient(
         circle at -224% 25%,
         rgba(255, 255, 255, 0) 67%,
@@ -367,7 +367,7 @@
     background-size: 50% 100%;
     position: relative;
     &:before {
-      content: "";
+      content: '';
       background: radial-gradient(
         circle at 224% 25%,
         rgba(255, 255, 255, 0) 67%,
@@ -392,7 +392,7 @@
     );
     position: relative;
     &:before {
-      content: "";
+      content: '';
       background: radial-gradient(
         circle at -224% 25%,
         rgba(255, 255, 255, 0) 67%,
@@ -432,11 +432,7 @@
     background-image: linear-gradient(120deg, #dfe1f3 0%, #ecdce0 100%);
   }
   &-08 {
-    background-image: linear-gradient(
-      90deg,
-      var(--sala-neutral-white, $neutral_white) 70%,
-      #e3deec 70%
-    );
+    background-image: linear-gradient(90deg, var(--sala-neutral-white, $neutral_white) 70%, #e3deec 70%);
   }
   &-09 {
     background-image: linear-gradient(to bottom, #e2deed, #eadce3);
@@ -547,7 +543,7 @@
     cursor: pointer;
     font-weight: 500;
     &:before {
-      content: "";
+      content: '';
       width: 16px;
       height: 16px;
       display: block;
@@ -558,8 +554,8 @@
       left: 0;
     }
     &:after {
-      content: "\f00c";
-      font-family: "Line Awesome Free";
+      content: '\f00c';
+      font-family: 'Line Awesome Free';
       font-weight: 900;
       position: absolute;
       top: -1px;
@@ -584,7 +580,7 @@
       @include border-radius(50%);
     }
     &:after {
-      content: "";
+      content: '';
       width: 10px;
       height: 10px;
       display: block;
@@ -624,7 +620,7 @@ textarea {
   resize: none;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   background-color: var(--sala-primary-navy, $primary_navy);
   color: var(--sala-alway-white, $neutral_white);
   padding: 0 28px;
@@ -789,7 +785,7 @@ input[type="submit"] {
     padding-left: 40px;
     position: relative;
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: 0;
       right: 0;
@@ -1069,7 +1065,7 @@ input[type="submit"] {
       );
       position: relative;
       &:before {
-        content: "";
+        content: '';
         display: none;
       }
     }
@@ -1078,7 +1074,7 @@ input[type="submit"] {
       background-image: none !important;
       position: relative;
       &:before {
-        content: "";
+        content: '';
         display: none;
       }
     }
@@ -1099,7 +1095,7 @@ input[type="submit"] {
       );
       position: relative;
       &:before {
-        content: "";
+        content: '';
         display: none;
       }
       .heading,

@@ -97,7 +97,7 @@
       z-index: 1;
 
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         bottom: 0;
         left: 0;
@@ -112,7 +112,7 @@
       }
 
       &.no-underline:after {
-        content: "";
+        content: '';
         display: none;
       }
     }
@@ -126,7 +126,7 @@
     }
 
     &.font-second {
-      font-family: "Cormorant Garamond", serif;
+      font-family: 'Cormorant Garamond', serif;
       font-size: 84px;
       font-weight: 900;
 
@@ -137,7 +137,7 @@
     }
 
     &.font-third {
-      font-family: "Cormorant Garamond", serif;
+      font-family: 'Cormorant Garamond', serif;
       font-size: 60px;
       font-weight: 600;
       line-height: 1.1;
@@ -148,13 +148,13 @@
         position: relative;
 
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           top: -40%;
           left: -25%;
           width: 180%;
           height: 180%;
-          background-image: url("../images/hea-08.png");
+          background-image: url('../images/hea-08.png');
           background-repeat: no-repeat;
           background-position: center;
           background-size: contain;
@@ -163,7 +163,7 @@
       }
 
       &.background-02 {
-        background-image: url("../images/hep-12.svg");
+        background-image: url('../images/hep-12.svg');
         background-repeat: no-repeat;
         background-position: bottom center;
         background-size: contain;
@@ -171,7 +171,7 @@
       }
 
       &.background-03 {
-        background-image: url("../images/hep-24.png");
+        background-image: url('../images/hep-24.png');
         background-repeat: no-repeat;
         background-position: bottom center;
         background-size: contain;
@@ -182,13 +182,13 @@
         position: relative;
 
         &:before {
-          content: "";
+          content: '';
           position: absolute;
           top: -35px;
           left: -40px;
           right: -40px;
           bottom: -15px;
-          background-image: url("../images/hst-02.svg");
+          background-image: url('../images/hst-02.svg');
           background-repeat: no-repeat;
           background-position: center center;
           background-size: contain;
@@ -349,7 +349,7 @@
 
       span.background-04 {
         &::before {
-          content: "";
+          content: '';
           display: none;
         }
       }

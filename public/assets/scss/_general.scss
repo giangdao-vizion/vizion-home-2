@@ -165,7 +165,7 @@
     top: -5px;
     &:before,
     &:after {
-      content: "";
+      content: '';
       display: none;
     }
   }
@@ -181,7 +181,7 @@
   margin-bottom: 32px;
   li:not(:last-child) {
     &:after {
-      content: "/";
+      content: '/';
       margin: 0 8px;
       font-size: 12px;
     }
@@ -194,8 +194,8 @@
   visibility: hidden;
   @include transition(all 0.3s);
   &:after {
-    content: "\f105";
-    font-family: "Line Awesome Free";
+    content: '\f105';
+    font-family: 'Line Awesome Free';
     font-weight: 900;
     font-size: 32px;
     color: var(--sala-alway-dark, $neutral_dark);
@@ -233,7 +233,7 @@
 
 .swiper-button-prev {
   &:after {
-    content: "\f104";
+    content: '\f104';
   }
 }
 
@@ -320,7 +320,7 @@ table {
 .devider-right {
   position: relative;
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: -170px;
@@ -359,7 +359,7 @@ table {
       @include d-flex;
       align-items: center;
       &:after {
-        content: "";
+        content: '';
         height: 1px;
         width: 26px;
         display: block;
@@ -367,7 +367,7 @@ table {
         margin: 0 12px;
       }
       &:last-child:after {
-        content: "";
+        content: '';
         display: none;
       }
     }
@@ -404,7 +404,7 @@ table {
   -o-transform-origin: left top;
   -ms-transform-origin: left top;
   &:after {
-    content: "";
+    content: '';
     width: 64px;
     height: 1px;
     display: block;
@@ -416,7 +416,7 @@ table {
 .background-overlay {
   position: relative;
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -1280,7 +1280,7 @@ table {
       @include border-radius(8px);
     }
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 16px;
       right: 0;
@@ -1448,7 +1448,7 @@ form.newsletter {
   max-width: 510px;
   margin: 0 auto;
   position: relative;
-  input[type="email"] {
+  input[type='email'] {
     height: 60px;
     padding-right: 160px;
     &:focus {
@@ -1456,7 +1456,7 @@ form.newsletter {
       outline-offset: inherit;
     }
   }
-  input[type="submit"] {
+  input[type='submit'] {
     position: absolute;
     top: 6px;
     right: 6px;
@@ -1474,8 +1474,8 @@ form.newsletter {
       color: var(--sala-alway-white, $neutral_white);
       margin-right: 32px;
       &:before {
-        content: "\f00c";
-        font-family: "Line Awesome Free";
+        content: '\f00c';
+        font-family: 'Line Awesome Free';
         font-weight: 900;
         font-size: 24px;
         margin-right: 12px;
@@ -1562,8 +1562,8 @@ form.newsletter {
       padding: 9px 20px 9px 56px;
       height: auto;
       &:before {
-        content: "\f041";
-        font-family: "Line Awesome Free";
+        content: '\f041';
+        font-family: 'Line Awesome Free';
         font-weight: 900;
         font-size: 24px;
         position: absolute;
@@ -1575,7 +1575,7 @@ form.newsletter {
       }
     }
   }
-  input[type="submit"] {
+  input[type='submit'] {
     width: 100%;
     height: 60px;
     line-height: 60px;
