@@ -116,7 +116,7 @@
       z-index: 1;
       border-radius: 5px;
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         top: -32px;
         left: -32px;
@@ -127,8 +127,8 @@
       }
     }
     .toggle-sub-menu:after {
-      content: "\f107";
-      font-family: "Line Awesome Free";
+      content: '\f107';
+      font-family: 'Line Awesome Free';
       margin-left: 8px;
       color: var(--sala-neutral-normal, #555555);
       vertical-align: 2px;
@@ -204,8 +204,8 @@
             }
           }
           .toggle-sub-menu:after {
-            content: "\f105";
-            font-family: "Line Awesome Free";
+            content: '\f105';
+            font-family: 'Line Awesome Free';
             margin-left: 8px;
             color: var(--sala-neutral-normal, #555555);
             vertical-align: 0px;
@@ -342,7 +342,7 @@
           pointer-events: all;
         }
         &:before {
-          content: "";
+          content: '';
           display: none;
         }
       }
@@ -576,7 +576,7 @@
           pointer-events: all;
         }
         &:before {
-          content: "";
+          content: '';
           display: none;
         }
       }

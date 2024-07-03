@@ -1,0 +1,48 @@
+.vizion-our-services {
+  .block-image-box.layout-04 {
+    .image-box {
+      padding: 20px;
+      .thumbnail {
+        position: relative;
+        overflow: hidden;
+        height: 150px;
+        margin-bottom: 15px;
+        .thumb-img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: unset;
+          height: 100%;
+          max-width: unset;
+          object-fit: unset;
+          margin: 0;
+        }
+      }
+      &:hover {
+        .thumbnail {
+          .thumb-img {
+            animation: moveToRight 3s infinite;
+          }
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes moveToRight {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+@keyframes moveToRight {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}

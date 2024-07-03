@@ -5,7 +5,9 @@ export default function TourIframe({ iframeUrl }) {
         <div className="container">
           <div className="heading align-center">
             <div className="heading-sub color-vizion">Khám Phá</div>
-            <h2 className="heading-title size-l">Trải Nghiệm Ngay <span className="heading-title-hightlight color-vizion">Live Demo</span></h2>
+            <h2 className="heading-title size-l">
+              Trải Nghiệm Ngay <span className="heading-title-hightlight color-vizion">Live Demo</span>
+            </h2>
           </div>
           <div>
             {/* <div
@@ -31,7 +33,7 @@ export default function TourIframe({ iframeUrl }) {
               className="homepage-iframe"
               src={iframeUrl}
               title="tour-immerse"
-              style={{ height: 540, width: "100%" }}
+              style={{ height: 540, width: '100%' }}
             />
           </div>
         </div>
