@@ -1,48 +1,47 @@
-import Link from "next/link";
+'use client';
 
-export default function Banner({ title, imageDisplayUrl }) {
+// import Link from 'next/link';
+import { useEffect } from 'react';
+
+export default function Banner() {
   return (
     <>
-      <section
-        className="section background-overlay background-full pdt180 oveflow-hidden"
-        style={{ backgroundImage: "url(/assets/images/hero-01.jpg)" }}
-      >
-        <div className="container">
-          <div className="row">
+      <section className="section opt120 overflow-hidden linear-gradient-07 banner">
+        <div className="container banner-container">
+          <div className="row flex-align-c">
             <div className="col-lg-6">
-              <div className="heading wow animate__animated animate__fadeInLeft ">
-                <h2 className="heading-title size-xl vz-text-red">
-                  {title}
-                </h2>
-              </div>
-
-              <div className="button-wrap">
-                <Link
-                  href="/contact-01"
-                  className="button fullfield-dark"
-                  title="Buy Now"
-                >
-                  Liên hệ ngay
-                </Link>
+              <div className="pdr60">
+                <div className="heading heading-alway-dark mb32">
+                  {/* <div className="heading-sub layout-02">OCULUS QUEST</div>
+                  <h2 className="heading-title size-xl">Oculus Go Standalone Virtual Reality Headse - 32GB</h2>
+                  <div className="heading-desc">User controlled playback of 360° video content</div>
+                </div>
+                <div className="button-wrap">
+                  <Link href="/contact-01" className="button fullfield" title="Buy Now">
+                    Buy Now
+                  </Link> */}
+                </div>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="images align-right layout-01 lg-mt32">
-                <img
-                  className="img01 wow animate__animated animate__fadeInUp "
-                  data-wow
-                  animate__animated-delay="0.5s"
-                  src="/assets/images/vz-asc1.png"
-                  alt="Image"
-                />
-                <img
-                  className="img02 wow animate__animated animate__fadeInUp "
-                  src={imageDisplayUrl}
-                  alt="Image"
-                />
+              <div className="lg-mt32">
+                <div className="images layout-03">
+                  <div className="inner banner-inner"></div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="banner-video">
+          <iframe
+            src="https://www.youtube.com/embed/ZlDUvmBOGOE?si=H5_iR821YI086svv&autoplay=1&mute=1&loop=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
       </section>
     </>
