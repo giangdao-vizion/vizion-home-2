@@ -22,7 +22,7 @@ export default function OurServices() {
   ];
   return (
     <>
-      <section className="section spdt vizion-our-services">
+      <section className="section background-grey spdt spdb vizion-our-services">
         <div className="container">
           <div className="heading align-center">
             <h2 className="heading-title size-l">3 Giải Pháp</h2>
