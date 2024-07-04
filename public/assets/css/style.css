@@ -13247,18 +13247,13 @@ form.checkout-coupon input[type=text] {
   display: none;
 }
 
+.iframe-container iframe {
+  border: 1px solid #c9c9c9;
+  border-radius: 6px;
+}
+
 .block-image-box.layout-04 .image-box {
   border: none;
-}
-
-.backtotop {
-  background-color: #f73e3f;
-}
-
-.spin {
-  border-top-color: #f73e3f;
-  border-left-color: #f73e3f;
-  border-bottom-color: #f73e3f;
 }
 
 .banner {
@@ -13332,7 +13327,7 @@ form.checkout-coupon input[type=text] {
     left: 0;
   }
   to {
-    left: -50%;
+    left: -100%;
   }
 }
 @keyframes moveToRight {
@@ -13340,15 +13335,8 @@ form.checkout-coupon input[type=text] {
     left: 0;
   }
   to {
-    left: -50%;
+    left: -100%;
   }
-}
-.contact-form.layout-02 {
-  background: rgba(55, 55, 55, 0.4392156863);
-}
-.contact-form.layout-02 input[type=submit] {
-  background-color: #f73e3f;
-  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
