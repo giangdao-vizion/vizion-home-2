@@ -30,7 +30,7 @@ export default function Layout({
     <>
       <PageHead headTitle={headTitle} />
       <div id="wrapper">
-        <Header3 />
+        {/* <Header3 /> */}
         {!headerLayout && <Header1 headerClass={headerClass} />}
         {headerLayout == 1 ? <Header1 headerClass={headerClass} /> : null}
 

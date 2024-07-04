@@ -6,7 +6,7 @@ import CanvasMenu from './CanvasMenu';
 export default function Header({ headerClass }) {
   return (
     <>
-      <header id="header" className={`site-header ${headerClass}`}>
+      <header id="header" className={`site-header ${headerClass} vz-header`}>
         {/* <CanvasMenu /> */}
         <div className="container-fluid">
           <div className="row flex-align-c inner">
@@ -20,9 +20,7 @@ export default function Header({ headerClass }) {
                 <Menu />
               </div>
             </div>
-            <div className="col-lg-3 col-6">
-              <HeaderRight />
-            </div>
+            <div className="col-lg-3 col-6">{/* <HeaderRight /> */}</div>
           </div>
         </div>
       </header>

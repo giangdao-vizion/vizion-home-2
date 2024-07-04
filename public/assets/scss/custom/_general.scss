@@ -41,6 +41,10 @@
 
 .backtotop {
   background-color: #f73e3f;
+
+  &:hover {
+    background-color: #cd0e0e;
+  }
 }
 
 .spin {

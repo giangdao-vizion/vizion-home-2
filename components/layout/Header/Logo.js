@@ -6,7 +6,7 @@ export default function Logo() {
     <>
       <div className="logo">
         <Link href="/">
-          <Image height={40} width={100} src={'/assets/images/vizion-logo.jpg'} />
+          <Image height={40} width={100} src={'/assets/images/vizion/logos/vz-logo-white.png'} />
         </Link>
       </div>
     </>

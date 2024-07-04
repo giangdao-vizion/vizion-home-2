@@ -4,7 +4,7 @@ export default function Introduce() {
     <>
       <section
         className="section background-full layout-12 opt160 opb200"
-        style={{ backgroundImage: 'url(/assets/images/hvr-04.jpeg)', transform: 'translateY(-4px)' }}
+        style={{ backgroundImage: 'url(/assets/images/hvr-04.jpeg)' }}
       >
         <div className="container">
           <div className="heading align-left heading-alway-white mb32">

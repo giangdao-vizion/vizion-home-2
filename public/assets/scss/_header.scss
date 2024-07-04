@@ -82,7 +82,7 @@
         display: block;
         font-weight: 500;
         &:hover .toggle-sub-menu:after {
-          color: var(--sala-primary-navy, #0057fc);
+          // color: var(--sala-primary-navy, #0057fc);
         }
       }
       &:hover > .sub-menu {
@@ -130,7 +130,7 @@
       content: '\f107';
       font-family: 'Line Awesome Free';
       margin-left: 8px;
-      color: var(--sala-neutral-normal, #555555);
+      // color: var(--sala-neutral-normal, #555555);
       vertical-align: 2px;
       font-size: 12px;
       font-weight: 900;

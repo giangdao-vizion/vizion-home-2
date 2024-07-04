@@ -15,8 +15,8 @@ export default function Menu() {
 
         <ul>
           <li className="is-mega-menu">
-            <Link href="/">
-              Lĩnh Vực Ứng Dụng <span className="toggle-sub-menu"></span>
+            <Link href="/" className="vz-sub-menu">
+              Lĩnh Vực Ứng Dụng <span className="toggle-sub-menu vz-toggle-sub--menu"></span>
             </Link>
             <ul className="sub-menu">
               <li>
@@ -24,53 +24,77 @@ export default function Menu() {
                   <div className="mega-menu-item">
                     <ul className="sub-menu">
                       <li>
-                        <Link href="/dich-vu/nha-may-san-xuat">Sản Xuất & Nhà Máy</Link>
+                        <Link className="vz-sub-menu--item" href="/dich-vu/nha-may-san-xuat">
+                          Sản Xuất & Nhà Máy
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/dich-vu/bat-dong-san">Bất Động Sản</Link>
+                        <Link className="vz-sub-menu--item" href="/dich-vu/bat-dong-san">
+                          Bất Động Sản
+                        </Link>
                       </li>
 
                       <li>
-                        <Link href="/dich-vu/showroom-xe-hoi">Showroom Xe Hơi</Link>
+                        <Link className="vz-sub-menu--item" href="/dich-vu/showroom-xe-hoi">
+                          Showroom Xe Hơi
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <div className="mega-menu-item">
                     <ul className="sub-menu">
                       <li>
-                        <Link href="/">Bán Lẻ & Thương Mại</Link>
+                        <Link className="vz-sub-menu--item" href="/">
+                          Bán Lẻ & Thương Mại
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/">Nội Thất Và Đồ Gỗ</Link>
+                        <Link className="vz-sub-menu--item" href="/">
+                          Nội Thất Và Đồ Gỗ
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/">Du Lịch Và Khám Phá</Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="mega-menu-item">
-                    <ul className="sub-menu">
-                      <li>
-                        <Link href="/">Khách Sạn & Resort</Link>
-                      </li>
-                      <li>
-                        <Link href="/">Cơ Sở Giáo Dục</Link>
-                      </li>
-                      <li>
-                        <Link href="/">Nhà Hàng & Quán Ăn</Link>
+                        <Link className="vz-sub-menu--item" href="/">
+                          Du Lịch Và Khám Phá
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <div className="mega-menu-item">
                     <ul className="sub-menu">
                       <li>
-                        <Link href="/">Giải Trí & Văn Hóa</Link>
+                        <Link className="vz-sub-menu--item" href="/">
+                          Khách Sạn & Resort
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/">Gym & Spa</Link>
+                        <Link className="vz-sub-menu--item" href="/">
+                          Cơ Sở Giáo Dục
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/">Bệnh Viện & TTCS Sức Khỏe</Link>
+                        <Link className="vz-sub-menu--item" href="/">
+                          Nhà Hàng & Quán Ăn
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="mega-menu-item">
+                    <ul className="sub-menu">
+                      <li>
+                        <Link className="vz-sub-menu--item" href="/">
+                          Giải Trí & Văn Hóa
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="vz-sub-menu--item" href="/">
+                          Gym & Spa
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="vz-sub-menu--item" href="/">
+                          Bệnh Viện & TTCS Sức Khỏe
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -79,8 +103,8 @@ export default function Menu() {
             </ul>
           </li>
           <li className="is-mega-menu">
-            <Link href="/">
-              Giải Pháp <span className="toggle-sub-menu"></span>
+            <Link href="/" className="vz-sub-menu">
+              Giải Pháp <span className="toggle-sub-menu vz-toggle-sub--menu"></span>
             </Link>
             <ul className="sub-menu">
               <li>
@@ -88,17 +112,23 @@ export default function Menu() {
                   <div className="mega-menu-item">
                     <ul className="sub-menu">
                       <li>
-                        <Link href="/virtual-solution-360">Giải Pháp Virtual 360</Link>
+                        <Link className="vz-sub-menu--item" href="/virtual-solution-360">
+                          Giải Pháp Virtual 360
+                        </Link>
                       </li>
                     </ul>
                     <ul className="sub-menu">
                       <li>
-                        <Link href="/">VR Room</Link>
+                        <Link className="vz-sub-menu--item" href="/">
+                          VR Room
+                        </Link>
                       </li>
                     </ul>
                     <ul className="sub-menu">
                       <li>
-                        <Link href="/">Showroom 3D</Link>
+                        <Link className="vz-sub-menu--item" href="/">
+                          Showroom 3D
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -107,7 +137,9 @@ export default function Menu() {
             </ul>
           </li>
           <li className="is-mega-menu">
-            <Link href="/">Story</Link>
+            <Link href="/" className="vz-sub-menu">
+              Story
+            </Link>
           </li>
         </ul>
       </div>
