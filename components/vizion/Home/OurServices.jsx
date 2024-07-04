@@ -25,7 +25,7 @@ export default function OurServices() {
       <section className="section spdt vizion-our-services">
         <div className="container">
           <div className="heading align-center">
-            <h2 className="heading-title size-l">Trải nghiệm sự khác biệt</h2>
+            <h2 className="heading-title size-l">3 Giải Pháp</h2>
             <div className="heading-desc">Dịch vụ của chúng tôi.</div>
           </div>
           <div className="block-image-box layout-04">
