@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Menu() {
+export default function Menu({ isTop }) {
   return (
     <>
       <div className="main-menu">
@@ -15,12 +15,13 @@ export default function Menu() {
 
         <ul>
           <li className="is-mega-menu">
-            <Link href="/" className="vz-sub-menu">
-              Lĩnh Vực Ứng Dụng <span className="toggle-sub-menu vz-toggle-sub--menu"></span>
+            <Link href="/" className={`vz-sub-menu ${isTop ? '' : 'text-black'}`}>
+              Lĩnh Vực Ứng Dụng
+              <span className={`toggle-sub-menu vz-toggle-sub--menu ${isTop ? '' : 'arrow-black'}`}></span>
             </Link>
             <ul className="sub-menu">
               <li>
-                <div className="mega-menu flex-content-c flex">
+                <div className="mega-menu flex-content-c flex industries-menu">
                   <div className="mega-menu-item">
                     <ul className="sub-menu">
                       <li>
@@ -103,12 +104,12 @@ export default function Menu() {
             </ul>
           </li>
           <li className="is-mega-menu">
-            <Link href="/" className="vz-sub-menu">
-              Giải Pháp <span className="toggle-sub-menu vz-toggle-sub--menu"></span>
+            <Link href="/" className={`vz-sub-menu ${isTop ? '' : 'text-black'}`}>
+              Giải Pháp <span className={`toggle-sub-menu vz-toggle-sub--menu ${isTop ? '' : 'arrow-black'}`}></span>
             </Link>
             <ul className="sub-menu">
               <li>
-                <div className="mega-menu flex-content-c flex">
+                <div className="mega-menu flex-content-c flex solution-menu">
                   <div className="mega-menu-item">
                     <ul className="sub-menu">
                       <li>
@@ -137,7 +138,7 @@ export default function Menu() {
             </ul>
           </li>
           <li className="is-mega-menu">
-            <Link href="/" className="vz-sub-menu">
+            <Link href="/" className={`vz-sub-menu ${isTop ? '' : 'text-black'}`}>
               Story
             </Link>
           </li>

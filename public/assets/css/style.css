@@ -240,7 +240,7 @@ a:hover {
 
 .spdtb {
   padding-top: 80px;
-  padding-bottom: 140px;
+  padding-bottom: 120px;
 }
 
 .spdb {
@@ -3482,7 +3482,6 @@ img.h600 {
   text-align: left;
   margin-left: -15px;
   margin-right: -15px;
-  max-width: 1200px;
   margin: 0 auto;
   background-color: var(--sala-neutral-white, #ffffff);
   border-radius: 5px;
@@ -13268,10 +13267,24 @@ form.checkout-coupon input[type=text] {
   z-index: 2;
   width: 100%;
 }
+.vz-header.bg-color {
+  background-color: white;
+}
+
+.industries-menu {
+  max-width: 1000px;
+}
+
+.solution-menu {
+  max-width: 400px;
+}
 
 .vz-sub-menu {
   color: white;
   text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.3);
+}
+.vz-sub-menu.text-black {
+  color: black;
 }
 .vz-sub-menu:hover {
   color: #f73e3f;
@@ -13282,6 +13295,9 @@ form.checkout-coupon input[type=text] {
 
 .vz-toggle-sub--menu::after {
   color: white;
+}
+.vz-toggle-sub--menu.arrow-black::after {
+  color: black;
 }
 
 .vz-sub-menu--item:hover {
@@ -13318,6 +13334,9 @@ form.checkout-coupon input[type=text] {
   padding-bottom: 0px;
 }
 
+.bussiness-discover {
+  padding: 80px 0;
+}
 .bussiness-discover--spdtb {
   padding: 0;
 }
@@ -13333,6 +13352,7 @@ form.checkout-coupon input[type=text] {
 
 .vizion-our-services .block-image-box.layout-04 .image-box {
   padding: 20px;
+  width: 400px;
 }
 .vizion-our-services .block-image-box.layout-04 .image-box .thumbnail {
   position: relative;

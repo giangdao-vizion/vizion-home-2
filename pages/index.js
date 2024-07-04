@@ -18,10 +18,10 @@ export default function Index() {
         imageDisplayUrl="/assets/images/phone-honepage-v2.png"
       />
       {/* <GenericStatistic /> */}
+      <OurServices />
+      <BusinessDiscovery />
       <Discover />
       <TourIframe iframeUrl="https://view.vizion.space/demo?mode=no-intro&menu-ui=gallery" />
-      <BusinessDiscovery />
-      <OurServices />
       <OurInvestor />
       <GetInTouch />
       {/* <TourSample /> */}

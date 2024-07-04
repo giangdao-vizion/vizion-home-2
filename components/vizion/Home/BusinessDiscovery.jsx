@@ -6,7 +6,7 @@ const BusinessDiscoveryItem = dynamic(() => import('./BusinessDiscoveryItem'), {
 
 export default function BusinessDiscovery() {
   return (
-    <section className="bussiness-discover">
+    <section className="bussiness-discover background-grey">
       <div className="container ">
         <div className="heading align-center">
           <h2 className="heading-title size-l">Serving Multiple Business Sectors</h2>

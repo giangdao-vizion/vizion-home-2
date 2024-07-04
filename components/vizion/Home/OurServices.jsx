@@ -3,30 +3,29 @@ export default function OurServices() {
   const ourServicesData = [
     {
       imageUrl: '/assets/images/vizion/our-services/pano1.jpeg',
-      title: '360° Business Tours',
-      desc: 'Giới thiệu các địa điểm kinh doanh của bạn bằng tour tham quan 360° của chúng tôi.',
+      title: 'Giải Pháp Virtual 360',
+      // desc: 'Giới thiệu các địa điểm kinh doanh của bạn bằng tour tham quan 360° của chúng tôi.',
       link: '',
     },
     {
       imageUrl: '/assets/images/vizion/our-services/pano1.jpeg',
-      title: '360° Tours Integration',
-      desc: 'Nâng tầm thương hiệu với trải nghiệm 3D được tùy chỉnh theo nhu cầu kinh doanh của bạn.',
+      title: 'VR Room',
+      // desc: 'Nâng tầm thương hiệu với trải nghiệm 3D được tùy chỉnh theo nhu cầu kinh doanh của bạn.',
       link: '',
     },
     {
       imageUrl: '/assets/images/vizion/our-services/pano1.jpeg',
-      title: 'Custom 3D Experience',
-      desc: 'Tối ưu hoá doanh nghiệp, phục vụ nhu cầu cụ thể và tạo ra trải nghiệm 3D độc đáo.',
+      title: 'Showroom 3D',
+      // desc: 'Tối ưu hoá doanh nghiệp, phục vụ nhu cầu cụ thể và tạo ra trải nghiệm 3D độc đáo.',
       link: '',
     },
   ];
   return (
     <>
-      <section className="section background-grey spdt spdb vizion-our-services">
+      <section className="section spdt spdb vizion-our-services">
         <div className="container">
           <div className="heading align-center">
-            <h2 className="heading-title size-l">3 Giải Pháp</h2>
-            <div className="heading-desc">Dịch vụ của chúng tôi.</div>
+            <h2 className="heading-title size-l">Giải Pháp Phục Vụ Cho Doanh Nghiệp</h2>
           </div>
           <div className="block-image-box layout-04">
             {ourServicesData.map((data, index) => (

@@ -1,7 +1,7 @@
 export default function TourIframe({ iframeUrl }) {
   return (
     <>
-      <div className="section background-grey spdt mb60">
+      <div className="section background-grey spdt mb40">
         <div className="container">
           <div className="heading align-center">
             <h2 className="heading-title size-l">Khám phá</h2>

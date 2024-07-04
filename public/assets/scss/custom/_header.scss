@@ -5,11 +5,27 @@
   top: 0;
   z-index: 2;
   width: 100%;
+
+  &.bg-color {
+    background-color: white;
+  }
+}
+
+.industries-menu {
+  max-width: 1000px;
+}
+
+.solution-menu {
+  max-width: 400px;
 }
 
 .vz-sub-menu {
   color: white;
   text-shadow: 1px 1px 1px rgba(gray, 0.3);
+
+  &.text-black {
+    color: black;
+  }
 
   &:hover {
     color: #f73e3f;
@@ -24,6 +40,12 @@
 .vz-toggle-sub--menu {
   &::after {
     color: white;
+  }
+
+  &.arrow-black {
+    &::after {
+      color: black;
+    }
   }
 }
 
