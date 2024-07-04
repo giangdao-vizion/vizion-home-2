@@ -8,7 +8,7 @@ export default function BusinessDiscovery() {
   return (
     <section className="bussiness-discover background-grey">
       <div className="container ">
-        <div className="heading align-center">
+        <div className="heading align-center wow animate__animated animate__fadeInRight">
           <h2 className="heading-title size-l">Serving Multiple Business Sectors</h2>
           <div className="heading-desc">
             <span className="vz-span">Ứng Dụng Đa Dạng</span> Cho Nhiều Lĩnh Vực.

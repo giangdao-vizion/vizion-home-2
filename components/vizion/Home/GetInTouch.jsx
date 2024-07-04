@@ -13,7 +13,7 @@ export default function GetInTouch() {
             <div className="row flex-align-c">
               <div className="col-lg-6">
                 <div className="spdtb">
-                  <div className="heading heading-alway-white mb32">
+                  <div className="heading heading-alway-white mb32 wow animate__animated animate__fadeInRight">
                     <div className="heading-sub">Liên hệ ngay</div>
                     <h2 className="heading-title size-xl">Bạn Còn Chờ Gì Nữa?</h2>
                   </div>

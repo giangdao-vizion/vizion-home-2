@@ -103,7 +103,7 @@ export default function BusinessDiscoveryItem() {
     <div className="row">
       {industries.map((item, index) => (
         <div className="col-lg-4 col-md-6" key={index}>
-          <div className="image-box">
+          <div data-wow-delay="0.2s" className="image-box wow animate__animated animate__fadeInRight">
             <div className="thumbnail bussiness-discover--thumbnail">
               <Link href={item.linkUrl} title="Industries Image">
                 <img className="bussiness-discover--img" src={item.imageUrl} alt="industries-thumbnail" />

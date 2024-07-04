@@ -3,10 +3,10 @@ export default function OurInvestor() {
     <>
       <section className="section spdtb vh100 flex flex-align-c">
         <div className="container">
-          <div className="heading align-center">
+          <div className="heading align-center wow animate__animated animate__fadeInRight">
             <h2 className="heading-title size-l">Khách Hàng Của Chúng Tôi</h2>
           </div>
-          <div className="grid-container our-investor-container">
+          <div data-wow-delay="0.2s" className="grid-container our-investor-container wow animate__animated animate__fadeInRight">
             <div className="grid-item">
               <img src="/assets/images/vizion/logos/sslog-1536x1295.png" alt="Partner" />
             </div>

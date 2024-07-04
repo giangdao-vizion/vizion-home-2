@@ -13207,6 +13207,13 @@ form.checkout-coupon input[type=text] {
   margin-top: -6px;
 }
 
+body {
+  overflow: hidden;
+}
+body.app-mounted {
+  overflow: unset;
+}
+
 .heading-title-hightlight::after {
   display: none;
 }
@@ -13268,8 +13275,9 @@ form.checkout-coupon input[type=text] {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 2;
+  z-index: 10;
   width: 100%;
+  transition: 0.5s;
 }
 .vz-header.bg-color {
   background-color: white;
@@ -13280,7 +13288,11 @@ form.checkout-coupon input[type=text] {
 }
 
 .solution-menu {
-  max-width: 400px;
+  max-width: 400px !important;
+}
+.solution-menu .mega-menu-item {
+  flex: unset !important;
+  max-width: unset !important;
 }
 
 .vz-sub-menu {
@@ -13318,12 +13330,12 @@ form.checkout-coupon input[type=text] {
   background-image: unset;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .banner-video {
   position: relative;
-  width: 100%;
+  height: 100%;
   z-index: 0;
-  cursor: pointer;
   pointer-events: none;
   aspect-ratio: 16/9;
   scale: 1.3;
@@ -13332,6 +13344,24 @@ form.checkout-coupon input[type=text] {
   object-fit: none;
   width: 100%;
   height: 100%;
+}
+.banner-video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4901960784);
+}
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner-content .heading-title {
+  color: #fff;
 }
 
 .discover {
@@ -13401,6 +13431,10 @@ form.checkout-coupon input[type=text] {
 .contact-form.layout-02 input[type=submit] {
   background-color: #f73e3f;
   color: #fff;
+}
+
+.footer-bottom .inner {
+  border-color: #313131;
 }
 
 /*# sourceMappingURL=style.css.map */

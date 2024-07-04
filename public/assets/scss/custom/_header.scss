@@ -3,9 +3,9 @@
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 2;
+  z-index: 10;
   width: 100%;
-
+  transition: .5s;
   &.bg-color {
     background-color: white;
   }
@@ -16,7 +16,11 @@
 }
 
 .solution-menu {
-  max-width: 400px;
+  max-width: 400px !important;
+  .mega-menu-item {
+    flex: unset !important;
+    max-width: unset !important;
+  }
 }
 
 .vz-sub-menu {
