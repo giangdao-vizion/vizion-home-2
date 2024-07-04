@@ -1,15 +1,7 @@
 export default function Discover() {
   return (
     <>
-      <section className="section spdtb discover">
-        {/* <div className="container">
-          <div className="heading align-center">
-            <div className="heading-sub">Why it best</div>
-            <h2 className="heading-title size-l">
-              The only comprehensive, simple and secure content platform that works with most smartphones.
-            </h2>
-          </div>
-        </div> */}
+      <section className="section discover">
         <div className="linear-gradient-08 spdtb ">
           <div className="container">
             <div className="row flex-align-c">

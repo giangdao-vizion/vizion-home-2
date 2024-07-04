@@ -9,10 +9,10 @@ export default function BusinessDiscovery() {
     <section className="bussiness-discover">
       <div className="container ">
         <div className="heading align-center">
-          <div className="heading-sub color-vizion">SERVING MULTIPLE BUSINESS SECTORS</div>
-          <h2 className="heading-title size-l">
-            <span className="heading-title-hightlight color-vizion">Ứng Dụng Đa Dạng</span> Cho Nhiều Lĩnh Vực
-          </h2>
+          <h2 className="heading-title size-l">Serving Multiple Business Sectors</h2>
+          <div className="heading-desc">
+            <span className="vz-span">Ứng Dụng Đa Dạng</span> Cho Nhiều Lĩnh Vực.
+          </div>
         </div>
         <div className="row">
           <div className="col-lg-12">
