@@ -13288,7 +13288,11 @@ body.app-mounted {
 }
 
 .solution-menu {
-  max-width: 400px;
+  max-width: 400px !important;
+}
+.solution-menu .mega-menu-item {
+  flex: unset !important;
+  max-width: unset !important;
 }
 
 .vz-sub-menu {
