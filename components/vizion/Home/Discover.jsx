@@ -7,7 +7,7 @@ export default function Discover() {
             <div className="row flex-align-c">
               <div className="col-lg-6">
                 <div className="heading">
-                  <h2 className="heading-title size-l">
+                  <h2 className="heading-title size-l wow animate__animated animate__fadeInRight">
                     Tại sao chọn <span className="vz-span">Vizion</span>?
                   </h2>
                   {/* <div className="heading-desc">
@@ -15,7 +15,7 @@ export default function Discover() {
                   </div> */}
                 </div>
                 <div className="block-icon-box layout-16">
-                  <div className="item">
+                  <div data-wow-delay="0.2s" className="item wow animate__animated animate__fadeInRight">
                     <div className="icon">
                       <svg xmlns="http://www.w3.org/2000/svg" width={50} height={50} viewBox="0 0 50 50">
                         <g
@@ -45,7 +45,7 @@ export default function Discover() {
                       </p>
                     </div>
                   </div>
-                  <div className="item">
+                  <div data-wow-delay="0.4s" className="item wow animate__animated animate__fadeInRight">
                     <div className="icon">
                       <svg xmlns="http://www.w3.org/2000/svg" width={40} height={48} viewBox="0 0 40 48">
                         <g fill="var(--sala-neutral-dark, $neutral_dark)" fillRule="nonzero">
@@ -79,7 +79,7 @@ export default function Discover() {
                       </p>
                     </div>
                   </div>
-                  <div className="item">
+                  <div data-wow-delay="0.4s" className="item wow animate__animated animate__fadeInRight">
                     <div className="icon">
                       <svg xmlns="http://www.w3.org/2000/svg" width={50} height={48} viewBox="0 0 50 48">
                         <g fill="var(--sala-neutral-dark, $neutral_dark)" fillRule="nonzero">
