@@ -8,7 +8,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import '../public/assets/css/style.css';
-export default function App({ Component, pageProps }) {
+import { appWithTranslation } from 'next-i18next';
+
+function App({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -28,3 +30,5 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+
+export default appWithTranslation(App);

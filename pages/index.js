@@ -9,13 +9,16 @@ import GetInTouch from '@/components/vizion/Home/GetInTouch';
 import OurInvestor from '@/components/vizion/Home/OurInvestor';
 import OurServices from '@/components/vizion/Home/OurServices';
 
-export default function Index() {
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+export default function Index(props) {
   return (
     <Layout siteContentClass="pt0 pb0">
       <Banner />
       <Introduce
         title="Nâng Cao Năng Lực Bán Hàng Cho Doanh Nghiệp"
         imageDisplayUrl="/assets/images/phone-honepage-v2.png"
+        {...props}
       />
       {/* <GenericStatistic /> */}
       <Discover />
@@ -24,7 +27,17 @@ export default function Index() {
       <OurServices />
       <OurInvestor />
       <GetInTouch />
-      {/* <TourSample /> */}
     </Layout>
   );
 }
+
+export const getStaticProps = async context => {
+  const { locale } = context;
+
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+      locale,
+    },
+  };
+};

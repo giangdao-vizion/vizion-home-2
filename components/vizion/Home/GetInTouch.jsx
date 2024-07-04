@@ -18,8 +18,8 @@ export default function GetInTouch() {
                     <h2 className="heading-title size-xl">Bạn Còn Chờ Gì Nữa?</h2>
                   </div>
                   {/* <div className="button-wrap">
-                                        <Link href="/contact-01" className="button fullfield" title="Book your seat">Book your seat</Link>
-                                    </div> */}
+                    <Link href="/contact-01" className="button fullfield" title="Book your seat">Book your seat</Link>
+                  </div> */}
                 </div>
               </div>
               <div className="col-lg-6">
@@ -46,7 +46,7 @@ export default function GetInTouch() {
                       </div>
                       <div className="col-md-12">
                         <div className="field-submit">
-                          <input type="submit" defaultValue="Confirm" value={'Đăng ký'} name="confirm" />
+                          <input type="submit" value={'Đăng ký'} name="confirm" />
                         </div>
                       </div>
                     </div>

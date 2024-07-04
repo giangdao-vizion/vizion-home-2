@@ -1,5 +1,7 @@
-import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
+
 export default function Introduce() {
+  const { t } = useTranslation();
   return (
     <>
       <section
@@ -8,7 +10,7 @@ export default function Introduce() {
       >
         <div className="container">
           <div className="heading align-left heading-alway-white mb32">
-            <h2 className="heading-title size-xl">Chúng tôi cung cấp</h2>
+            <h2 className="heading-title size-xl">{t('Introduce.title')}</h2>
             <div className="heading-desc">
               Giải pháp công nghệ Thực tế ảo, đồng hành cùng doanh nghiệp <br /> trong quá trình chuyển đổi số
             </div>
