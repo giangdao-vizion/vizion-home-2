@@ -3,7 +3,7 @@ import LiveDemo from '@/components/vizion/CommonModules/LiveDemo/LiveDemo';
 import TourIframe from '@/components/vizion/CommonModules/TourIframe/TourIframe';
 import Banner from '@/components/vizion/Home/Banner';
 
-export default function BatDongSan() {
+export default function RealEstate() {
   const dataLiveDemo = [
     {
       title: 'Novaworld HO TRAM - Ocean Villa',

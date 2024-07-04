@@ -5,7 +5,7 @@ export default function Introduce() {
   return (
     <>
       <section
-        className="section background-full layout-12 opt160 opb200"
+        className="section background-full layout-12 opt160 opb200 introduce vh100 flex flex-align-c"
         style={{ backgroundImage: 'url(/assets/images/hvr-04.jpeg)' }}
       >
         <div className="container">

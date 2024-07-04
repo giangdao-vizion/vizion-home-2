@@ -25,18 +25,18 @@ export default function Menu({ isTop }) {
                   <div className="mega-menu-item">
                     <ul className="sub-menu">
                       <li>
-                        <Link className="vz-sub-menu--item" href="/dich-vu/nha-may-san-xuat">
+                        <Link className="vz-sub-menu--item" href="/cac-linh-vuc/nha-may-san-xuat">
                           Sản Xuất & Nhà Máy
                         </Link>
                       </li>
                       <li>
-                        <Link className="vz-sub-menu--item" href="/dich-vu/bat-dong-san">
+                        <Link className="vz-sub-menu--item" href="/cac-linh-vuc/bat-dong-san">
                           Bất Động Sản
                         </Link>
                       </li>
 
                       <li>
-                        <Link className="vz-sub-menu--item" href="/dich-vu/showroom-xe-hoi">
+                        <Link className="vz-sub-menu--item" href="/cac-linh-vuc/showroom-xe-hoi">
                           Showroom Xe Hơi
                         </Link>
                       </li>
@@ -45,17 +45,17 @@ export default function Menu({ isTop }) {
                   <div className="mega-menu-item">
                     <ul className="sub-menu">
                       <li>
-                        <Link className="vz-sub-menu--item" href="/">
+                        <Link className="vz-sub-menu--item" href="/cac-linh-vuc/ban-le-thuong-mai">
                           Bán Lẻ & Thương Mại
                         </Link>
                       </li>
                       <li>
-                        <Link className="vz-sub-menu--item" href="/">
+                        <Link className="vz-sub-menu--item" href="/cac-linh-vuc/noi-that-do-go">
                           Nội Thất Và Đồ Gỗ
                         </Link>
                       </li>
                       <li>
-                        <Link className="vz-sub-menu--item" href="/">
+                        <Link className="vz-sub-menu--item" href="/cac-linh-vuc/du-lich-kham-pha">
                           Du Lịch Và Khám Phá
                         </Link>
                       </li>
@@ -64,17 +64,17 @@ export default function Menu({ isTop }) {
                   <div className="mega-menu-item">
                     <ul className="sub-menu">
                       <li>
-                        <Link className="vz-sub-menu--item" href="/">
+                        <Link className="vz-sub-menu--item" href="/cac-linh-vuc/khach-san-resort">
                           Khách Sạn & Resort
                         </Link>
                       </li>
                       <li>
-                        <Link className="vz-sub-menu--item" href="/">
+                        <Link className="vz-sub-menu--item" href="/cac-linh-vuc/co-so-giao-duc">
                           Cơ Sở Giáo Dục
                         </Link>
                       </li>
                       <li>
-                        <Link className="vz-sub-menu--item" href="/">
+                        <Link className="vz-sub-menu--item" href="/cac-linh-vuc/nha-hang-quan-an">
                           Nhà Hàng & Quán Ăn
                         </Link>
                       </li>
@@ -83,17 +83,17 @@ export default function Menu({ isTop }) {
                   <div className="mega-menu-item">
                     <ul className="sub-menu">
                       <li>
-                        <Link className="vz-sub-menu--item" href="/">
+                        <Link className="vz-sub-menu--item" href="/cac-linh-vuc/giai-tri-van-hoa">
                           Giải Trí & Văn Hóa
                         </Link>
                       </li>
                       <li>
-                        <Link className="vz-sub-menu--item" href="/">
+                        <Link className="vz-sub-menu--item" href="/cac-linh-vuc/gym-spa">
                           Gym & Spa
                         </Link>
                       </li>
                       <li>
-                        <Link className="vz-sub-menu--item" href="/">
+                        <Link className="vz-sub-menu--item" href="/cac-linh-vuc/benh-vien-tts-suc-khoe">
                           Bệnh Viện & TTCS Sức Khỏe
                         </Link>
                       </li>

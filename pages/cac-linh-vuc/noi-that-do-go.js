@@ -3,7 +3,7 @@ import LiveDemo from '@/components/vizion/CommonModules/LiveDemo/LiveDemo';
 import TourIframe from '@/components/vizion/CommonModules/TourIframe/TourIframe';
 import Banner from '@/components/vizion/Home/Banner';
 
-export default function ShowroomXeHoi() {
+export default function InteriorAndFurniture() {
   const dataLiveDemo = [
     {
       title: 'CAR AGENTS',

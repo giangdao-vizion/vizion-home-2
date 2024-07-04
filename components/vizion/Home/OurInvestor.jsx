@@ -1,7 +1,7 @@
 export default function OurInvestor() {
   return (
     <>
-      <section className="section spdtb">
+      <section className="section spdtb vh100 flex flex-align-c">
         <div className="container">
           <div className="heading align-center">
             <h2 className="heading-title size-l">Khách Hàng Của Chúng Tôi</h2>
