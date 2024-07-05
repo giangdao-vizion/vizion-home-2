@@ -6,7 +6,7 @@
   &-post {
     &:hover {
       .spec-industry-icon--top-cover {
-        opacity: 0.3;
+        opacity: 0.5;
       }
 
       .spec-industry-entry--content {
@@ -38,6 +38,7 @@
 
   &--entry-title {
     margin-bottom: 15px !important;
+    text-transform: uppercase;
     h3 {
       color: white;
     }

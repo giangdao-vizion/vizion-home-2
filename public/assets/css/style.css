@@ -13455,7 +13455,7 @@ body.app-mounted {
   margin-top: 220px;
 }
 .spec-industry-post:hover .spec-industry-icon--top-cover {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .spec-industry-post:hover .spec-industry-entry--content {
   opacity: 1;
@@ -13481,6 +13481,7 @@ body.app-mounted {
 }
 .spec-industry--entry-title {
   margin-bottom: 15px !important;
+  text-transform: uppercase;
 }
 .spec-industry--entry-title h3 {
   color: white;

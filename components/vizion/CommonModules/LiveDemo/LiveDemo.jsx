@@ -3,7 +3,7 @@ import LiveDemoItem from './LiveDemoItem';
 export default function LiveDemo({ dataLiveDemo, swiperCustom }) {
   return (
     <>
-      <section className="section spdt overflow-hidden mb-5">
+      <section className="section spdt overflow-hidden mb-5" style={{ marginTop: 120 }}>
         <div className="container">
           <div className="block-gallery layout-04">
             <div className="row row-full">
