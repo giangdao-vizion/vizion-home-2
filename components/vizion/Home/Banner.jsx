@@ -6,7 +6,7 @@ export default function Banner() {
           {/* iframe video goes here */}
         </div>
         <div className="banner-content">
-          <h1 data-wow-delay="1s" className="heading-title size-l text-center wow animate__animated animate__fadeInRight">Video - Mô hình 3D hoặc tour đẹp nhất.</h1>
+          <h1 data-wow-delay="0.5s" className="heading-title size-l text-center wow animate__animated animate__fadeInRight">Video - Mô hình 3D hoặc tour đẹp nhất.</h1>
         </div>
       </section>
     </>
