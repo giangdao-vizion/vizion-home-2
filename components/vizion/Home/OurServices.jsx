@@ -22,12 +22,12 @@ export default function OurServices() {
   ];
   return (
     <>
-      <section className="section spdt spdb vizion-our-services vh100 flex flex-align-c">
+      <section className="section spdt spdb vizion-our-services min-vh100 flex flex-align-c">
         <div className="container">
           <div className="heading align-center wow animate__animated animate__fadeInRight">
             <h2 className="heading-title size-l">Giải Pháp Phục Vụ Cho Doanh Nghiệp</h2>
           </div>
-          <div className="block-image-box layout-04 wow animate__animated animate__fadeInRight">
+          <div className="block-image-box align-items-center layout-04 wow animate__animated animate__fadeInRight">
             {ourServicesData.map((data, index) => (
               <div className="image-box" key={index}>
                 <div className="thumbnail">
