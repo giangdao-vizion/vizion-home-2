@@ -1,4 +1,5 @@
 import Layout from '@/components/layout/Layout';
+import Industry from '@/components/vizion/CommonModules/LiveDemo/Industry';
 import LiveDemo from '@/components/vizion/CommonModules/LiveDemo/LiveDemo';
 import TourIframe from '@/components/vizion/CommonModules/TourIframe/TourIframe';
 import Banner from '@/components/vizion/Home/Banner';
@@ -43,7 +44,9 @@ export default function ManufacturingAndFactory() {
         imageDisplayUrl="/assets/images/phone-honepage-v2.png"
       />
       <TourIframe iframeUrl="https://view.vizion.space/demo?mode=no-intro&menu-ui=gallery" />
-      <LiveDemo dataLiveDemo={dataLiveDemo} />
+      {/* <LiveDemo dataLiveDemo={dataLiveDemo} /> */}
+
+      <Industry dataLiveDemo={dataLiveDemo} />
     </Layout>
   );
 }

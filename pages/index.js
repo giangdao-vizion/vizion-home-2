@@ -10,6 +10,7 @@ import OurInvestor from '@/components/vizion/Home/OurInvestor';
 import OurServices from '@/components/vizion/Home/OurServices';
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import DiscoverV2 from '@/components/vizion/Home/DiscoverV2';
 
 export default function Index(props) {
   return (
@@ -23,7 +24,8 @@ export default function Index(props) {
       {/* <GenericStatistic /> */}
       <OurServices />
       <BusinessDiscovery />
-      <Discover />
+      {/* <Discover /> */}
+      <DiscoverV2 />
       <TourIframe iframeUrl="https://view.vizion.space/demo?mode=no-intro&menu-ui=gallery" />
       <OurInvestor />
       <GetInTouch />
