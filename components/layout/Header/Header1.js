@@ -1,13 +1,14 @@
 'user client';
 
 import { useEffect, useState } from 'react';
-// import HeaderRight from './HeaderRight';
+import HeaderRight from './HeaderRight';
 import Logo from './Logo';
 import Menu from './Menu';
 // import CanvasMenu from './CanvasMenu';
 
-export default function Header({ headerClass }) {
+export default function Header({ headerClass, locale, fixedMenu }) {
   const [isTop, setIsTop] = useState(true);
+  const enableMenu = isTop && !fixedMenu;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,21 +27,23 @@ export default function Header({ headerClass }) {
 
   return (
     <>
-      <header id="header" className={`site-header ${headerClass} vz-header ${isTop ? '' : 'bg-color'}`}>
+      <header id="header" className={`site-header ${headerClass} vz-header ${enableMenu ? '' : 'bg-color'}`}>
         {/* <CanvasMenu /> */}
         <div className="container-fluid">
           <div className="row flex-align-c inner">
             <div className="col-lg-3 col-6">
               <div className="header-left flex flex-align-c">
-                <Logo isTop={isTop} />
+                <Logo isTop={enableMenu} />
               </div>
             </div>
             <div className="col-lg-6 col-0 text-center">
               <div className="header-center">
-                <Menu isTop={isTop} />
+                <Menu isTop={enableMenu} />
               </div>
             </div>
-            <div className="col-lg-3 col-6">{/* <HeaderRight /> */}</div>
+            <div className="col-lg-3 col-6">
+              <HeaderRight locale={locale} />
+            </div>
           </div>
         </div>
       </header>

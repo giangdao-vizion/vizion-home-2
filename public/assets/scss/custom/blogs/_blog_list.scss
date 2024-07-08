@@ -1,0 +1,9 @@
+.blog-list-container {
+  .post.format-video {
+    .entry-thumbnail {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

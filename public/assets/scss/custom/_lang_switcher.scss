@@ -1,0 +1,43 @@
+.lang-switcher {
+  position: relative;
+  .btn-lang {
+    .lang-icon {
+      path {
+        fill: #fff;
+      }
+    }
+    &::after {
+      display: none;
+    }
+  }
+  .lang-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .dropdown-menu {
+    right: 0;
+    .dropdown-item {
+      gap: 10px;
+      &.active, &:active {
+        background-color: #f73e3f;
+        .lang-icon {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.vz-header {
+  &.bg-color {
+    .lang-switcher {
+      .lang-icon {
+        path {
+          fill: #333;
+        }
+      }
+    }
+  }
+}

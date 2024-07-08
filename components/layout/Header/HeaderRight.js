@@ -1,24 +1,10 @@
-import Link from 'next/link';
+'use clients';
+import LanguageSelector from '@/components/elements/LanguageSelector';
 
-export default function HeaderRight() {
+export default function HeaderRight({ locale }) {
   return (
-    <>
-      <div className="header-right flex flex-align-c flex-content-e">
-        {/* <div className="customer">
-          <Link href="/sign-in">
-            <i className="las la-user-circle" />
-            <span>Log In</span>
-          </Link>
-        </div>
-        <div className="buttons">
-          <Link href="/contact-01" className="button fullfield">
-            <i className="las la-headset" />
-            <span>Let's Talk</span>
-          </Link>
-        </div> */}
-
-        <img src="/assets/images/awards-v3.png" alt="vizion-achivements" />
-      </div>
-    </>
+    <div className="header-right flex flex-align-c flex-content-e">
+      <LanguageSelector locale={locale} />
+    </div>
   );
 }
