@@ -14,21 +14,11 @@ function App({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    let iframe = document.createElement('iframe');
-    iframe.onload = function () {
+    setTimeout(() => {
       document.body.classList.add('app-mounted');
       setLoading(false);
-    };
-    iframe.src =
-      'https://www.youtube.com/embed/SgvqXpPo6Ts?si=0RWsZPLbmiCKhRLp&autoplay=1&mute=1&loop=1&controls=0&playlist=SgvqXpPo6Ts&vq=hd1080';
-    iframe.title = 'YouTube video player';
-    iframe.frameBorder = '0';
-    iframe.allow =
-      'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-    iframe.allowFullScreen = true;
-    document.getElementById('banner-video-iframe-id')?.appendChild(iframe);
-  }, []);
+    }, 1000)
+  }, [])
 
   return (
     <>

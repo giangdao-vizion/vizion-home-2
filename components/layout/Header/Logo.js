@@ -9,7 +9,7 @@ export default function Logo({ isTop }) {
     <>
       <div className="logo">
         <Link href="/">
-          <Image height={40} width={100} src={isTop ? WHITE_LOGO : COLOR_LOGO} />
+          <Image height={40} width={100} src={isTop ? WHITE_LOGO : COLOR_LOGO} alt='vizion-logo' />
         </Link>
       </div>
     </>

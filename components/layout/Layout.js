@@ -7,18 +7,21 @@ import Header1 from './Header/Header1';
 import PageHead from './PageHead';
 import Header3 from './Header/Header3';
 
-export default function Layout({
-  headerLayout,
-  footerLayout,
-  children,
-  siteContentClass,
-  pageTitle,
-  pageTitleSub,
-  pageTitleDesc,
-  pageTitleBtn,
-  headerClass,
-  headTitle,
-}) {
+export default function Layout(props) {
+  const {
+    headerLayout,
+    footerLayout,
+    children,
+    siteContentClass,
+    pageTitle,
+    pageTitleSub,
+    pageTitleDesc,
+    pageTitleBtn,
+    headerClass,
+    headTitle,
+    ...rest
+  } = props;
+
   useEffect(() => {
     const WOW = require('wowjs');
     window.wow = new WOW.WOW({
@@ -26,13 +29,14 @@ export default function Layout({
     });
     window.wow.init();
   });
+
   return (
     <>
       <PageHead headTitle={headTitle} />
       <div id="wrapper">
         {/* <Header3 /> */}
-        {!headerLayout && <Header1 headerClass={headerClass} />}
-        {headerLayout == 1 ? <Header1 headerClass={headerClass} /> : null}
+        {!headerLayout && <Header1 headerClass={headerClass} {...rest} />}
+        {headerLayout == 1 ? <Header1 headerClass={headerClass} {...rest} /> : null}
 
         <main id="main" className="site-main">
           {pageTitle && (

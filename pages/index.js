@@ -8,19 +8,17 @@ import GenericStatistic from '@/components/vizion/Home/GenericStatistic';
 import GetInTouch from '@/components/vizion/Home/GetInTouch';
 import OurInvestor from '@/components/vizion/Home/OurInvestor';
 import OurServices from '@/components/vizion/Home/OurServices';
-
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import DiscoverV2 from '@/components/vizion/Home/DiscoverV2';
 
 export default function Index(props) {
   return (
-    <Layout siteContentClass="pt0 pb0">
-      <Banner />
-      <Introduce
-        title="Nâng Cao Năng Lực Bán Hàng Cho Doanh Nghiệp"
-        imageDisplayUrl="/assets/images/phone-honepage-v2.png"
-        {...props}
+    <Layout siteContentClass="pt0 pb0" {...props}>
+      <Banner
+        title="Video - Mô hình 3D hoặc tour đẹp nhất."
+        iframeUrl="https://www.youtube.com/embed/SgvqXpPo6Ts?si=0RWsZPLbmiCKhRLp&autoplay=1&mute=1&loop=1&controls=0&playlist=SgvqXpPo6Ts&vq=hd1080"
       />
+      <Introduce {...props} />
       {/* <GenericStatistic /> */}
       <OurServices />
       <BusinessDiscovery />

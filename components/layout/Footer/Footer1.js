@@ -82,17 +82,17 @@ export default function Footer() {
                   <div className="footer-item footer-newsletter">
                     <h6>Thành tựu của chúng tôi</h6>
                     {/* <p>
-                                            Subcribe our newsletter and stay up
-                                            to date about the company
-                                        </p> */}
+                        Subcribe our newsletter and stay up
+                        to date about the company
+                    </p> */}
                     <div className="row">
-                      <div className="col-lg-4">
+                      <div className="col-4">
                         <img src="/assets/images/vizion/achievement/saokhue-v4.png" alt="" />
                       </div>
-                      <div className="col-lg-4">
+                      <div className="col-4">
                         <img src="/assets/images/vizion/achievement/VZ-TOP20_StartupViet.png" alt="" />
                       </div>
-                      <div className="col-lg-4">
+                      <div className="col-4">
                         <img src="/assets/images/vizion/achievement/VZ-TOP20_TECHFEST.png" alt="" />
                       </div>
                     </div>

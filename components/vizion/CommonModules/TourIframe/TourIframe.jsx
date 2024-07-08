@@ -1,7 +1,7 @@
 export default function TourIframe({ iframeUrl }) {
   return (
     <>
-      <div className="section background-grey spdt mb40 vh100">
+      <div className="section background-grey spdt mb40 min-vh100">
         <div className="container">
           <div data-wow-delay="0.2s" className="heading align-center wow animate__animated animate__fadeInRight">
             <h2 className="heading-title size-l">Khám phá</h2>
