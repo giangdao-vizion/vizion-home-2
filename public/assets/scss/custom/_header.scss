@@ -5,8 +5,8 @@
   top: 0;
   z-index: 10;
   width: 100%;
-  transition: .5s;
-  
+  transition: 0.5s;
+
   &.bg-color {
     background-color: white;
     box-shadow: 0 1px 15px 1px #cfcfcf59;
@@ -14,11 +14,11 @@
 }
 
 .industries-menu {
-  max-width: 1000px;
+  max-width: 875px;
 }
 
 .solution-menu {
-  max-width: 400px !important;
+  max-width: 285px !important;
   .mega-menu-item {
     flex: unset !important;
     max-width: unset !important;

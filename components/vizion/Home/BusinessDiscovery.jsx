@@ -9,10 +9,9 @@ export default function BusinessDiscovery() {
     <section className="bussiness-discover background-grey">
       <div className="container ">
         <div data-wow-delay="0.2s" className="heading align-center wow animate__animated animate__fadeInRight">
-          <h2 className="heading-title size-l">Serving Multiple Business Sectors</h2>
-          <div className="heading-desc">
-            <span className="vz-span">Ứng Dụng Đa Dạng</span> Cho Nhiều Lĩnh Vực.
-          </div>
+          <h2 className="heading-title size-l text-uppercase">
+            <span className="vz-span ">Ứng Dụng Đa Dạng</span> Cho Nhiều Lĩnh Vực
+          </h2>
         </div>
         <div className="row">
           <div className="col-lg-12">

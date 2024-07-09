@@ -6,7 +6,7 @@ export default function DiscoverV2() {
       <section className="section spdt">
         <div className="container">
           <div className="heading align-center">
-            <h2 className="heading-title size-l">
+            <h2 className="heading-title size-l text-uppercase">
               Tại sao chọn <span className="vz-span">Vizion</span>?
             </h2>
           </div>

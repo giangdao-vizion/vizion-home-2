@@ -27,7 +27,16 @@ export default function Header({ headerClass, locale, fixedMenu }) {
 
   return (
     <>
-      <header id="header" className={`site-header ${headerClass} vz-header ${enableMenu ? '' : 'bg-color'}`}>
+      <header
+        id="header"
+        className={`site-header ${headerClass} vz-header ${enableMenu ? '' : 'bg-color'}`}
+        onMouseEnter={() => setIsTop(false)}
+        onMouseLeave={() => {
+          if (window.scrollY <= 50) {
+            setIsTop(true);
+          }
+        }}
+      >
         {/* <CanvasMenu /> */}
         <div className="container-fluid">
           <div className="row flex-align-c inner">

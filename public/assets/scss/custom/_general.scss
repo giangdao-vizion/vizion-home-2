@@ -11,6 +11,10 @@ body {
   }
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .our-investor-container {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-content: center;
@@ -51,6 +55,15 @@ body {
 
   &:hover {
     background-color: #cd0e0e;
+  }
+}
+
+.contact-btn {
+  background-color: #f73e3f;
+  // display: inline-block;
+
+  &:hover {
+    background-color: #cd0e0e !important;
   }
 }
 

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function GetInTouch() {
   return (
     <>
@@ -13,16 +15,25 @@ export default function GetInTouch() {
             <div className="row flex-align-c">
               <div className="col-lg-6">
                 <div className="spdtb">
-                  <div data-wow-delay="0.2s" className="heading heading-alway-white mb32 wow animate__animated animate__fadeInRight">
-                    <div className="heading-sub">Liên hệ ngay</div>
+                  <div
+                    data-wow-delay="0.2s"
+                    className="heading heading-alway-white mb32 wow animate__animated animate__fadeInRight"
+                  >
+                    {/* <div className="heading-sub">Liên hệ ngay</div> */}
                     <h2 className="heading-title size-xl">Bạn Còn Chờ Gì Nữa?</h2>
+                  </div>
+
+                  <div className="button-wrap ">
+                    <Link href="/contact-01" className="button fullfield xs-mb10 contact-btn" title="Book your seat">
+                      Liên hệ ngay
+                    </Link>
                   </div>
                   {/* <div className="button-wrap">
                     <Link href="/contact-01" className="button fullfield" title="Book your seat">Book your seat</Link>
                   </div> */}
                 </div>
               </div>
-              <div className="col-lg-6">
+              {/* <div className="col-lg-6">
                 <div className="contact-form layout-02">
                   <div className="heading heading-alway-white mb32">
                     <h2 className="heading-title">Đăng ký</h2>
@@ -52,7 +63,7 @@ export default function GetInTouch() {
                     </div>
                   </form>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
