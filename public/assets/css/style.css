@@ -13218,6 +13218,10 @@ body.app-mounted {
   display: none;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .our-investor-container {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-content: center;
@@ -13258,6 +13262,13 @@ body.app-mounted {
 }
 .backtotop:hover {
   background-color: #cd0e0e;
+}
+
+.contact-btn {
+  background-color: #f73e3f;
+}
+.contact-btn:hover {
+  background-color: #cd0e0e !important;
 }
 
 .spin {
@@ -13339,7 +13350,6 @@ body.app-mounted {
 .banner {
   position: relative;
   padding: 0;
-  pointer-events: none;
   width: 100%;
   height: 100vh;
   background-color: transparent;
@@ -13375,6 +13385,7 @@ body.app-mounted {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 .banner-content .heading-title {
   color: #fff;
@@ -13556,6 +13567,69 @@ body.app-mounted {
 
 .blog-list-container .post.format-video .entry-thumbnail::before {
   display: none;
+}
+
+.blog-detail-page {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.blog-detail-container .h1-content {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #333;
+}
+.blog-detail-container .p-content {
+  margin-bottom: 30px;
+}
+.blog-detail-container .img-content {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.blog-detail-container .img-content img {
+  min-width: 300px;
+  max-width: 100%;
+  min-height: 300px;
+  max-height: 700px;
+}
+.blog-detail-container .img-content .p-extra-content {
+  font-style: italic;
+  font-size: 12px;
+  max-width: 700px;
+  margin: auto;
+}
+.blog-detail-container .ul-content {
+  margin-bottom: 30px;
+}
+.blog-detail-container .ul-content li {
+  margin-bottom: 30px;
+}
+.blog-detail-container .ul-content li:last-child {
+  margin-bottom: 0;
+}
+.blog-detail-container .ul-content img {
+  float: right;
+}
+
+.breadcrumbs-container {
+  padding: 0 10px;
+}
+.breadcrumbs-container .icon {
+  margin: 7px 10px 0 7px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+.breadcrumbs-container .icon path {
+  fill: #fff;
+}
+.breadcrumbs-container .link-item {
+  font-size: 20px;
+  color: #fff;
+  transition: 0.3s;
+}
+.breadcrumbs-container .link-item:hover {
+  color: #f73e3f;
 }
 
 /*# sourceMappingURL=style.css.map */
