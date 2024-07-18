@@ -1,10 +1,10 @@
-export default function Banner({ title, iframeUrl }) {
+export default function Banner({ title, videoUrl }) {
   return (
     <>
       <section className="section opt120 overflow-hidden linear-gradient-07 banner">
         <div id="banner-video-iframe-id" className="banner-video">
           <iframe
-            src={iframeUrl}
+            src={videoUrl}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"

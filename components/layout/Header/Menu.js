@@ -34,7 +34,6 @@ export default function Menu({ isTop }) {
                           Bất Động Sản
                         </Link>
                       </li>
-
                       <li>
                         <Link className="vz-sub-menu--item" href="/cac-linh-vuc/showroom-xe-hoi">
                           Showroom Xe Hơi
