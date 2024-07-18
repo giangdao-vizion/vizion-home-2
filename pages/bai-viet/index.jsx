@@ -1,4 +1,5 @@
 import Layout from '@/components/layout/Layout';
+import BlogTitle from '@/components/vizion/Blog/BlogTitle';
 import Banner from '@/components/vizion/Home/Banner';
 import { blogListMock } from '@/mock/blog';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -8,7 +9,7 @@ export default function BlogListIndex(props) {
   return (
     <Layout siteContentClass="pt0 pb0" fixedMenu {...props}>
       <Banner
-        title="Share your stories and news with everyone."
+        title={<BlogTitle {...props} />}
         iframeUrl="https://www.youtube.com/embed/SgvqXpPo6Ts?si=0RWsZPLbmiCKhRLp&autoplay=1&mute=1&loop=1&controls=0&playlist=SgvqXpPo6Ts&vq=hd1080"
       />
 

@@ -1,5 +1,6 @@
 import Layout from '@/components/layout/Layout';
 import BlogSection from '@/components/vizion/Blog/BlogSection';
+import BlogTitle from '@/components/vizion/Blog/BlogTitle';
 import Banner from '@/components/vizion/Home/Banner';
 import { blogDetailPagesMock } from '@/mock/blog';
 import { useRouter } from 'next/router';
@@ -12,10 +13,10 @@ export default function BlogDetail(props) {
   return (
     <Layout siteContentClass="pt0 pb0" fixedMenu {...props}>
       <Banner
-        title="Share your stories and news with everyone."
+        title={<BlogTitle {...props} />}
         iframeUrl="https://www.youtube.com/embed/SgvqXpPo6Ts?si=0RWsZPLbmiCKhRLp&autoplay=1&mute=1&loop=1&controls=0&playlist=SgvqXpPo6Ts&vq=hd1080"
       />
-      <div className="container">
+      <div className="container blog-detail-page">
         {blogDetailData ? (
           blogDetailData.sections.map((section, index) => (
             <div className="section-container" key={index}>
