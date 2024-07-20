@@ -10,6 +10,12 @@ import OurInvestor from '@/components/vizion/Home/OurInvestor';
 import OurServices from '@/components/vizion/Home/OurServices';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import DiscoverV2 from '@/components/vizion/Home/DiscoverV2';
+import OurAchiements from '@/components/vizion/Home/OurAchiements';
+import UseCase from '@/components/vizion/Home/UseCase';
+import DigitalTwin from '@/components/vizion/Home/DigitalTwin';
+import OurPlatform from '@/components/vizion/Home/OurPlatform';
+import JoinOurPlatform from '@/components/vizion/Home/JoinOurPlatform';
+import JoinUsNow from '@/components/vizion/Home/JoinUsNow';
 
 export default function Index(props) {
   return (
@@ -18,15 +24,23 @@ export default function Index(props) {
         title="Video - Mô hình 3D hoặc tour đẹp nhất."
         videoUrl="https://www.youtube.com/embed/SgvqXpPo6Ts?si=0RWsZPLbmiCKhRLp&autoplay=1&mute=1&loop=1&controls=0&playlist=SgvqXpPo6Ts&vq=hd1080"
       />
-      <Introduce {...props} />
+      {/* <Introduce {...props} /> */}
       {/* <GenericStatistic /> */}
-      <OurServices />
-      <BusinessDiscovery />
+
+      <OurAchiements />
+      <UseCase />
+      <DigitalTwin />
+      <OurPlatform />
+      <JoinOurPlatform />
+      <JoinUsNow />
+
+      {/* <OurServices />
+      <BusinessDiscovery /> */}
       {/* <Discover /> */}
-      <DiscoverV2 />
+      {/* <DiscoverV2 />
       <TourIframe iframeUrl="https://view.vizion.space/demo?mode=no-intro&menu-ui=gallery" />
       <OurInvestor />
-      <GetInTouch />
+      <GetInTouch /> */}
     </Layout>
   );
 }

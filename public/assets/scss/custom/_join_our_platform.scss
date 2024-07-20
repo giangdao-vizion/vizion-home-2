@@ -1,0 +1,19 @@
+.joinourplatform {
+  &-btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+  &-btn {
+    width: 150px;
+    padding: 12px;
+    border-radius: 6px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+  }
+}
