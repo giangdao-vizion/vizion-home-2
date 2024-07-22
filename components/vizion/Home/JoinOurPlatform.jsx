@@ -1,79 +1,65 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
+
+('user client');
 
 export default function JoinOurPlatform() {
+  const [state, setState] = useState(0);
   return (
-    <section className="section background-grey spdtb">
+    <section className="section spdt min-vh100 flex flex-align-c">
       <div className="container">
-        <div className="heading align-center">
-          <h2 className="heading-title size-l">Join Our Platform</h2>
+        <div data-wow-delay="0.2s" className="heading align-center wow animate__animated animate__fadeInRight">
+          <h2 className="heading-title size-l text-uppercase">Use Case</h2>
         </div>
-
-        <div className="joinourplatform-btns">
-          <button className="joinourplatform-btn">For 3D Creators</button>
-          <button className="joinourplatform-btn">For Enterpise</button>
-        </div>
-        <div className="block-icon-box layout-15">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="icon-box">
-                <div className="icon">
-                  <i className="lab la-telegram" />
-                </div>
-                <div className="content">
-                  <h4 className="title">Telegram</h4>
-                </div>
+        <div className="block-infinite use-case--block-infinite layout-02">
+          <div className="infinite use-case--infinite" data-speed={100}>
+            <div className="item use-case--item">
+              <div className="thumb">
+                <img src="/assets/images/binance.png" alt="Binance" />
               </div>
+              <span>Binance</span>
             </div>
-            <div className="col-lg-6">
-              <div className="icon-box">
-                <div className="icon">
-                  <i className="lab la-discord" />
-                </div>
-                <div className="content">
-                  <h4 className="title">Discord</h4>
-                </div>
+            <div className="item use-case--item">
+              <div className="thumb">
+                <img src="/assets/images/optimism.png" alt="Optimism" />
               </div>
+              <span>Optimism</span>
             </div>
-            <div className="col-lg-6">
-              <div className="icon-box">
-                <div className="icon">
-                  <i className="lab la-twitter" />
-                </div>
-                <div className="content">
-                  <h4 className="title">Twitter</h4>
-                </div>
+            <div className="item use-case--item">
+              <div className="thumb">
+                <img src="/assets/images/harmony.png" alt="Harmony" />
               </div>
+              <span>Harmony</span>
             </div>
-            <div className="col-lg-6">
-              <div className="icon-box">
-                <div className="icon">
-                  <i className="lab la-facebook-f" />
-                </div>
-                <div className="content">
-                  <h4 className="title">Facebook</h4>
-                </div>
+            <div className="item use-case--item">
+              <div className="thumb">
+                <img src="/assets/images/polygon.png" alt="Polygon" />
               </div>
+              <span>Polygon</span>
             </div>
-            <div className="col-lg-6">
-              <div className="icon-box">
-                <div className="icon">
-                  <i className="lab la-medium" />
-                </div>
-                <div className="content">
-                  <h4 className="title">Medium</h4>
-                </div>
+            <div className="item use-case--item">
+              <div className="thumb">
+                <img src="/assets/images/near.png" alt="Near" />
               </div>
+              <span>Near</span>
             </div>
-            <div className="col-lg-6">
-              <div className="icon-box">
-                <div className="icon">
-                  <i className="lab la-linkedin-in" />
-                </div>
-                <div className="content">
-                  <h4 className="title">Linkedin</h4>
-                </div>
+            <div className="item use-case--item">
+              <div className="thumb">
+                <img src="/assets/images/fantom.png" alt="Fantom" />
               </div>
+              <span>Fantom</span>
+            </div>
+            <div className="item use-case--item">
+              <div className="thumb">
+                <img src="/assets/images/solana.png" alt="Solana" />
+              </div>
+              <span>Solana</span>
+            </div>
+            <div className="item use-case--item">
+              <div className="thumb">
+                <img src="/assets/images/ethereum.png" alt="Ethereum" />
+              </div>
+              <span>Ethereum</span>
             </div>
           </div>
         </div>

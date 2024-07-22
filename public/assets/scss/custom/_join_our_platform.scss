@@ -5,15 +5,37 @@
     justify-content: center;
     align-items: center;
     height: 100px;
+
+    button {
+      &:first-child {
+        transform: translateX(1px);
+      }
+
+      &:last-child {
+        transform: translateX(-1px);
+      }
+    }
+  }
+
+  &-heading {
+    margin-bottom: 0;
   }
 
   &-btn {
     width: 150px;
     padding: 12px;
-    border-radius: 6px;
-    color: black;
+    color: grey;
     font-size: 16px;
     font-weight: bold;
     background-color: white;
+    z-index: 1;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+  }
+
+  &-btn--on {
+    color: black;
+    z-index: 2;
+    border: 1px solid black;
   }
 }

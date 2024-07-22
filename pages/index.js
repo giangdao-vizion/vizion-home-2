@@ -22,7 +22,7 @@ export default function Index(props) {
     <Layout siteContentClass="pt0 pb0" {...props}>
       <Banner
         title="Video - Mô hình 3D hoặc tour đẹp nhất."
-        videoUrl="https://www.youtube.com/embed/SgvqXpPo6Ts?si=0RWsZPLbmiCKhRLp&autoplay=1&mute=1&loop=1&controls=0&playlist=SgvqXpPo6Ts&vq=hd1080"
+        videoUrl="https://www.youtube.com/embed/0AMkpTaqxdc?si=u2LyV4Jf6cP5bNE7&autoplay=1&mute=1&loop=1&controls=0&playlist=0AMkpTaqxdc&vq=hd1080"
       />
       {/* <Introduce {...props} /> */}
       {/* <GenericStatistic /> */}

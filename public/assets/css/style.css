@@ -13662,14 +13662,30 @@ body.app-mounted {
   align-items: center;
   height: 100px;
 }
+.joinourplatform-btns button:first-child {
+  transform: translateX(1px);
+}
+.joinourplatform-btns button:last-child {
+  transform: translateX(-1px);
+}
+.joinourplatform-heading {
+  margin-bottom: 0;
+}
 .joinourplatform-btn {
   width: 150px;
   padding: 12px;
-  border-radius: 6px;
-  color: black;
+  color: grey;
   font-size: 16px;
   font-weight: bold;
   background-color: white;
+  z-index: 1;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+.joinourplatform-btn--on {
+  color: black;
+  z-index: 2;
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */
