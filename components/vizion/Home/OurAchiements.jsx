@@ -20,21 +20,21 @@ export default function OurAchiements() {
             <div className="col-lg-4">
               <div className="pricing-box">
                 <div className="inner background-grey ourachievement-inner">
-                  <img src="/assets/images/vizion/achievement/saokhuev1.png" alt="achievements" />
+                  <img src="/assets/images/vizion/achievement/sao-khue.png" alt="achievements" />
                 </div>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="pricing-box popular">
                 <div className="inner background-grey ourachievement-inner">
-                  <img src="/assets/images/vizion/achievement/startupviet.png" alt="achievements" />
+                  <img src="/assets/images/vizion/achievement/startup-viet.png" alt="achievements" />
                 </div>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="pricing-box">
                 <div className="inner background-grey ourachievement-inner">
-                  <img src="/assets/images/vizion/achievement/techfest-v3.png" alt="achievements" />
+                  <img src="/assets/images/vizion/achievement/techfest.png" alt="achievements" />
                 </div>
               </div>
             </div>
