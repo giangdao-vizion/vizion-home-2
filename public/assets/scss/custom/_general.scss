@@ -50,11 +50,12 @@ body {
   border: none;
 }
 
-.backtotop {
-  background-color: #f73e3f;
+.backtotop,
+.vz-btn {
+  background-color: #f73e3f !important;
 
   &:hover {
-    background-color: #cd0e0e;
+    background-color: #cd0e0e !important;
   }
 }
 

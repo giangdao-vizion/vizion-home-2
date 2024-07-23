@@ -16,6 +16,11 @@ import DigitalTwin from '@/components/vizion/Home/DigitalTwin';
 import OurPlatform from '@/components/vizion/Home/OurPlatform';
 import JoinOurPlatform from '@/components/vizion/Home/JoinOurPlatform';
 import JoinUsNow from '@/components/vizion/Home/JoinUsNow';
+import Industries from '@/components/vizion/Home/Industries';
+import Hybrid from '@/components/vizion/Home/Hybrid';
+import Partner from '@/components/vizion/Home/Partner';
+import TrustByMarketLeader from '@/components/vizion/Home/TrustByMarketLeader';
+import PlatformFeatures from '@/components/vizion/Home/PlatformFeatures';
 
 export default function Index(props) {
   return (
@@ -32,8 +37,13 @@ export default function Index(props) {
       <DigitalTwin />
       <OurPlatform />
       <JoinOurPlatform />
-      <JoinUsNow />
+      <PlatformFeatures />
+      <Industries />
+      <Hybrid />
+      <Partner />
+      <TrustByMarketLeader />
 
+      <JoinUsNow />
       {/* <OurServices />
       <BusinessDiscovery /> */}
       {/* <Discover /> */}

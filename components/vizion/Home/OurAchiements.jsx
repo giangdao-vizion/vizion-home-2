@@ -9,39 +9,38 @@ export default function OurAchiements() {
   };
 
   return (
-    <>
-      <section className="section spdt spdb vizion-our-services min-vh100 flex flex-align-c bussiness-discover background-grey">
-        <div className="container">
-          <div data-wow-delay="0.2s" className="heading align-center wow animate__animated animate__fadeInRight">
-            <h2 className="heading-title size-l text-uppercase">Giải Pháp Đột Phá Cho Doanh Nghiệp</h2>
-          </div>
-          <div className="clients align-center mt60">
-            <ul className="content">
-              <li>
-                <img
-                  src="/assets/images/vizion/achievement/saokhue-v4.png"
-                  style={{ height: 100 }}
-                  alt="sao-khue-img"
-                />
-              </li>
-              <li>
-                <img
-                  src="/assets/images/vizion/achievement/VZ-TOP20_StartupViet.png"
-                  style={{ height: 100 }}
-                  alt="startup-viet-img"
-                />
-              </li>
-              <li>
-                <img
-                  src="/assets/images/vizion/achievement/VZ-TOP20_TECHFEST.png"
-                  style={{ height: 100 }}
-                  alt="techfest-img"
-                />
-              </li>
-            </ul>
+    <div className="section-pricing section spdtb">
+      <div className="container">
+        <div className="heading align-center">
+          <h2 className="heading-title size-l">Our Achievements</h2>
+        </div>
+
+        <div className="pricing-table layout-01 is-active">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="pricing-box">
+                <div className="inner background-grey ourachievement-inner">
+                  <img src="/assets/images/vizion/achievement/saokhuev1.png" alt="achievements" />
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="pricing-box popular">
+                <div className="inner background-grey ourachievement-inner">
+                  <img src="/assets/images/vizion/achievement/startupviet.png" alt="achievements" />
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="pricing-box">
+                <div className="inner background-grey ourachievement-inner">
+                  <img src="/assets/images/vizion/achievement/techfest-v3.png" alt="achievements" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </div>
   );
 }

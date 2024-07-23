@@ -5,7 +5,7 @@ export default function UseCase() {
     <section className="section spdt min-vh100 flex flex-align-c">
       <div className="container">
         <div data-wow-delay="0.2s" className="heading align-center wow animate__animated animate__fadeInRight">
-          <h2 className="heading-title size-l text-uppercase">Use Case</h2>
+          <h2 className="heading-title size-l">Use Case</h2>
         </div>
         <div className="block-infinite use-case--block-infinite layout-02">
           <div className="infinite use-case--infinite" data-speed={100}>

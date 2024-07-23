@@ -38,4 +38,15 @@
     z-index: 2;
     border: 1px solid black;
   }
+
+  &-learn--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      &:hover {
+        background-color: #cd0e0e !important;
+      }
+    }
+  }
 }
