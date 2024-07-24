@@ -86,18 +86,18 @@
         }
       }
       &:hover > .sub-menu {
-        top: calc(100% + 30px);
-        opacity: 1;
-        visibility: visible;
-        pointer-events: all;
-        z-index: 200;
-        .sub-menu {
-          pointer-events: all;
-        }
-        &::before {
-          visibility: visible;
-          pointer-events: all;
-        }
+        // top: calc(100% + 30px);
+        // opacity: 1;
+        // visibility: visible;
+        // pointer-events: all;
+        // z-index: 200;
+        // .sub-menu {
+        //   pointer-events: all;
+        // }
+        // &::before {
+        //   visibility: visible;
+        //   pointer-events: all;
+        // }
       }
       &:last-child {
         margin-right: 0;

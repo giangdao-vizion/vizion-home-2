@@ -29,8 +29,12 @@
   color: white;
   text-shadow: 1px 1px 1px rgba(gray, 0.3);
 
-  &.text-black {
+  &.menu-text--black {
     color: black;
+  }
+
+  &.menu-text--red {
+    color: #f73e3f;
   }
 
   &:hover {

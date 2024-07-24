@@ -1,0 +1,136 @@
+.menuV2 {
+  &-mega--menu {
+    padding: 1px 10px;
+    &:hover {
+      .menuV2-btn {
+        color: #f73e3f !important;
+      }
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    gap: 5px;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-btn--arrow {
+    transition: 0.3s;
+    &.arrow-active {
+      transform: translateY(3px) rotate(180deg);
+      color: #f73e3f;
+    }
+  }
+
+  &-product--container {
+    max-height: 76vh;
+    overflow: auto;
+    display: flex;
+    z-index: 2;
+    transform: translateX(9px);
+  }
+
+  &-product {
+    padding: 20px !important;
+    position: relative;
+    border-radius: 10px !important;
+
+    div {
+      &:nth-child(2) {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+
+  &-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+  }
+
+  &-bg--item {
+    width: 50%;
+  }
+
+  &-product--item {
+    width: 50%;
+    &-left {
+      padding-right: 20px;
+    }
+
+    &-right {
+      padding: 0 13px 0 20px;
+    }
+  }
+
+  &-title {
+    margin-bottom: 16px;
+  }
+
+  &-sub--menu {
+    &.open {
+      top: calc(100% + 30px) !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: all !important;
+      z-index: 200 !important;
+    }
+  }
+
+  &-li {
+    border: 1px solid rgba(193, 175, 175, 0.1);
+    padding: 10px;
+    border-radius: 7px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-bottom: 15px;
+
+    &:hover {
+      border: 1px solid rgba(193, 175, 175, 0.35);
+    }
+
+    &.pointer-event {
+      pointer-events: all;
+    }
+  }
+
+  &-sub--menu-item {
+    margin-left: 10px;
+    &:hover {
+      color: red;
+    }
+  }
+
+  &-leaders--container {
+    grid-column-gap: 0.75rem;
+    grid-row-gap: 0.75rem;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  &-leaders--item {
+    border: 1px solid rgba(99, 98, 98, 0.1);
+    border-radius: 7px;
+    padding: 10px 20px;
+  }
+
+  //Solutions menu
+
+  &-solution--img {
+    height: 150px;
+  }
+}
