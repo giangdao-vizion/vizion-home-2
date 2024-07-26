@@ -7,9 +7,26 @@ import video from './test.mp4';
 export default function Banner({ title, videoUrl }) {
   const [isMobile, setIsMobile] = useState(false);
 
+  const [isTop, setIsTop] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 30) {
+        setIsTop(false);
+      } else {
+        setIsTop(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   useEffect(() => {
     const checkIsMobile = () => {
-      setIsMobile(window.innerWidth <= 1023);
+      setIsMobile(window.innerWidth <= 767);
     };
 
     // Initial check
@@ -24,47 +41,55 @@ export default function Banner({ title, videoUrl }) {
     };
   }, []);
 
+  console.log(isMobile);
+
   return (
     <>
-      <section className="section opt120 overflow-hidden linear-gradient-07 banner">
+      <section
+        className="section opt120 overflow-hidden linear-gradient-07 banner"
+        style={{ paddingTop: isTop ? 0 : 68, transition: '1s ease' }}
+      >
         <div id="banner-video-iframe-id" className="banner-video">
-          {isMobile ? (
-            <div className="banner-mobile--video">
+          <div className="banner-mobile--video">
+            {!isMobile ? (
               <video autoPlay loop muted>
-                <source src={video} type="video/mp4" />
+                <source
+                  src={'https://vizion-homepage-video-s3.s3.ap-southeast-1.amazonaws.com/vizion-home-mobile.mp4'}
+                  type="video/mp4"
+                />
               </video>
-            </div>
-          ) : (
-            <iframe
-              src={videoUrl}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
-          )}
+            ) : (
+              <video autoPlay loop muted>
+                <source
+                  src={'https://vizion-homepage-video-s3.s3.ap-southeast-1.amazonaws.com/vizion-home-desktop.mp4'}
+                  type="video/mp4"
+                />
+              </video>
+            )}
+          </div>
         </div>
-        <div className="banner-content">
-          {/* <div className="container">
+        {/* <div className="banner-content">
+          <div className="container">
             <div className="row flex-align-c">
               <div className="col-lg-6">
                 <div className="heading heading-alway-white mb32">
-                  <div className="heading-sub">AWARD WINNING SEO</div>
-                  <h2 className="heading-title size-xxl">Best 2023 Digital Marketing</h2>
-                  <div className="heading-desc">Nunc molestie tellus sapien, quis laoreet orci.</div>
+                  <h2 className="heading-title size-xxl">Create immersive experiences powered by 3D Tour</h2>
                 </div>
                 <div className="button-wrap mt32">
-                  <Link href="/contact-01" className="button fullfield-white xs-mb10" title="Let's Talk">
-                    Let's Talk
-                  </Link>
-                  <Link href="tel:00342834445" className="button text-white xs-mb10" title="Call. + 00 342 834 445">
-                    Call. + 00 342 834 445
+                  <Link href="/contact-01" className="button fullfield xs-mb10 vz-btn" title="Let's Talk">
+                    Book for Demo
                   </Link>
                 </div>
               </div>
             </div>
-          </div> */}
-        </div>
+          </div>
+        </div> */}
+
+        {/* <img
+          src="https://images.unsplash.com/photo-1544644986-1b798640b29c?q=80&w=1788&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="test"
+          style={{ height: '100%', widows: '100%' }}
+        /> */}
       </section>
     </>
   );
