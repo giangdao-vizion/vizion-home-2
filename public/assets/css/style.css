@@ -13713,6 +13713,12 @@ body.app-mounted {
   font-size: 18px !important;
 }
 
+@media (min-width: 1024px) {
+  .ourachievement {
+    transform: translateY(-5px);
+    background-color: white;
+  }
+}
 .ourachievement-inner {
   padding: 20px !important;
   display: flex;

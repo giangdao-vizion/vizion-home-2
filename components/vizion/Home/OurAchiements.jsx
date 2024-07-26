@@ -9,7 +9,7 @@ export default function OurAchiements() {
   };
 
   return (
-    <div className="section-pricing section spdtb">
+    <div className="section-pricing section pt120 pb120 ourachievement">
       <div className="container">
         <div className="heading align-center">
           <h2 className="heading-title size-l">Our Achievements</h2>

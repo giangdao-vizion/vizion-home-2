@@ -3,31 +3,37 @@ import React from 'react';
 
 export default function DigitalTwin() {
   return (
-    <section className="section spdt">
+    <section className="section-banner layout-06 align-right mt80">
       <div className="container">
-        <div className="row flex-align-c">
-          <div className="col-lg-6 lg-order-2">
-            <div className="pdr80 lg-mt32">
-              <div className="heading mb24">
-                <h2 className="heading-title size-l">What is Digital Twin Technology</h2>
-                <div className="heading-desc">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum ut lacus eu egestas. Duis
-                  fringilla sed ligula sed ultricies. Ut consectetur malesuada magna, vitae elementum elit imperdiet
-                  tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </div>
-              </div>
-              {/* <div className="button-wrap">
-                <Link href="/contact-01" className="button fullfield" title="Start Inverting">
-                  Start Inverting
-                </Link>
-              </div> */}
-            </div>
+        <div className="inner">
+          <div className="images layout-06">
+            <img className="wow animate__animated animate__fadeInLeft" src="/assets/images/nft-12.png" alt="Banner" />
+            <div className="dot dot-04 red" />
+            <div className="dot dot-05 violet" />
+            <div className="dot dot-06 yellow" />
           </div>
-          <div className="col-lg-6 lg-order-1">
-            <div className="images layout-03">
-              <div className="inner">
-                <img className="wow animate__animated animate__fadeInLeft" src="/assets/images/hi-05.png" alt="Image" />
+          <div className="content align-left">
+            <div className="heading">
+              <h2 className="heading-title size-l">How Much Can You Earn?</h2>
+              <div className="heading-desc">
+                <p>
+                  Ut quis euismod nulla. Donec consectetur enim neque, vitae vehicula turpis lobortis vitae. Ut dui
+                  metus, ullamcorper a mollis vel, consectetur a felis. Nam vel sem nisl. Cras quis commodo quam.
+                </p>
+                <p>
+                  Aliquam vehicula nibh eu finibus consectetur. Donec enim felis, lacinia sit amet dignissim id, euismod
+                  non lacus. Morbi finibus enim vel metus eleifend iaculis.
+                </p>
+                <p>
+                  Curabitur pharetra, leo quis egestas fringilla, ipsum massa commodo magna, ac mattis arcu nibh ut
+                  magna.
+                </p>
               </div>
+            </div>
+            <div className="button-wrap">
+              <Link href="/contact-01" className="button fullfield" title="Watch Video">
+                Watch Video
+              </Link>
             </div>
           </div>
         </div>
