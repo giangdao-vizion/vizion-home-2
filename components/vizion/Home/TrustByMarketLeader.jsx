@@ -8,7 +8,7 @@ import { Autoplay, Pagination } from 'swiper';
 
 export default function TrustByMarketLeader() {
   return (
-    <section className="section background-grey spdtb">
+    <section className="section background-grey trustedbymarket">
       <div className="container">
         <div className="heading align-center">
           <h2 className="heading-title size-l">Trusted by Market Leaders</h2>

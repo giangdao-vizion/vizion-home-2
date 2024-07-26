@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 export default function JoinOurPlatform() {
   const [state, setState] = useState(0);
   return (
-    <section className="section background-grey spdtb">
+    <section className="section background-grey spdtb joinourplatform">
       <div className="container">
         <div className="heading align-center joinourplatform-heading">
           <h2 className="heading-title size-l">Join Our Platform</h2>

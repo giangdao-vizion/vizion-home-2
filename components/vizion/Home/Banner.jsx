@@ -41,8 +41,6 @@ export default function Banner({ title, videoUrl }) {
     };
   }, []);
 
-  console.log(isMobile);
-
   return (
     <>
       <section
@@ -51,24 +49,19 @@ export default function Banner({ title, videoUrl }) {
       >
         <div id="banner-video-iframe-id" className="banner-video">
           <div className="banner-mobile--video">
-            {!isMobile ? (
-              <video autoPlay loop muted>
-                <source
-                  src={'https://vizion-homepage-video-s3.s3.ap-southeast-1.amazonaws.com/vizion-home-mobile.mp4'}
-                  type="video/mp4"
-                />
-              </video>
-            ) : (
-              <video autoPlay loop muted>
-                <source
-                  src={'https://vizion-homepage-video-s3.s3.ap-southeast-1.amazonaws.com/vizion-home-desktop.mp4'}
-                  type="video/mp4"
-                />
-              </video>
-            )}
+            <video
+              src={
+                isMobile
+                  ? 'https://vizion-homepage-video-s3.s3.ap-southeast-1.amazonaws.com/vizion-home-mobile.mp4'
+                  : 'https://vizion-homepage-video-s3.s3.ap-southeast-1.amazonaws.com/vizion-home-desktop.mp4'
+              }
+              autoPlay
+              loop
+              muted
+            ></video>
           </div>
         </div>
-        {/* <div className="banner-content">
+        <div className="banner-content">
           <div className="container">
             <div className="row flex-align-c">
               <div className="col-lg-6">
@@ -83,7 +76,7 @@ export default function Banner({ title, videoUrl }) {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
         {/* <img
           src="https://images.unsplash.com/photo-1544644986-1b798640b29c?q=80&w=1788&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

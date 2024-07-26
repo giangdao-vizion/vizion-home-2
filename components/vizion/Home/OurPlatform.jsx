@@ -3,10 +3,22 @@ import React from 'react';
 
 export default function OurPlatform() {
   return (
-    <section className="section spdt">
+    <section className="section spdt" style={{ marginBottom: 150 }}>
       <div className="container">
         <div className="row flex-align-c">
           <div className="col-lg-6 lg-order-2">
+            <div className="images layout-03">
+              <div className="inner">
+                <img
+                  style={{ transform: 'translateX(-120px)' }}
+                  className="wow animate__animated animate__fadeInLeft"
+                  src="/assets/images/hi-05.png"
+                  alt="Image"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6 lg-order-1">
             <div className="pdr80 lg-mt32">
               <div className="heading mb24">
                 <h2 className="heading-title size-l">How our Platform works</h2>
@@ -21,13 +33,6 @@ export default function OurPlatform() {
                   Start Inverting
                 </Link>
               </div> */}
-            </div>
-          </div>
-          <div className="col-lg-6 lg-order-1">
-            <div className="images layout-03">
-              <div className="inner">
-                <img className="wow animate__animated animate__fadeInLeft" src="/assets/images/hi-05.png" alt="Image" />
-              </div>
             </div>
           </div>
         </div>

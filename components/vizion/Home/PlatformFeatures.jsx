@@ -6,9 +6,9 @@ export default function PlatformFeatures() {
   };
   return (
     <>
-      <div className="section spdt">
+      <div className="section spdt mb80">
         <div className="container">
-          <div className="section spdt mb60">
+          <div className="section mb60">
             <div className="container">
               <div className="heading align-center">
                 {/* <div className="heading-sub color-navy">Khám Phá</div> */}
