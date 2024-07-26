@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function UseCase() {
   return (
-    <section className="section spdt min-vh100 flex flex-align-c">
+    <section className="section min-vh100 flex flex-align-c background-grey">
       <div className="container">
         <div data-wow-delay="0.2s" className="heading align-center wow animate__animated animate__fadeInRight">
           <h2 className="heading-title size-l">Use Case</h2>

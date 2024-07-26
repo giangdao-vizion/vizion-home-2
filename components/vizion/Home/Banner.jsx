@@ -41,8 +41,6 @@ export default function Banner({ title, videoUrl }) {
     };
   }, []);
 
-  console.log(isMobile);
-
   return (
     <>
       <section

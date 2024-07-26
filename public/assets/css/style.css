@@ -13653,6 +13653,9 @@ body.app-mounted {
   align-items: center;
 }
 
+.joinourplatform {
+  padding-top: 120px;
+}
 .joinourplatform-btns {
   width: 100%;
   display: flex;
@@ -13718,6 +13721,10 @@ body.app-mounted {
 }
 .ourachievement-inner img {
   height: 250px;
+}
+
+.trustedbymarket {
+  padding: 120px 0;
 }
 
 .menuV2-mega--menu {
