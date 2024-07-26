@@ -156,7 +156,7 @@ export default function JoinOurPlatform() {
           )}
         </div>
 
-        <div className="button-wrap joinourplatform-learn--btn">
+        <div className="button-wrap joinourplatform-learn--btn mt-3">
           <Link href="/contact-01" className="button fullfield" title="Try it free">
             Learn more
           </Link>

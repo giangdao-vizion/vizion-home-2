@@ -13285,17 +13285,17 @@ body.app-mounted {
 }
 
 .vz-header {
-  background-color: transparent;
-  position: fixed;
-  left: 0;
-  top: 0;
+  position: static;
   z-index: 10;
   width: 100%;
-  transition: 0.5s;
-}
-.vz-header.bg-color {
+  transition: 2s ease;
   background-color: white;
   box-shadow: 0 1px 15px 1px rgba(207, 207, 207, 0.3490196078);
+}
+.vz-header.bg-color {
+  left: 0;
+  top: 0;
+  position: fixed;
 }
 
 .industries-menu {
@@ -13353,7 +13353,6 @@ body.app-mounted {
   width: 100%;
   z-index: 0;
   pointer-events: none;
-  aspect-ratio: 16/9;
 }
 .banner-video iframe {
   object-fit: none;
@@ -13380,8 +13379,14 @@ body.app-mounted {
   color: #fff;
 }
 .banner-mobile--video video {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .banner-mobile--video video {
+    height: 100vh;
+    width: 100vw;
+  }
 }
 
 .discover {
@@ -13554,7 +13559,7 @@ body.app-mounted {
   fill: #fff;
 }
 
-.vz-header.bg-color .lang-switcher .lang-icon path {
+.vz-header .lang-switcher .lang-icon path {
   fill: #333;
 }
 
@@ -13689,8 +13694,20 @@ body.app-mounted {
   background-color: #cd0e0e !important;
 }
 
+.partner-infinite {
+  gap: 18px;
+}
+.partner-item {
+  padding: 6px 18px !important;
+}
 .partner-thumb img {
   width: 35px !important;
+}
+.partner-thumb--image {
+  margin-right: 5px !important;
+}
+.partner-thumb--title {
+  font-size: 18px !important;
 }
 
 .ourachievement-inner {

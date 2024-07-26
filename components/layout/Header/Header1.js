@@ -3,9 +3,8 @@
 import { useEffect, useState } from 'react';
 import HeaderRight from './HeaderRight';
 import Logo from './Logo';
-import Menu from './Menu';
+// import Menu from './Menu';
 import MenuV2 from './MenuV2';
-// import CanvasMenu from './CanvasMenu';
 
 export default function Header({ headerClass, locale, fixedMenu }) {
   const [isTop, setIsTop] = useState(true);
@@ -33,16 +32,7 @@ export default function Header({ headerClass, locale, fixedMenu }) {
       <header
         id="header"
         className={`site-header ${headerClass} vz-header ${openMenu ? 'bg-color' : ''} ${enableMenu ? '' : 'bg-color'}`}
-        onMouseEnter={() => {
-          if (!openMenu) setIsTop(false);
-        }}
-        onMouseLeave={() => {
-          if (window.scrollY <= 50 && !openMenu) {
-            setIsTop(true);
-          }
-        }}
       >
-        {/* <CanvasMenu /> */}
         <div className="container-fluid">
           <div className="row flex-align-c inner">
             <div className="col-lg-3 col-6">

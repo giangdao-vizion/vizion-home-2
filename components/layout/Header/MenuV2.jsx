@@ -14,8 +14,6 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
     }
   };
 
-  console.log(isTop);
-
   return (
     <>
       <div className="main-menu">
@@ -31,7 +29,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
         <ul>
           <li className="is-mega-menu menuV2-mega--menu">
             <button
-              className={`vz-sub-menu ${isTop && !openMenu ? '' : 'menu-text--black'} ${openMenu === 'product' ? 'menu-text--red' : ''} menuV2-btn`}
+              className={`vz-sub-menu menu-text--black ${openMenu === 'product' ? 'menu-text--red' : ''} menuV2-btn`}
               onClick={() => handleMenu('product')}
             >
               Products
@@ -50,7 +48,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                     <div className="menuV2-product--item menuV2-product--item-left">
                       <h4 className="menuV2-title">Product by Feature</h4>
                       <ul className="sub-menu">
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -59,13 +57,13 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                             3D Tour
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
                             VR Room
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -74,7 +72,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                             Showroom 3D
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -83,7 +81,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                             Experience Creator
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -97,7 +95,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                     <div className="menuV2-product--item menuV2-product--item-right">
                       <h4 className="menuV2-title">Product By Client Type</h4>
                       <ul className="sub-menu">
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -106,13 +104,13 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                             3D Creators
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
                             Photographers
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -125,7 +123,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
 
                       <h4 className="menuV2-title">Product By Technology</h4>
                       <ul className="sub-menu">
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -134,13 +132,13 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                             360 Virtual Tour
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
                             Virtual Reality
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -184,7 +182,9 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
           <li className="is-mega-menu menuV2-mega--menu">
             <button
               href="/"
-              className={`vz-sub-menu ${isTop && !openMenu ? '' : 'menu-text--black'} menuV2-btn`}
+              className={`vz-sub-menu menu-text--black 
+              ${openMenu === 'solutions' ? 'menu-text--red' : ''}
+              menuV2-btn`}
               onClick={() => handleMenu('solutions')}
             >
               Solutions
@@ -203,7 +203,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                     <div className="menuV2-product--item menuV2-product--item-left">
                       <h4 className="menuV2-title">Solutions by Industry</h4>
                       <ul className="sub-menu">
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -212,13 +212,13 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                             Real Estate & Architecture
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
                             Industry 4.0
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -231,21 +231,21 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
 
                       <h4 className="menuV2-title">Our Achievements</h4>
                       <ul className="sub-menu">
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
                           <img
                             className="menuV2-solution--img"
                             src="/assets/images/vizion/achievement/sao-khue.png"
                             alt="achievements"
                           />
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
                           <img
                             className="menuV2-solution--img"
                             src="/assets/images/vizion/achievement/startup-viet.png"
                             alt="achievements"
                           />
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
                           <img
                             className="menuV2-solution--img"
                             src="/assets/images/vizion/achievement/techfest.png"
@@ -257,7 +257,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                     <div className="menuV2-product--item menuV2-product--item-right">
                       <h4 className="menuV2-title">Solutions by Use Case</h4>
                       <ul className="sub-menu">
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -266,13 +266,13 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                             Marketing and Advertising
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
                             Planning and Design
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -281,7 +281,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                             Indoor Navigation
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -290,7 +290,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                             Online Shopping
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -299,7 +299,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                             Facilities Management
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -318,7 +318,9 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
           <li className="is-mega-menu menuV2-mega--menu">
             <button
               href="/"
-              className={`vz-sub-menu ${isTop && !openMenu ? '' : 'menu-text--black'} menuV2-btn`}
+              className={`vz-sub-menu menu-text--black
+              ${openMenu === 'resources' ? 'menu-text--red' : ''}
+              menuV2-btn`}
               onClick={() => handleMenu('resources')}
             >
               Resources
@@ -337,7 +339,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                     <div className="menuV2-product--item menuV2-product--item-left">
                       <h4 className="menuV2-title">Company</h4>
                       <ul className="sub-menu">
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'resources' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -346,13 +348,13 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                             Real Estate & Architecture
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'resources' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
                             Industry 4.0
                           </Link>
                         </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event' : ''}`}>
+                        <li className={`menuV2-li ${openMenu === 'resources' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
@@ -365,59 +367,6 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                     </div>
                     <div className="menuV2-product--item menuV2-product--item-right">
                       <h4 className="menuV2-title">Solutions by Use Case</h4>
-                      {/* <ul className="sub-menu">
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event'  : ""}`}>
-                          <DigitalTwinIcon />
-                          <Link
-                            className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/nha-may-san-xuat"
-                          >
-                            Marketing and Advertising
-                          </Link>
-                        </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event'  : ""}`}>
-                          <DigitalTwinIcon />
-                          <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
-                            Planning and Design
-                          </Link>
-                        </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event'  : ""}`}>
-                          <DigitalTwinIcon />
-                          <Link
-                            className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/showroom-xe-hoi"
-                          >
-                            Indoor Navigation
-                          </Link>
-                        </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event'  : ""}`}>
-                          <DigitalTwinIcon />
-                          <Link
-                            className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/showroom-xe-hoi"
-                          >
-                            Online Shopping
-                          </Link>
-                        </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event'  : ""}`}>
-                          <DigitalTwinIcon />
-                          <Link
-                            className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/showroom-xe-hoi"
-                          >
-                            Facilities Management
-                          </Link>
-                        </li>
-                        <li className={`menuV2-li ${openMenu ? 'pointer-event'  : ""}`}>
-                          <DigitalTwinIcon />
-                          <Link
-                            className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/showroom-xe-hoi"
-                          >
-                            Immersive Training
-                          </Link>
-                        </li>
-                      </ul> */}
                     </div>
                   </div>
                 </div>
