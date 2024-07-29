@@ -33,7 +33,7 @@ export default function Header({ headerClass, locale, fixedMenu }) {
         id="header"
         className={`site-header ${headerClass} vz-header ${openMenu ? 'bg-color' : ''} ${enableMenu ? '' : 'bg-color'}`}
       >
-        <div className="container-fluid">
+        <div className="container-fluid desktop">
           <div className="row flex-align-c inner">
             <div className="col-lg-3 col-6">
               <div className="header-left flex flex-align-c">

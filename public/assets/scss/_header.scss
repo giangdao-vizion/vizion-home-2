@@ -721,15 +721,10 @@
   display: block;
 }
 
-@media (max-width: 992px) {
-  .site-header .logo {
-    margin-left: 45px;
-  }
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
+
 .sala-dark-scheme {
   .icon.cursor-pointer {
     display: none;
