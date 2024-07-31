@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,6 +7,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper';
 
 export default function TrustByMarketLeader() {
+  const [isClient, setIsClient] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+    setIsMobile(window.innerWidth <= 767);
+  }, []);
+
   return (
     <section className="section background-grey trustedbymarket">
       <div className="container">
@@ -16,50 +24,50 @@ export default function TrustByMarketLeader() {
         </div>
         <div className="block-testimonial layout-01">
           <div className="swiper uxp-swiper-slider testimonial-slider">
-            <>
+            {isClient && (
               <Swiper
-                // modules={[Autoplay, Pagination]}
-                slidesPerView={2}
+                modules={[Autoplay, Pagination]}
+                slidesPerView={isMobile ? 1 : 2}
                 spaceBetween={30}
                 centeredSlides={false}
-                // loop={true}
+                loop={false}
                 autoplay={{
                   delay: 2500,
                   disableOnInteraction: false,
                 }}
-                // pagination={{
-                //   clickable: true,
-                //   el: '.testimonial-pagination',
-                // }}
-                // navigation={{
-                //     prevEl: ".navigation-prev",
-                //     nextEl: ".navigation-next",
-                // }}
+                pagination={{
+                  clickable: true,
+                  el: '.testimonial-pagination',
+                }}
+                navigation={{
+                  prevEl: '.navigation-prev',
+                  nextEl: '.navigation-next',
+                }}
                 // breakpoints={{
-                //     320: {
-                //         slidesPerView: 1,
-                //         spaceBetween: 30,
-                //     },
-                //     575: {
-                //         slidesPerView: 2,
-                //         spaceBetween: 30,
-                //     },
-                //     767: {
-                //         slidesPerView: 3,
-                //         spaceBetween: 30,
-                //     },
-                //     991: {
-                //         slidesPerView: 2,
-                //         spaceBetween: 30,
-                //     },
-                //     1199: {
-                //         slidesPerView: 2,
-                //         spaceBetween: 30,
-                //     },
-                //     1350: {
-                //         slidesPerView: 2,
-                //         spaceBetween: 30,
-                //     },
+                //   320: {
+                //     slidesPerView: 1,
+                //     spaceBetween: 30,
+                //   },
+                //   575: {
+                //     slidesPerView: 2,
+                //     spaceBetween: 30,
+                //   },
+                //   767: {
+                //     slidesPerView: 1,
+                //     spaceBetween: 30,
+                //   },
+                //   991: {
+                //     slidesPerView: 2,
+                //     spaceBetween: 30,
+                //   },
+                //   1199: {
+                //     slidesPerView: 2,
+                //     spaceBetween: 30,
+                //   },
+                //   1350: {
+                //     slidesPerView: 2,
+                //     spaceBetween: 30,
+                //   },
                 // }}
                 className="swiper-wrapper"
               >
@@ -133,8 +141,7 @@ export default function TrustByMarketLeader() {
                   </div>
                 </SwiperSlide>
               </Swiper>
-              {/* <div className="swiper-pagination testimonial-pagination" /> */}
-            </>
+            )}
           </div>
         </div>
       </div>

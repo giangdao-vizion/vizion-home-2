@@ -10,52 +10,46 @@ export default function UseCase() {
         <div className="block-infinite use-case--block-infinite layout-02">
           <div className="infinite use-case--infinite" data-speed={100}>
             <div className="item use-case--item">
-              <div className="thumb">
-                <img src="/assets/images/binance.png" alt="Binance" />
+              <div className="thumb use-case--thumb">
+                <img
+                  src="/assets/images/vizion/icon-images/marketing-and-advertising.svg"
+                  alt="marketing-and-advertising"
+                />
               </div>
-              <span>Binance</span>
+              <span>Marketing and Advertising</span>
             </div>
             <div className="item use-case--item">
-              <div className="thumb">
-                <img src="/assets/images/optimism.png" alt="Optimism" />
+              <div className="thumb use-case--thumb">
+                <img src="/assets/images/vizion/icon-images/planning-and-design.svg" alt="planning-and-design" />
               </div>
-              <span>Optimism</span>
+              <span>Planning and Design</span>
             </div>
             <div className="item use-case--item">
-              <div className="thumb">
-                <img src="/assets/images/harmony.png" alt="Harmony" />
+              <div className="thumb use-case--thumb">
+                <img src="/assets/images/vizion/icon-images/indoor-navigation.svg" alt="indoor-navigation" />
               </div>
-              <span>Harmony</span>
+              <span>Indoor Navigation</span>
             </div>
             <div className="item use-case--item">
-              <div className="thumb">
-                <img src="/assets/images/polygon.png" alt="Polygon" />
+              <div className="thumb use-case--thumb">
+                <img src="/assets/images/vizion/icon-images/online-shopping.svg" alt="online-shopping" />
               </div>
-              <span>Polygon</span>
+              <span>Online Shopping</span>
             </div>
             <div className="item use-case--item">
-              <div className="thumb">
-                <img src="/assets/images/near.png" alt="Near" />
+              <div className="thumb use-case--thumb">
+                <img
+                  src="/assets/images/vizion/icon-images/facilities-and-management.svg"
+                  alt="facilities-and-management"
+                />
               </div>
-              <span>Near</span>
+              <span>Facilities Management</span>
             </div>
             <div className="item use-case--item">
-              <div className="thumb">
-                <img src="/assets/images/fantom.png" alt="Fantom" />
+              <div className="thumb use-case--thumb">
+                <img src="/assets/images/vizion/icon-images/immersive-traning.svg" alt="immersive-traning" />
               </div>
-              <span>Fantom</span>
-            </div>
-            <div className="item use-case--item">
-              <div className="thumb">
-                <img src="/assets/images/solana.png" alt="Solana" />
-              </div>
-              <span>Solana</span>
-            </div>
-            <div className="item use-case--item">
-              <div className="thumb">
-                <img src="/assets/images/ethereum.png" alt="Ethereum" />
-              </div>
-              <span>Ethereum</span>
+              <span>Immersive Training</span>
             </div>
           </div>
         </div>
