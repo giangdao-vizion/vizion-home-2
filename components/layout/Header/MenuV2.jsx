@@ -1,5 +1,8 @@
 import Arrow from '@/components/icons/Arrow';
+import LangSelectIcon from '@/components/icons/LangSelectIcon';
 import DigitalTwinIcon from '@/components/icons/TwinIcon';
+import VRIcon from '@/components/icons/VRIcon';
+// import VRTourIcon from '@/components/icons/VRTourIcon';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -49,7 +52,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                       <h4 className="menuV2-title">Product by Feature</h4>
                       <ul className="sub-menu">
                         <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img src="/assets/images/vizion/icon-images/3dtour.svg" alt="3dtour" />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
                             href="/cac-linh-vuc/nha-may-san-xuat"
@@ -64,7 +67,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img src="/assets/images/vizion/icon-images/showroom-3d.svg" alt="showroom-3d" />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
                             href="/cac-linh-vuc/showroom-xe-hoi"
@@ -73,7 +76,10 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img
+                            src="/assets/images/vizion/icon-images/experience-creator.svg"
+                            alt="experience-creator"
+                          />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
                             href="/cac-linh-vuc/showroom-xe-hoi"
@@ -82,7 +88,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img src="/assets/images/vizion/icon-images/space-analytics.svg" alt="3dtour" />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
                             href="/cac-linh-vuc/showroom-xe-hoi"
@@ -96,7 +102,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                       <h4 className="menuV2-title">Product By Client Type</h4>
                       <ul className="sub-menu">
                         <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img src="/assets/images/vizion/icon-images/3d-creator.svg" alt="3dtour" />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
                             href="/cac-linh-vuc/nha-may-san-xuat"
@@ -105,13 +111,13 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img src="/assets/images/vizion/icon-images/photographers.svg" alt="photographers" />
                           <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
                             Photographers
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img src="/assets/images/vizion/icon-images/enterpise.svg" alt="enterpise" />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
                             href="/cac-linh-vuc/showroom-xe-hoi"
@@ -124,7 +130,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                       <h4 className="menuV2-title">Product By Technology</h4>
                       <ul className="sub-menu">
                         <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img src="/assets/images/vizion/icon-images/tour360.svg" alt="tour360" />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
                             href="/cac-linh-vuc/nha-may-san-xuat"
@@ -133,13 +139,13 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img src="/assets/images/vizion/icon-images/virtual-reality.svg" alt="virtual-reality" />
                           <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
                             Virtual Reality
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img src="/assets/images/vizion/icon-images/augmented-reality.svg" alt="augmented-reality" />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
                             href="/cac-linh-vuc/showroom-xe-hoi"
@@ -204,7 +210,10 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                       <h4 className="menuV2-title">Solutions by Industry</h4>
                       <ul className="sub-menu">
                         <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img
+                            src="/assets/images/vizion/icon-images/real-estate-architechture.svg"
+                            alt="real-estate-architechture"
+                          />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
                             href="/cac-linh-vuc/nha-may-san-xuat"
@@ -213,13 +222,16 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img src="/assets/images/vizion/icon-images/industry4.svg" alt="industry4" />
                           <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
                             Industry 4.0
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img
+                            src="/assets/images/vizion/icon-images/retail-and-showroom.svg"
+                            alt="retail-and-showroom"
+                          />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
                             href="/cac-linh-vuc/showroom-xe-hoi"
@@ -258,7 +270,10 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                       <h4 className="menuV2-title">Solutions by Use Case</h4>
                       <ul className="sub-menu">
                         <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img
+                            src="/assets/images/vizion/icon-images/marketing-and-advertising.svg"
+                            alt="marketing-and-advertising"
+                          />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
                             href="/cac-linh-vuc/nha-may-san-xuat"
@@ -267,13 +282,16 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img
+                            src="/assets/images/vizion/icon-images/planning-and-design.svg"
+                            alt="planning-and-design"
+                          />
                           <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
                             Planning and Design
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img src="/assets/images/vizion/icon-images/indoor-navigation.svg" alt="indoor-navigation" />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
                             href="/cac-linh-vuc/showroom-xe-hoi"
@@ -282,7 +300,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img src="/assets/images/vizion/icon-images/online-shopping.svg" alt="online-shopping" />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
                             href="/cac-linh-vuc/showroom-xe-hoi"
@@ -291,7 +309,10 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img
+                            src="/assets/images/vizion/icon-images/facilities-and-management.svg"
+                            alt="facilities-and-management"
+                          />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
                             href="/cac-linh-vuc/showroom-xe-hoi"
@@ -300,7 +321,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img src="/assets/images/vizion/icon-images/immersive-traning.svg" alt="immersive-traning" />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
                             href="/cac-linh-vuc/showroom-xe-hoi"
@@ -340,18 +361,18 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                       <h4 className="menuV2-title">Company</h4>
                       <ul className="sub-menu">
                         <li className={`menuV2-li ${openMenu === 'resources' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img src="/assets/images/vizion/icon-images/case-studies.svg" alt="case-studies" />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
                             href="/cac-linh-vuc/nha-may-san-xuat"
                           >
-                            Real Estate & Architecture
+                            Case Studies
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'resources' ? 'pointer-event' : ''}`}>
-                          <DigitalTwinIcon />
+                          <img src="/assets/images/vizion/icon-images/blog.svg" alt="blog" />
                           <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
-                            Industry 4.0
+                            Blog
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'resources' ? 'pointer-event' : ''}`}>
