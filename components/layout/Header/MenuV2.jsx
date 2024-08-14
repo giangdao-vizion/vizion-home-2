@@ -216,14 +216,14 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/nha-may-san-xuat"
+                            href="/solutions-industry/real-estate-architecture"
                           >
                             Real Estate & Architecture
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
                           <img src="/assets/images/vizion/icon-images/industry4.svg" alt="industry4" />
-                          <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
+                          <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/solutions-industry/industry-4-0">
                             Industry 4.0
                           </Link>
                         </li>
@@ -234,7 +234,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/showroom-xe-hoi"
+                            href="/solutions-industry/retail-showrooms"
                           >
                             Retail and Showrooms
                           </Link>
