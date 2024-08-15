@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LearnWhatWe = () => {
+const SectionProject = () => {
   return (
     <section className="section projects">
       <div className="page-padding">
@@ -101,4 +101,4 @@ const LearnWhatWe = () => {
   );
 };
 
-export default LearnWhatWe;
+export default SectionProject;

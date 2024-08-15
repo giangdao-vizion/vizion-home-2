@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SetUp = () => {
+const SectionSales = () => {
   return (
     <>
       <section id="contactform" className="section try">
@@ -48,4 +48,4 @@ const SetUp = () => {
     </>
   );
 };
-export default SetUp;
+export default SectionSales;

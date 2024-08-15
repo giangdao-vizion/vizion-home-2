@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContactSale = () => {
+const SectionCapture = () => {
   return (
     <section className="section capture">
       <div className="page-padding">
@@ -53,4 +53,4 @@ const ContactSale = () => {
   );
 };
 
-export default ContactSale;
+export default SectionCapture;

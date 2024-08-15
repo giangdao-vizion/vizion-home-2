@@ -1,4 +1,4 @@
-export default function Slider() {
+export default function CMS_Slider() {
   return (
     <>
       <section className="section background-grey spdtb">

@@ -1,41 +1,44 @@
 import Layout from '@/components/layout/Layout';
-import { solutionListMock } from '@/mock/solution';
+import heroMock from '@/mock/solution-industry/hero-mock';
 import Hero from '@/components/sections/homepage/solution-industry/hero';
 import { useRouter } from 'next/router';
 import React from 'react';
 import WhatIs from '@/components/sections/homepage/solution-industry/what-is';
-import TopFea from '@/components/sections/homepage/solution-industry/topfea';
+import CMC_Tab from '@/components/sections/homepage/solution-industry/cms-tab';
 import UseCase from '@/components/sections/homepage/solution-industry/usecase';
-import Slider from '@/components/sections/homepage/solution-industry/slider';
-import TrialNow from '@/components/sections/homepage/solution-industry/trial_now';
-import Holistic from '@/components/sections/homepage/solution-industry/holistic';
-import TryIt from '@/components/sections/homepage/solution-industry/try-it';
-import ContactSale from '@/components/sections/homepage/solution-industry/contact-sale';
-import LearnWhatWe from '@/components/sections/homepage/solution-industry/learn-what-we';
+import CMS_Slider from '@/components/sections/homepage/solution-industry/cms-slider';
+import ContactForm from '@/components/sections/homepage/solution-industry/contact-form';
+import EnterPrises from '@/components/sections/homepage/solution-industry/enterprises';
+import Section3D from '@/components/sections/homepage/solution-industry/section-3d';
+import SectionCapture from '@/components/sections/homepage/solution-industry/section-capture';
+import SectionProject from '@/components/sections/homepage/solution-industry/section-project';
 import Hybrid from '@/components/sections/homepage/solution-industry/hybrid';
-import SetUp from '@/components/sections/homepage/solution-industry/setup';
+import SectionSales from '@/components/sections/homepage/solution-industry/section-sales';
 
 export default function Page(props) {
   const router = useRouter();
-  const { solutionId } = router.query || {};
-  const solution = solutionListMock.find(sol => sol.solutionId === solutionId);
 
-  if (!solution) return <p>Not found</p>;
+  // sử dụng tạm id hero áp cứng
+  const { heroId } = router.query;
+  const defaultHeroId = 'industry-4-0';
+  const hero = heroMock.find(her => her.heroId === heroId) || heroMock.find(her => her.heroId === defaultHeroId);
+
+  if (!hero) return <p>Not found</p>;
   return (
     <>
       <Layout siteContentClass="pt0 pb0" fixedMenu {...props}>
-        <Hero />
-        <WhatIs />
-        <TopFea />
+        <Hero hero={hero} />
+        {/* <WhatIs />
+        <CMC_Tab />
         <UseCase />
-        <Slider />
-        <TrialNow />
-        <Holistic />
-        <TryIt />
-        <ContactSale />
-        <LearnWhatWe />
+        <CMS_Slider />
+        <ContactForm />
+        <EnterPrises />
+        <Section3D />
+        <SectionCapture />
+        <SectionProject />
         <Hybrid />
-        <SetUp />
+        <SectionSales /> */}
       </Layout>
     </>
   );

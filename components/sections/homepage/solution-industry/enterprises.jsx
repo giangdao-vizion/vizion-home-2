@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Holistic = () => {
+const EnterPrises = () => {
   return (
     <section className="section for-enterprises">
       <div className="page-padding">
@@ -143,4 +143,4 @@ const Holistic = () => {
   );
 };
 
-export default Holistic;
+export default EnterPrises;

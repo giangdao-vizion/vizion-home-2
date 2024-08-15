@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TryIt = () => {
+const Section3D = () => {
   return (
     <section id="tifysjjjjj" className="section _3d">
       <div className="page-padding">
@@ -46,4 +46,4 @@ const TryIt = () => {
   );
 };
 
-export default TryIt;
+export default Section3D;

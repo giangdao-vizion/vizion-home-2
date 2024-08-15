@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TrialNow = () => {
+const ContactForm = () => {
   return (
     <section id="contactform" className="section try">
       <div className="page-padding">
@@ -48,4 +48,4 @@ const TrialNow = () => {
   );
 };
 
-export default TrialNow;
+export default ContactForm;
