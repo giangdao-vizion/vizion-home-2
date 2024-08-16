@@ -13,15 +13,15 @@ import Section3D from '@/components/sections/homepage/solution-industry/section-
 import SectionCapture from '@/components/sections/homepage/solution-industry/section-capture';
 import SectionProject from '@/components/sections/homepage/solution-industry/section-project';
 import Hybrid from '@/components/sections/homepage/solution-industry/hybrid';
-import SectionSales from '@/components/sections/homepage/solution-industry/section-sales';
+import SectionSales from '@/components/sections/homepage/solution-usecase/section-sales';
 import whatIsMock from '@/mock/solution-industry/what-is-mock';
 import useCaseMock from '@/mock/solution-industry/usecase-mock';
 import { getEntities } from '@/utils/utils';
+import EnterPrisesJoin from '@/components/sections/homepage/solution-usecase/enterprise-join';
 import projectMock from '@/mock/solution-industry/section-project-mock';
-
 export default function Page(props) {
   const router = useRouter();
-  const defaultId = 'industry-4-0';
+  const defaultId = 'online-shopping';
   const { hero, whatis, usecase, project } = getEntities(
     router,
     heroMock,
@@ -36,14 +36,9 @@ export default function Page(props) {
         <Hero hero={hero} />
         <WhatIs whatis={whatis} />
         <CMC_Tab /> {/* chưa set dynamic component */}
-        <UseCase usecase={usecase} />
+        <EnterPrisesJoin />
         <CMS_Slider />
-        <ContactForm />
-        <EnterPrises />
-        <Section3D />
-        <SectionCapture />
         <SectionProject project={project} />
-        <Hybrid />
         <SectionSales />
       </Layout>
     </>

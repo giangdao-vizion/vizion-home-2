@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 const Hero = ({ hero }) => {
   const {
     title,
@@ -27,9 +27,9 @@ const Hero = ({ hero }) => {
                 </h1>
                 <p className="p subtitle">{subtitle}</p>
                 {/* <p className="p hero-2__text">{text}</p> */}
-                <a href={buttonLink} className="btn-5">
+                <Link href={buttonLink} className="btn-5">
                   {buttonText}
-                </a>
+                </Link>
               </div>
               <div className="hero-2__right">
                 <img
@@ -56,10 +56,10 @@ const Hero = ({ hero }) => {
                 <div role="list" className="logos-wrapper w-dyn-items">
                   {hero.logos.map((logo, index) => (
                     <div role="listitem" className="logos-slide w-dyn-item" key={index}>
-                      <a href="#" className="logo-slide in-slider w-inline-block">
+                      <Link href="#" className="logo-slide in-slider w-inline-block">
                         <img loading="lazy" alt={logo.alt} src={logo.src} className="logo-slide__img" style={{}} />
                         <img alt="" src={logo.colorSrc} className="logo-slide__img color" style={{}} />
-                      </a>
+                      </Link>
                     </div>
                   ))}
                 </div>

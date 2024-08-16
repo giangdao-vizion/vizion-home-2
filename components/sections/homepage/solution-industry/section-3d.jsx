@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 const Section3D = () => {
   return (
     <section id="tifysjjjjj" className="section _3d">
@@ -33,12 +33,12 @@ const Section3D = () => {
                 ></iframe>
               </div>
             </div>
-            <a href="#" className="btn-5 in-3d hide-he">
+            <Link href="#" className="btn-5 in-3d hide-he">
               Get Started for Free
-            </a>
-            <a href="/contact-sales" className="btn-5 in-3d show-he">
+            </Link>
+            <Link href="/contact-sales" className="btn-5 in-3d show-he">
               Get Started for Free
-            </a>
+            </Link>
           </div>
         </div>
       </div>

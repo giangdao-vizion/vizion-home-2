@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const ContactForm = () => {
@@ -12,12 +13,12 @@ const ContactForm = () => {
                 Vizion is your go-to platform to enhance custom-branded digital twins, create hybrid experiences, and
                 navigate the metaverse
               </p>
-              <a href="https://my.treedis.com/admin/register" className="btn-2 in-try hide-he">
+              <Link href="https://my.treedis.com/admin/register" className="btn-2 in-try hide-he">
                 Start your Free Trial Now
-              </a>
-              <a href="https://he.treedis.com/contact-sales" className="btn-2 in-try show-he">
+              </Link>
+              <Link href="https://he.treedis.com/contact-sales" className="btn-2 in-try show-he">
                 Start your Free Trial Now
-              </a>
+              </Link>
             </div>
             <img
               src="https://cdn.prod.website-files.com/636d1da0a8aa09416247d194/636d2f82723267490463c0ad_05-bg-frame.svg"

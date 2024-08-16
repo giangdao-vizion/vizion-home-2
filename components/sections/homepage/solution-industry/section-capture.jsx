@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 const SectionCapture = () => {
   return (
     <section className="section capture">
@@ -27,9 +27,9 @@ const SectionCapture = () => {
                 are ready to match you with the right professional who meets Vizion' high standards for excellence and
                 professionalism.
               </p>
-              <a href="/contact-sales" className="btn-1 in-capture">
+              <Link href="/contact-sales" className="btn-1 in-capture">
                 Contact Sales
-              </a>
+              </Link>
             </div>
             <div className="capture__right">
               <img

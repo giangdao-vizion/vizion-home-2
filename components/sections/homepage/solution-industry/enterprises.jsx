@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 const EnterPrises = () => {
   return (
     <section className="section for-enterprises">
@@ -123,7 +123,7 @@ const EnterPrises = () => {
                 <p className="for-enterprises__box__title-text">Characterization and UI/UX design</p>
               </div>
             </div>
-            <a href="/product-by-type/enterprise" className="btn-1 in-for-enterprises w-inline-block">
+            <Link href="/product-by-type/enterprise" className="btn-1 in-for-enterprises w-inline-block">
               <div className="btn-text">Learn More</div>
               <div className="embed-btn-arrow flip w-embed">
                 <svg
@@ -135,7 +135,7 @@ const EnterPrises = () => {
                   alt="arrow-right"
                 ></svg>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

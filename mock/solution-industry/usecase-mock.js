@@ -75,7 +75,7 @@ const useCaseMock = [{
         }
     ]
 },{
-    useCaseId: 'retail-and-showrooms',
+    useCaseId: 'retail-showrooms',
     title: 'Use Case',
     text:'We provide dozens of solutions that can be used by diverse end markets',
     items: [

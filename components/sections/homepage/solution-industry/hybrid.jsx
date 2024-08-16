@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 const Hybrid = () => {
   return (
     <section className="section hybrid">
@@ -16,7 +16,7 @@ const Hybrid = () => {
                 Activate two-in-one experiences by scanning your space and customizing the physical and virtual worlds.
                 We power our solutions with the latest hybrid reality technologies.
               </p>
-              <a href="#" className="btn-5 in-hybrid w-inline-block">
+              <Link href="#" className="btn-5 in-hybrid w-inline-block">
                 <div className="btn-text">Learn More</div>
                 <div className="embed-btn-arrow w-embed">
                   <svg
@@ -26,14 +26,9 @@ const Hybrid = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     alt="arrow-right"
-                  >
-                    <path
-                      d="M15.4133 6.60855L12.8333 4.00189C12.7714 3.9394 12.6976 3.8898 12.6164 3.85596C12.5351 3.82211 12.448 3.80469 12.36 3.80469C12.272 3.80469 12.1849 3.82211 12.1036 3.85596C12.0224 3.8898 11.9486 3.9394 11.8867 4.00189V4.00189C11.7625 4.12679 11.6928 4.29576 11.6928 4.47189C11.6928 4.64801 11.7625 4.81698 11.8867 4.94189L14.26 7.33522H0.666667C0.489856 7.33522 0.320286 7.40546 0.195262 7.53048C0.0702379 7.65551 0 7.82508 0 8.00189H0C0 8.1787 0.0702379 8.34827 0.195262 8.47329C0.320286 8.59832 0.489856 8.66855 0.666667 8.66855H14.3L11.8867 11.0752C11.8242 11.1372 11.7746 11.2109 11.7407 11.2922C11.7069 11.3734 11.6895 11.4605 11.6895 11.5486C11.6895 11.6366 11.7069 11.7237 11.7407 11.8049C11.7746 11.8862 11.8242 11.9599 11.8867 12.0219C11.9486 12.0844 12.0224 12.134 12.1036 12.1678C12.1849 12.2017 12.272 12.2191 12.36 12.2191C12.448 12.2191 12.5351 12.2017 12.6164 12.1678C12.6976 12.134 12.7714 12.0844 12.8333 12.0219L15.4133 9.43522C15.7879 9.06022 15.9982 8.55189 15.9982 8.02189C15.9982 7.49188 15.7879 6.98355 15.4133 6.60855V6.60855Z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
+                  ></svg>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="hubrid__right">
               <img

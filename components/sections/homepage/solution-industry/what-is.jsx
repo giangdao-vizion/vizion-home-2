@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 const WhatIs = ({ whatis }) => {
   const { mobileImage, desktopImage, video, title, text, buttonText } = whatis;
   return (
@@ -31,9 +31,9 @@ const WhatIs = ({ whatis }) => {
                 <span className="title-span-turquoise">{title}</span>
               </h2>
               <p className="p what-is__text">{text}</p>
-              <a href="#" className="btn-1 global-sales">
+              <Link href="#" className="btn-1 global-sales">
                 {buttonText}
-              </a>
+              </Link>
             </div>
           </div>
         </div>

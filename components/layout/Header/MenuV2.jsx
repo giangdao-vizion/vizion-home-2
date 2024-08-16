@@ -223,7 +223,10 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                         </li>
                         <li className={`menuV2-li ${openMenu === 'solutions' ? 'pointer-event' : ''}`}>
                           <img src="/assets/images/vizion/icon-images/industry4.svg" alt="industry4" />
-                          <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/solutions-industry/industry-4-0">
+                          <Link
+                            className="vz-sub-menu--item menuV2-sub--menu-item"
+                            href="/solutions-industry/industry-4-0"
+                          >
                             Industry 4.0
                           </Link>
                         </li>
@@ -276,7 +279,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/nha-may-san-xuat"
+                            href="/solutions-usecase/market-adv"
                           >
                             Marketing and Advertising
                           </Link>
@@ -286,7 +289,10 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                             src="/assets/images/vizion/icon-images/planning-and-design.svg"
                             alt="planning-and-design"
                           />
-                          <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
+                          <Link
+                            className="vz-sub-menu--item menuV2-sub--menu-item"
+                            href="/solutions-usecase/planning-design"
+                          >
                             Planning and Design
                           </Link>
                         </li>
@@ -294,7 +300,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           <img src="/assets/images/vizion/icon-images/indoor-navigation.svg" alt="indoor-navigation" />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/showroom-xe-hoi"
+                            href="/solutions-usecase/indoor-nav"
                           >
                             Indoor Navigation
                           </Link>
@@ -303,7 +309,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           <img src="/assets/images/vizion/icon-images/online-shopping.svg" alt="online-shopping" />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/showroom-xe-hoi"
+                            href="/solutions-usecase/online-shopping"
                           >
                             Online Shopping
                           </Link>
@@ -315,7 +321,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/showroom-xe-hoi"
+                            href="/solutions-usecase/facilities-management"
                           >
                             Facilities Management
                           </Link>
@@ -324,7 +330,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           <img src="/assets/images/vizion/icon-images/immersive-traning.svg" alt="immersive-traning" />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/showroom-xe-hoi"
+                            href="/solutions-usecase/immersive-training"
                           >
                             Immersive Training
                           </Link>
