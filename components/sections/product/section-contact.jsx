@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-const SectionSales = () => {
+const SectionContact = () => {
   return (
     <>
       <section id="contactform" className="section try">
@@ -9,14 +9,16 @@ const SectionSales = () => {
             <div className="try__wrap">
               <div className="try__box">
                 <h2 className="h2 try__h2">
-                  Set up a call with our <br></br>Sales Team
+                  Set up a call with our <br></br>Enterprise Team
                 </h2>
-                <p className="p try__text">Benefit from a one-on-one demo with one of our Experts</p>
-                <Link href="https://my.treedis.com/admin/register" className="btn-2 in-try hide-he">
-                  Start your Free Trial Now
+                <p className="p try__text">
+                  Speak with one of our experts and learn how we can help your business succeed!
+                </p>
+                <Link href="/" className="btn-2 in-try hide-he">
+                  Get in Touch
                 </Link>
-                <Link href="https://he.treedis.com/contact-sales" className="btn-2 in-try show-he">
-                  Start your Free Trial Now
+                <Link href="/" className="btn-2 in-try show-he">
+                  Get in Touch
                 </Link>
               </div>
               <img
@@ -48,4 +50,4 @@ const SectionSales = () => {
     </>
   );
 };
-export default SectionSales;
+export default SectionContact;

@@ -82,7 +82,7 @@ const EnterPrisesJoin = () => {
                         <p className="tabs-1__title-text">Generate revenue across a variety of industries.</p>
                       </div>
                     </div>
-                    <Link href="/product-by-type/3d-creators" className="btn-4 in-join w-inline-block">
+                    <Link href="#" className="btn-4 in-join w-inline-block">
                       <div className="btn-text">Learn More</div>
                       <div className="embed-btn-arrow w-embed">
                         <svg
@@ -137,7 +137,7 @@ const EnterPrisesJoin = () => {
                         <p className="tabs-1__title-text">Project Management from A-Z</p>
                       </div>
                     </div>
-                    <Link href="/product-by-type/enterprise" className="btn-4 in-join w-inline-block">
+                    <Link href="#" className="btn-4 in-join w-inline-block">
                       <div className="btn-text">Learn More</div>
                       <div className="embed-btn-arrow flip w-embed">
                         <svg

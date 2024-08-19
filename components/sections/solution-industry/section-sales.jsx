@@ -9,14 +9,14 @@ const SectionSales = () => {
             <div className="try__wrap">
               <div className="try__box">
                 <h2 className="h2 try__h2">
-                  Need A-Z services?<br></br> Get in touch with our<br></br> sales team
+                  Set up a call with our <br></br>Sales Team
                 </h2>
-                <p className="p try__text">Discover all the benefits we offer for enterprises</p>
-                <Link href="https://my.treedis.com/admin/register" className="btn-2 in-try hide-he">
-                  Let's Talk
+                <p className="p try__text">Benefit from a one-on-one demo with one of our Experts</p>
+                <Link href="#" className="btn-2 in-try hide-he">
+                  Start your Free Trial Now
                 </Link>
-                <Link href="https://he.treedis.com/contact-sales" className="btn-2 in-try show-he">
-                  Let's Talk
+                <Link href="#" className="btn-2 in-try show-he">
+                  Start your Free Trial Now
                 </Link>
               </div>
               <img

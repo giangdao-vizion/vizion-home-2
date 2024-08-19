@@ -27,7 +27,7 @@ const SectionCapture = () => {
                 are ready to match you with the right professional who meets Vizion' high standards for excellence and
                 professionalism.
               </p>
-              <Link href="/contact-sales" className="btn-1 in-capture">
+              <Link href="#" className="btn-1 in-capture">
                 Contact Sales
               </Link>
             </div>

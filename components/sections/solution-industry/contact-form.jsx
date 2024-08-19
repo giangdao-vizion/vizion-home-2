@@ -13,10 +13,10 @@ const ContactForm = () => {
                 Vizion is your go-to platform to enhance custom-branded digital twins, create hybrid experiences, and
                 navigate the metaverse
               </p>
-              <Link href="https://my.treedis.com/admin/register" className="btn-2 in-try hide-he">
+              <Link href="#" className="btn-2 in-try hide-he">
                 Start your Free Trial Now
               </Link>
-              <Link href="https://he.treedis.com/contact-sales" className="btn-2 in-try show-he">
+              <Link href="#" className="btn-2 in-try show-he">
                 Start your Free Trial Now
               </Link>
             </div>

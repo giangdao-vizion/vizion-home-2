@@ -21,6 +21,7 @@ import Hybrid from '@/components/vizion/Home/Hybrid';
 import Partner from '@/components/vizion/Home/Partner';
 import TrustByMarketLeader from '@/components/vizion/Home/TrustByMarketLeader';
 import PlatformFeatures from '@/components/vizion/Home/PlatformFeatures';
+import EnterPrisesJoin from '@/components/sections/solution-usecase/enterprise-join';
 
 export default function Index(props) {
   return (
@@ -36,7 +37,7 @@ export default function Index(props) {
       <UseCase />
       <DigitalTwin />
       <OurPlatform />
-      <JoinOurPlatform />
+      <EnterPrisesJoin />
       <PlatformFeatures />
       <Industries />
       <Hybrid />

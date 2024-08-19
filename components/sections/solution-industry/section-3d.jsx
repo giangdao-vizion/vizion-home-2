@@ -36,7 +36,7 @@ const Section3D = () => {
             <Link href="#" className="btn-5 in-3d hide-he">
               Get Started for Free
             </Link>
-            <Link href="/contact-sales" className="btn-5 in-3d show-he">
+            <Link href="#" className="btn-5 in-3d show-he">
               Get Started for Free
             </Link>
           </div>

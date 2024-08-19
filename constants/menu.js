@@ -32,12 +32,12 @@ export const menuData = [
           {
             title: "Experience Creator",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/showroom-xe-hoi"
+            link: "/product-by-feature/experience-creator"
           },
           {
             title: "Space Analytics",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/showroom-xe-hoi"
+            link: "/product-by-feature/analytics"
           },
         ]
       },
@@ -47,17 +47,17 @@ export const menuData = [
           {
             title: "3D Creators",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/nha-may-san-xuat"
+            link: "/product-by-type/3d-creators"
           },
           {
             title: "Photographers",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/bat-dong-san"
+            link: "#"
           },
           {
             title: "Enterprise",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/nha-may-san-xuat"
+            link: "/product-by-type/enterprise"
           },
         ]
       },
@@ -67,17 +67,17 @@ export const menuData = [
           {
             title: "360 Virtual Tour",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/nha-may-san-xuat"
+            link: "#"
           },
           {
             title: "Virtual Reality",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/bat-dong-san"
+            link: "/product-by-technology/virtual-reality"
           },
           {
             title: "Augmented Reality",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/nha-may-san-xuat"
+            link: "/product-by-technology/augmented-reality"
           },
         ]
       },
@@ -114,17 +114,17 @@ export const menuData = [
           {
             title: "Real Estate & Architecture",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/nha-may-san-xuat"
+            link: "/solutions-industry/real-estate-architecture"
           },
           {
             title: "Industry 4.0",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/nha-may-san-xuat"
+            link: "/solutions-industry/industry-4-0"
           },
           {
             title: "Retail and Showrooms",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/nha-may-san-xuat"
+            link: "/solutions-industry/retail-showrooms"
           },
         ]
       },
@@ -151,32 +151,32 @@ export const menuData = [
           {
             title: "Marketing and Advertising",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/nha-may-san-xuat"
+            link: "/solutions-usecase/market-adv"
           },
           {
             title: "Planning and Design",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/nha-may-san-xuat"
+            link: "/solutions-usecase/planning-design"
           },
           {
             title: "Indoor Navigation",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/nha-may-san-xuat"
+            link: "/solutions-usecase/indoor-nav"
           },
           {
             title: "Online Shopping",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/nha-may-san-xuat"
+            link: "/solutions-usecase/online-shopping"
           },
           {
             title: "Facilities Management",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/nha-may-san-xuat"
+            link: "/solutions-usecase/facilities-management"
           },
           {
             title: "Immersive Training",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/nha-may-san-xuat"
+            link: "/solutions-usecase/immersive-training"
           },
         ]
       }
@@ -190,19 +190,19 @@ export const menuData = [
         title: "Company",
         children: [
           {
-            title: "Real Estate & Architecture",
+            title: "Case Studies",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/nha-may-san-xuat"
+            link: "/case-studies"
           },
           {
-            title: "Industry 4.0",
+            title: "Blog",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/nha-may-san-xuat"
+            link: "/blog"
           },
           {
-            title: "Retail and Showrooms",
+            title: "Career",
             icon: DigitalTwinIcon,
-            link: "/cac-linh-vuc/nha-may-san-xuat"
+            link: "/career"
           },
         ]
       },

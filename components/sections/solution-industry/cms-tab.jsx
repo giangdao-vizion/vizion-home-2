@@ -20,31 +20,31 @@ export default function CMC_Tab() {
                   <ul className="sub-menu">
                     <li className={`menuV2-li`}>
                       <img src="/assets/images/vizion/icon-images/3dtour.svg" alt="3dtour" />
-                      <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/nha-may-san-xuat">
+                      <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="#">
                         3D Tour
                       </Link>
                     </li>
                     <li className={`menuV2-li `}>
                       <DigitalTwinIcon />
-                      <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
+                      <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="#">
                         VR Room
                       </Link>
                     </li>
                     <li className={`menuV2-li `}>
                       <img src="/assets/images/vizion/icon-images/showroom-3d.svg" alt="showroom-3d" />
-                      <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/showroom-xe-hoi">
+                      <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="#">
                         Showroom 3D
                       </Link>
                     </li>
                     <li className={`menuV2-li `}>
                       <img src="/assets/images/vizion/icon-images/experience-creator.svg" alt="experience-creator" />
-                      <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/showroom-xe-hoi">
+                      <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="#">
                         Experience Creator
                       </Link>
                     </li>
                     <li className={`menuV2-li `}>
                       <img src="/assets/images/vizion/icon-images/space-analytics.svg" alt="3dtour" />
-                      <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/showroom-xe-hoi">
+                      <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="#">
                         Space Analytics
                       </Link>
                     </li>

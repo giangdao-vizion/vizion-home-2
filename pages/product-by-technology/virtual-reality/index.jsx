@@ -13,15 +13,17 @@ import Section3D from '@/components/sections/solution-industry/section-3d';
 import SectionCapture from '@/components/sections/solution-industry/section-capture';
 import SectionProject from '@/components/sections/solution-industry/section-project';
 import Hybrid from '@/components/sections/solution-industry/hybrid';
-import SectionSales from '@/components/sections/solution-usecase/section-sales';
 import whatIsMock from '@/mock/solution-industry/what-is-mock';
 import useCaseMock from '@/mock/solution-industry/usecase-mock';
 import { getEntities } from '@/utils/utils';
-import EnterPrisesJoin from '@/components/sections/solution-usecase/enterprise-join';
 import projectMock from '@/mock/solution-industry/section-project-mock';
+
+import SectionSales from '@/components/sections/resource/section-sales';
+import SectionPartners from '@/components/sections/product/section-partners';
+
 export default function Page(props) {
   const router = useRouter();
-  const defaultId = 'online-shopping';
+  const defaultId = 'virtual-reality';
   const { hero, whatis, usecase, project } = getEntities(
     router,
     heroMock,
@@ -35,10 +37,15 @@ export default function Page(props) {
       <Layout siteContentClass="pt0 pb0" fixedMenu {...props}>
         <Hero hero={hero} />
         <WhatIs whatis={whatis} />
-        <CMC_Tab /> {/* chưa set dynamic component */}
-        <EnterPrisesJoin />
+        <UseCase usecase={usecase} />
         <CMS_Slider />
+        <ContactForm />
+        <CMC_Tab />
+        <EnterPrises />
+        <Section3D />
         <SectionProject project={project} />
+        <SectionPartners />
+        <Hybrid />
         <SectionSales />
       </Layout>
     </>

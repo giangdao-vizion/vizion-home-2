@@ -7,7 +7,7 @@ const SectionProject = ({ project }) => {
       <div className="page-padding">
         <div className="container in-projects w-container">
           <div className="projects__row">
-            <div className="heading projects__heading">
+            <div className="heading ">
               <h2 className="h2 projects__h2">{title}</h2>
               <p className="p projects__text">{text}</p>
             </div>
@@ -25,7 +25,7 @@ const SectionProject = ({ project }) => {
                   <p className="review__text">{reviewText}</p>
                   <p className="review__author">{author}</p>
                   <p className="case__review-author-job-title">{jobTitle}</p>
-                  <Link href="/contact-sales" className="btn-1 in-review">
+                  <Link href="#" className="btn-1 in-review">
                     {buttonText}
                   </Link>
                   <img
@@ -48,10 +48,7 @@ const SectionProject = ({ project }) => {
                   <div className="article-card__box">
                     <p className="article-card__name">{cardName}</p>
                     <p className="article-card__text">{cardText}</p>
-                    <Link
-                      href="/case-studies/empowering-industry-4-0-digital-twins-and-iot-integration-at-the-vodafone-business-edge-innovation-lab"
-                      className="article-card__link w-inline-block"
-                    >
+                    <Link href="#" className="article-card__link w-inline-block">
                       <div className="article-card__link-text">Read More</div>
                       <div className="embed-icon arrow-right flip w-embed">
                         <svg
@@ -65,10 +62,7 @@ const SectionProject = ({ project }) => {
                       </div>
                     </Link>
                   </div>
-                  <Link
-                    href="/case-studies/empowering-industry-4-0-digital-twins-and-iot-integration-at-the-vodafone-business-edge-innovation-lab"
-                    className="article-card__link-wrap w-inline-block"
-                  ></Link>
+                  <Link href="#" className="article-card__link-wrap w-inline-block"></Link>
                 </div>
               </div>
             </div>

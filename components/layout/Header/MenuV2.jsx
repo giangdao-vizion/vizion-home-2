@@ -82,7 +82,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/showroom-xe-hoi"
+                            href="/product-by-feature/experience-creator"
                           >
                             Experience Creator
                           </Link>
@@ -91,7 +91,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           <img src="/assets/images/vizion/icon-images/space-analytics.svg" alt="3dtour" />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/showroom-xe-hoi"
+                            href="/product-by-feature/analytics"
                           >
                             Space Analytics
                           </Link>
@@ -103,25 +103,19 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                       <ul className="sub-menu">
                         <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
                           <img src="/assets/images/vizion/icon-images/3d-creator.svg" alt="3dtour" />
-                          <Link
-                            className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/nha-may-san-xuat"
-                          >
+                          <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/product-by-type/3d-creators">
                             3D Creators
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
                           <img src="/assets/images/vizion/icon-images/photographers.svg" alt="photographers" />
-                          <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
+                          <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="#">
                             Photographers
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
                           <img src="/assets/images/vizion/icon-images/enterpise.svg" alt="enterpise" />
-                          <Link
-                            className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/showroom-xe-hoi"
-                          >
+                          <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/product-by-type/enterprise">
                             Enterprise
                           </Link>
                         </li>
@@ -131,16 +125,16 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                       <ul className="sub-menu">
                         <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
                           <img src="/assets/images/vizion/icon-images/tour360.svg" alt="tour360" />
-                          <Link
-                            className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/nha-may-san-xuat"
-                          >
+                          <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="#">
                             360 Virtual Tour
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'product' ? 'pointer-event' : ''}`}>
                           <img src="/assets/images/vizion/icon-images/virtual-reality.svg" alt="virtual-reality" />
-                          <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
+                          <Link
+                            className="vz-sub-menu--item menuV2-sub--menu-item"
+                            href="/product-by-technology/virtual-reality"
+                          >
                             Virtual Reality
                           </Link>
                         </li>
@@ -148,7 +142,7 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                           <img src="/assets/images/vizion/icon-images/augmented-reality.svg" alt="augmented-reality" />
                           <Link
                             className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/showroom-xe-hoi"
+                            href="/product-by-technology/augmented-reality"
                           >
                             Augmented Reality
                           </Link>
@@ -368,26 +362,20 @@ export default function MenuV2({ isTop, openMenu, setOpenMenu }) {
                       <ul className="sub-menu">
                         <li className={`menuV2-li ${openMenu === 'resources' ? 'pointer-event' : ''}`}>
                           <img src="/assets/images/vizion/icon-images/case-studies.svg" alt="case-studies" />
-                          <Link
-                            className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/nha-may-san-xuat"
-                          >
+                          <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/case-studies">
                             Case Studies
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'resources' ? 'pointer-event' : ''}`}>
                           <img src="/assets/images/vizion/icon-images/blog.svg" alt="blog" />
-                          <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/cac-linh-vuc/bat-dong-san">
+                          <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/blog">
                             Blog
                           </Link>
                         </li>
                         <li className={`menuV2-li ${openMenu === 'resources' ? 'pointer-event' : ''}`}>
                           <DigitalTwinIcon />
-                          <Link
-                            className="vz-sub-menu--item menuV2-sub--menu-item"
-                            href="/cac-linh-vuc/showroom-xe-hoi"
-                          >
-                            Retail and Showrooms
+                          <Link className="vz-sub-menu--item menuV2-sub--menu-item" href="/career">
+                            Career
                           </Link>
                         </li>
                       </ul>

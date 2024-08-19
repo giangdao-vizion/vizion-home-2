@@ -80,6 +80,60 @@ const whatIsMock = [
         mobileImage: 'https://cdn.prod.website-files.com/636d1da0a8aa09416247d194/637103e071bc73478bb4ba64_video-bg-pinky-mobile.svg',
         video: 'https://vizion-homepage-video-s3.s3.ap-southeast-1.amazonaws.com/vizion-home-desktop.mp4'
     },
+    {
+        whatIsId: '3d-creators',
+        title: 'What\'s Vizion for 3D Creators?',
+        text: 'With our platform, you can enhance your digital twins and create immersive experiences without coding knowledge, stage empty places with thousands of digital assets, incorporate Augmented and Virtual Reality into all of your projects.– and much more.',
+        buttonText: 'Contact Sales',
+        desktopImage: 'https://cdn.prod.website-files.com/636d1da0a8aa09416247d194/637101f601967339b6c17cd9_video-bg-pinky.svg',
+        mobileImage: 'https://cdn.prod.website-files.com/636d1da0a8aa09416247d194/637103e071bc73478bb4ba64_video-bg-pinky-mobile.svg',
+        video: 'https://vizion-homepage-video-s3.s3.ap-southeast-1.amazonaws.com/vizion-home-desktop.mp4'
+    },
+    {
+        whatIsId: 'enterprise',
+        title: 'What\'s the Enterprise Program?',
+        text: 'We offer individually-tailored management solutions, handling every aspect of your project and ensuring it meets your requirements.',
+        buttonText: 'Contact Sales',
+        desktopImage: 'https://cdn.prod.website-files.com/636d1da0a8aa09416247d194/637101f601967339b6c17cd9_video-bg-pinky.svg',
+        mobileImage: 'https://cdn.prod.website-files.com/636d1da0a8aa09416247d194/637103e071bc73478bb4ba64_video-bg-pinky-mobile.svg',
+        video: 'https://vizion-homepage-video-s3.s3.ap-southeast-1.amazonaws.com/vizion-home-desktop.mp4'
+    },
+    {
+        whatIsId: 'virtual-reality',
+        title: 'What is Virtual Reality?',
+        text: 'Unleash the Full Potential of your Tours in VR with Vizion.\n As the only Matterport overlay platform offering VR support for any of our digital twins, we provide access to cutting-edge features that will take your experience to the next level.',
+        buttonText: 'Get Started for Free',
+        desktopImage: 'https://cdn.prod.website-files.com/636d1da0a8aa09416247d194/637101f601967339b6c17cd9_video-bg-pinky.svg',
+        mobileImage: 'https://cdn.prod.website-files.com/636d1da0a8aa09416247d194/637103e071bc73478bb4ba64_video-bg-pinky-mobile.svg',
+        video: 'https://vizion-homepage-video-s3.s3.ap-southeast-1.amazonaws.com/vizion-home-desktop.mp4'
+    },
+    {
+        whatIsId: 'augmented-reality',
+        title: 'What is the Augmented Reality App?',
+        text: 'The Augmented Reality App by Treedis enables businesses to experience your digital twin in its physical environment. Whether you are in manufacturing, retail, malls, or any other industry, our versatile app can be applied to create seamless blends of the virtual and physical worlds. With AR, you can overlay digital information, virtual objects, interactive elements, and even enable indoor navigation, captivating and engaging your audience in innovative ways.',
+        buttonText: 'Get Started',
+        desktopImage: 'https://cdn.prod.website-files.com/636d1da0a8aa09416247d194/637101f601967339b6c17cd9_video-bg-pinky.svg',
+        mobileImage: 'https://cdn.prod.website-files.com/636d1da0a8aa09416247d194/637103e071bc73478bb4ba64_video-bg-pinky-mobile.svg',
+        video: 'https://vizion-homepage-video-s3.s3.ap-southeast-1.amazonaws.com/vizion-home-desktop.mp4'
+    },
+    {
+        whatIsId: 'experience-creator',
+        title: 'What is the Experience Creator?',
+        text: 'The Vizion Experience Creator enables you to create immersive experiences based on your 3D twins. You can combine these twins and 3D graphics with real-world physical spaces to create experiences that captivate users and deeply immerse them in the scene.',
+        buttonText: 'Get Started for Free',
+        desktopImage: 'https://cdn.prod.website-files.com/636d1da0a8aa09416247d194/637101f601967339b6c17cd9_video-bg-pinky.svg',
+        mobileImage: 'https://cdn.prod.website-files.com/636d1da0a8aa09416247d194/637103e071bc73478bb4ba64_video-bg-pinky-mobile.svg',
+        video: 'https://vizion-homepage-video-s3.s3.ap-southeast-1.amazonaws.com/vizion-home-desktop.mp4'
+    },
+    {
+        whatIsId: 'analytics',
+        title: 'What are Vizion Analytics?',
+        text: 'Utilizing powerful analytics is the key to success. They allow you to capture leads and analyze customer engagement. Subsequently, they can help improve your sales process and bottom line.\n Track all the information you need online with a comprehensive Treedis analytics dashboard.',
+        buttonText: 'Get Started for Free',
+        desktopImage: 'https://cdn.prod.website-files.com/636d1da0a8aa09416247d194/637101f601967339b6c17cd9_video-bg-pinky.svg',
+        mobileImage: 'https://cdn.prod.website-files.com/636d1da0a8aa09416247d194/637103e071bc73478bb4ba64_video-bg-pinky-mobile.svg',
+        video: 'https://vizion-homepage-video-s3.s3.ap-southeast-1.amazonaws.com/vizion-home-desktop.mp4'
+    },
 ]
 
 export default whatIsMock

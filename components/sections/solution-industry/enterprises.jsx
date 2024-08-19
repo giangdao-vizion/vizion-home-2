@@ -123,7 +123,7 @@ const EnterPrises = () => {
                 <p className="for-enterprises__box__title-text">Characterization and UI/UX design</p>
               </div>
             </div>
-            <Link href="/product-by-type/enterprise" className="btn-1 in-for-enterprises w-inline-block">
+            <Link href="#" className="btn-1 in-for-enterprises w-inline-block">
               <div className="btn-text">Learn More</div>
               <div className="embed-btn-arrow flip w-embed">
                 <svg

@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import '../public/assets/css/style.css';
-import '../public/assets/css/copypath.min.css'
+import '../public/assets/css/demo.min.css'
 import { appWithTranslation } from 'next-i18next';
 
 function App({ Component, pageProps }) {
