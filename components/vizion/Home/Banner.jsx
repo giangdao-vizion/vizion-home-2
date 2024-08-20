@@ -1,6 +1,7 @@
+import { CONTACT_INFO } from '@/constants/contact.info';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import video from './test.mp4';
+// import video from './test.mp4';
 
 ('use clients');
 
@@ -65,12 +66,20 @@ export default function Banner({ title, videoUrl }) {
           <div className="container">
             <div className="row flex-align-c">
               <div className="col-lg-6">
-                <div className="heading heading-alway-white mb32">
-                  <h2 className="heading-title size-xxl">Create immersive experiences powered by 3D Tour</h2>
+                <div className="heading heading-alway-white mb32 align-center">
+                  <h2 className="heading-title size-xxl mb-2">Giải pháp Công nghệ Tour 3D</h2>
+                  <h5 className="heading-sub">
+                    Không gian 4.0 thông minh giúp tăng hiệu quả bán hàng cho mọi doanh nghiệp
+                  </h5>
                 </div>
-                <div className="button-wrap mt32">
-                  <Link href="/contact-01" className="button fullfield xs-mb10 vz-btn" title="Let's Talk">
-                    Book for Demo
+                <div className="button-wrap mt32 align-center">
+                  <Link
+                    href={CONTACT_INFO.ZALO}
+                    target="blank"
+                    className="button fullfield xs-mb10 vz-btn"
+                    title="Liên hệ ngay"
+                  >
+                    Liên hệ ngay
                   </Link>
                 </div>
               </div>

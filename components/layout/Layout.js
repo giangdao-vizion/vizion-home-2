@@ -4,8 +4,9 @@ import SwitchDarkLight from '../elements/SwitchDarkLight';
 
 import Footer1 from './Footer/Footer1';
 import Header1 from './Header/Header1';
+import Header from './Header/Header';
 import PageHead from './PageHead';
-import Header3 from './Header/Header3';
+// import Header3 from './Header/Header3';
 
 export default function Layout(props) {
   const {
@@ -34,9 +35,9 @@ export default function Layout(props) {
     <>
       <PageHead headTitle={headTitle} />
       <div id="wrapper">
-        {/* <Header3 /> */}
-        {!headerLayout && <Header1 headerClass={headerClass} {...rest} />}
-        {headerLayout == 1 ? <Header1 headerClass={headerClass} {...rest} /> : null}
+        <Header />
+        {/* {!headerLayout && <Header1 headerClass={headerClass} {...rest} />}
+        {headerLayout == 1 ? <Header1 headerClass={headerClass} {...rest} /> : null} */}
 
         <main id="main" className="site-main">
           {pageTitle && (

@@ -1,5 +1,5 @@
 .heading {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto 60px;
 
   svg {
@@ -22,7 +22,7 @@
       color: #f83f40;
     }
 
-    & + .heading-title {
+    &+.heading-title {
       margin-top: 12px;
     }
 
@@ -247,6 +247,7 @@
   }
 
   &.heading-alway-white {
+
     .heading-sub,
     .heading-title,
     .heading-desc {
@@ -259,6 +260,7 @@
   }
 
   &.heading-alway-dark {
+
     .heading-sub,
     .heading-title,
     .heading-desc {
@@ -293,7 +295,7 @@
       @include typo(24px, 1.33, 600);
       color: var(--sala-neutral-dark, $neutral_dark);
 
-      & + li {
+      &+li {
         margin-top: 12px;
       }
     }

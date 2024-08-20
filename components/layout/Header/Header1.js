@@ -35,19 +35,17 @@ export default function Header({ headerClass, locale, fixedMenu }) {
       >
         <div className="container-fluid desktop">
           <div className="row flex-align-c inner">
-            <div className="col-lg-3 col-6">
+            <div className="col-lg-3 col-6 mb-0">
               <div className="header-left flex flex-align-c">
                 <Logo isTop={enableMenu} />
               </div>
             </div>
-            <div className="col-lg-6 col-0 text-center">
+            {/* <div className="col-lg-6 col-0 text-center">
               <div className="header-center">
                 <MenuV2 isTop={enableMenu} openMenu={openMenu} setOpenMenu={setOpenMenu} />
               </div>
-            </div>
-            <div className="col-lg-3 col-6">
-              <HeaderRight locale={locale} />
-            </div>
+            </div> */}
+            {/* <div className="col-lg-3 col-6"><HeaderRight locale={locale} /></div> */}
           </div>
         </div>
       </header>

@@ -27,7 +27,7 @@ export default function Index(props) {
   return (
     <Layout siteContentClass="pt0 pb0" {...props}>
       <Banner
-        title="Video - Mô hình 3D hoặc tour đẹp nhất."
+        title="Video giới thiệu giải pháp 3D Tour"
         videoUrl="https://vizion-homepage-video-s3.s3.ap-southeast-1.amazonaws.com/vizion-home-desktop.mp4"
       />
       {/* <Introduce {...props} /> */}

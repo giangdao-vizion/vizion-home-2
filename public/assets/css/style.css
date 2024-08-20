@@ -3352,6 +3352,9 @@ img.h600 {
 .site-header .logo svg path {
   fill: var(--sala-neutral-dark, #ffffff);
 }
+.site-header .logo img {
+  width: 100%;
+}
 .site-header.is-transparent {
   position: absolute;
   top: 0;
@@ -7106,7 +7109,7 @@ form.checkout-coupon input[type=text] {
   }
 }
 .heading {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto 60px;
 }
 .heading svg {
@@ -13948,5 +13951,3 @@ body.app-mounted {
 }
 
 /*# sourceMappingURL=style.css.map */
-
-
