@@ -1,96 +1,165 @@
 const { gql } = require('apollo-server');
-const data = require('./datavizion.json');
+const { GraphQLJSON } = require('graphql-type-json');
+const { getDb } = require('./db');
+const fs = require('fs');
 
-// Recursive function to generate nested GraphQL types dynamically
-const generateFields = (obj, typeName) => {
-  let fields = '';
-  for (const [key, value] of Object.entries(obj)) {
-    if (Array.isArray(value)) {
-      if (typeof value[0] === 'object' && value[0] !== null) {
-        const nestedTypeName = capitalize(key);
-        fields += `${key}: [${nestedTypeName}]\n`;
-        createTypeDefinitions(nestedTypeName, value[0]); // Recursively create type for nested array objects
-      } else {
-        fields += `${key}: [${getGraphQLType(value[0])}]\n`;
-      }
-    } else if (typeof value === 'object' && value !== null) {
-      const nestedTypeName = capitalize(key);
-      fields += `${key}: ${nestedTypeName}\n`;
-      createTypeDefinitions(nestedTypeName, value); // Recursively create type for nested objects
-    } else {
-      fields += `${key}: ${getGraphQLType(value)}\n`;
+const COLLECTIONS_FILE = 'collections_structure.json';
+
+async function generateDynamicSchema() {
+  let collectionsStructure;
+
+  // Đọc cấu trúc collection từ file hoặc từ cơ sở dữ liệu
+  if (fs.existsSync(COLLECTIONS_FILE)) {
+    console.log('Reading collections structure from file...');
+    collectionsStructure = JSON.parse(fs.readFileSync(COLLECTIONS_FILE, 'utf-8'));
+  } else {
+    console.log('Generating collections structure from database...');
+    collectionsStructure = await getCollectionsStructure();
+    fs.writeFileSync(COLLECTIONS_FILE, JSON.stringify(collectionsStructure, null, 2));
+  }
+
+  return buildSchema(collectionsStructure);
+}
+
+async function getCollectionsStructure() {
+  const db = getDb();
+  const collections = await db.listCollections().toArray();
+  const structure = {};
+
+  for (const collection of collections) {
+    const collectionName = collection.name;
+    if (collectionName === '_init') continue;
+
+    const fields = await getCollectionFields(db, collectionName);
+    structure[collectionName] = fields;
+  }
+  return structure;
+}
+
+function buildSchema(collectionsStructure) {
+  let typeDefinitions = `scalar JSON\n`;
+  let queryFields = '';
+  let mutationFields = '';
+
+  for (const [collectionName, fields] of Object.entries(collectionsStructure)) {
+    const typeName = capitalizeFirstLetter(collectionName);
+    typeDefinitions += generateTypeDefinition(typeName, fields);
+    typeDefinitions += generateInputTypeDefinition(typeName, fields);
+    queryFields += generateQueryFields(typeName, collectionName);
+    mutationFields += generateMutationFields(typeName, collectionName);
+  }
+
+  const filterableFields = `
+
+    input FilterInput {
+      field: String
+      value: JSON
     }
-  }
-  return fields;
-};
 
-// Helper function to capitalize the first letter of a string (used for type names)
-const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
+    input SortInput {
+      field: String
+      order: String
+    }
 
-// Helper function to map JavaScript types to GraphQL types
-const getGraphQLType = (value) => {
-  switch (typeof value) {
-    case 'string': return 'String';
-    case 'number': return 'Float';
-    case 'boolean': return 'Boolean';
-    default: return 'String'; // fallback
-  }
-};
-
-// Store dynamically generated types to avoid duplication
-let typeDefinitions = '';
-
-// Function to create type definitions dynamically based on JSON structure
-const createTypeDefinitions = (typeName, obj) => {
-  const fields = generateFields(obj);
-  typeDefinitions += `
-    type ${typeName} {
-      ${fields}
+    input PaginationInput {
+      limit: Int
+      skip: Int
     }
   `;
-};
 
-// Generate root types (Tour, Customer, Scene)
-createTypeDefinitions('Tour', data.tour);
-createTypeDefinitions('Customer', data.customer);
-createTypeDefinitions('Scenes', data.scenes[0]);
-createTypeDefinitions('Media', data.media[0]);
-createTypeDefinitions('Group',data.groups[0]);
+  return gql`
+    ${typeDefinitions}
+    ${filterableFields}
 
-// Generate GraphQL schema
-const typeDefs = gql`
-  ${typeDefinitions}
+    type Query {
+      ${queryFields}
+    }
 
-  type Query {
-    tour(id: ID!): Tour
-    customer(id: ID!): Customer
-    scenes(id: ID!): Scenes
-    media(id: ID!): Media
-    group(id: ID!): Group
-    # groupScenes(groupId: ID!, sceneId: ID!): scenes
+    type Mutation {
+      ${mutationFields}
+    }
+  `;
+}
+
+function generateQueryFields(typeName, collectionName) {
+  return `
+    ${collectionName}(id: ID!): ${typeName}
+    all${typeName}s(
+      filters: [FilterInput]
+      sort: SortInput
+      pagination: PaginationInput
+    ): [${typeName}!]!
+  `;
+}
+
+async function getCollectionFields(db, collectionName) {
+  const sampleSize = 100; 
+  const documents = await db.collection(collectionName).find().limit(sampleSize).toArray();
+  const fields = {};
+
+  for (const doc of documents) {
+    for (const [key, value] of Object.entries(doc)) {
+      if (key !== '_id') {
+        fields[key] = getGraphQLType(value);
+      }
+    }
   }
 
-  type Mutation {
-    createTour(id: ID!, title: String!): Tour
-    updateTour(id: ID!, title: String!): Tour
-    deleteTour(id: ID!): Boolean
-    
-    createCustomer(id: ID!, name: String!): Customer
-    updateCustomer(id: ID!, name: String!): Customer
-    deleteCustomer(id: ID!): Boolean
-    
-    createScene(id: ID!, title: String!): Scenes
-    updateScene(id: ID!, title: String!): Scenes
-    deleteScene(id: ID!): Boolean
-    
-    createMedia(id: ID!, title: String!): Media
-    updateMedia(id: ID!, title: String!): Media
-    deleteMedia(id: ID!): Boolean
-    
-    createGroup(id: ID!, title: String!): Group
-    updateGroup(id: ID!, title: String!): Group
-    deleteGroup(id: ID!): Boolean
-  }
-`;
+  return fields;
+}
 
-module.exports = typeDefs;
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function generateTypeDefinition(typeName, fields) {
+  let fieldDefinitions = 'id: ID!\n';
+  const commonFields = {
+    UpdatedAt: 'String',
+    IsDeleted: 'Boolean',
+    DeletedAt: 'String',
+    UserIdDeleted: 'String',
+    Uid: 'String',
+    Email: 'String',
+    DeletionDate: 'String'
+  };
+
+  const allFields = { ...commonFields, ...fields };
+
+  for (const [key, type] of Object.entries(allFields)) {
+    fieldDefinitions += `  ${key}: ${type}\n`;
+  }
+
+  return `type ${typeName} {\n${fieldDefinitions}}\n`;
+}
+
+function generateInputTypeDefinition(typeName, fields) {
+  let fieldDefinitions = '';
+  for (const [key, type] of Object.entries(fields)) {
+    if (!['id', 'UpdatedAt', 'IsDeleted', 'DeletedAt', 'UserIdDeleted', 'Uid', 'DeletionDate'].includes(key)) {
+      fieldDefinitions += `  ${key}: ${type}\n`;
+    }
+  }
+  return `input ${typeName}Input {\n${fieldDefinitions}}\n`;
+}
+
+function getGraphQLType(value) {
+  if (Array.isArray(value)) return '[JSON]';
+  switch (typeof value) {
+    case 'string': return 'String';
+    case 'number': return Number.isInteger(value) ? 'Int' : 'Float';
+    case 'boolean': return 'Boolean';
+    case 'object': return value instanceof Date ? 'String' : 'JSON';
+    default: return 'String';
+  }
+}
+
+function generateMutationFields(typeName, collectionName) {
+  return `
+    create${typeName}(input: ${typeName}Input!): ${typeName}!
+    update${typeName}(id: ID!, input: ${typeName}Input!): ${typeName}
+    delete${typeName}(id: ID!): Boolean!
+  `;
+}
+
+module.exports = generateDynamicSchema;

@@ -14,10 +14,12 @@
     "@walmartlabs/json-to-simple-graphql-schema": "^1.0.0",
     "apollo-server": "^3.13.0",
     "dataloader": "^2.2.2",
+    "fs": "^0.0.1-security",
     "graphql": "^16.9.0",
     "graphql-tools": "^9.0.1",
     "graphql-type-json": "^0.3.2",
     "json-schema-to-graphql-types": "^1.0.0",
-    "json-server": "^1.0.0-beta.2"
+    "json-server": "^1.0.0-beta.2",
+    "mongodb": "^6.9.0"
   }
 }

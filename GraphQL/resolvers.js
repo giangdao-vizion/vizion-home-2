@@ -1,133 +1,118 @@
-const data = require('./datavizion.json');
+const { ObjectId } = require('mongodb');
+const { GraphQLScalarType, Kind } = require('graphql');
+const { GraphQLJSON } = require('graphql-type-json');
 
-const resolvers = {
-  Query: {
-    tour: (parent, args) => {
-      return data.tour.id === args.id ? data.tour : null;
-    },
-    customer: (parent, args) => {
-      return data.customer.Id === args.id ? data.customer : null;
-    },
-    scenes: (parent, args) => {
-      return data.scenes.find(scene => scene.id === args.id) || null;
-    },
-    media: (parent, args) => {
-      return data.media.find(media => media.id === args.id) || null;
-    },
-    group: (parent, args) => {
-      return data.groups.find(group => group.id === args.id) || null;
-    }
+const JSONScalar = new GraphQLScalarType({
+  name: 'JSON',
+  description: 'JSON custom scalar type',
+  serialize(value) {
+    return value;
   },
-  
-  Mutation: {
-    createTour: (parent, args) => {
-      const newTour = { id: args.id, title: args.title };
-      data.tour = newTour;
-      return newTour;
-    },
-    updateTour: (parent, args) => {
-      const tour = data.tour.id === args.id ? data.tour : null;
-      if (tour) {
-        tour.title = args.title;
-        return tour;
-      }
-      return null;
-    },
-    deleteTour: (parent, args) => {
-      if (data.tour.id === args.id) {
-        data.tour = null;
-        return true;
-      }
-      return false;
-    },
-    
-    createCustomer: (parent, args) => {
-      const newCustomer = { id: args.id, name: args.name };
-      data.customer = newCustomer;
-      return newCustomer;
-    },
-    updateCustomer: (parent, args) => {
-      const customer = data.customer.Id === args.id ? data.customer : null;
-      if (customer) {
-        customer.name = args.name;
-        return customer;
-      }
-      return null;
-    },
-    deleteCustomer: (parent, args) => {
-      if (data.customer.Id === args.id) {
-        data.customer = null;
-        return true;
-      }
-      return false;
-    },
-    
-    createScene: (parent, args) => {
-      const newScene = { id: args.id, title: args.title };
-      data.scenes.push(newScene);
-      return newScene;
-    },
-    updateScene: (parent, args) => {
-      const scene = data.scenes.find(scene => scene.id === args.id);
-      if (scene) {
-        scene.title = args.title;
-        return scene;
-      }
-      return null;
-    },
-    deleteScene: (parent, args) => {
-      const index = data.scenes.findIndex(scene => scene.id === args.id);
-      if (index > -1) {
-        data.scenes.splice(index, 1);
-        return true;
-      }
-      return false;
-    },
-    
-    createMedia: (parent, args) => {
-      const newMedia = { id: args.id, title: args.title };
-      data.media.push(newMedia);
-      return newMedia;
-    },
-    updateMedia: (parent, args) => {
-      const media = data.media.find(media => media.id === args.id);
-      if (media) {
-        media.title = args.title;
-        return media;
-      }
-      return null;
-    },
-    deleteMedia: (parent, args) => {
-      const index = data.media.findIndex(media => media.id === args.id);
-      if (index > -1) {
-        data.media.splice(index, 1);
-        return true;
-      }
-      return false;
-    },
-    
-    createGroup: (parent, args) => {
-      const newGroup = { id: args.id, title: args.title };
-      data.groups.push(newGroup);
-      return newGroup;
-    },
-    updateGroup: (parent, args) => {
-      const group = data.groups.find(group => group.id === args.id);
-      if (group) {
-        group.title = args.title;
-        return group;
-      }
-      return null;
-    },
-    deleteGroup: (parent, args) => {
-      const index = data.groups.findIndex(group => group.id === args.id);
-      if (index > -1) {
-        data.groups.splice(index, 1);
-        return true;
-      }
-      return false;
+  parseValue(value) {
+    return value;
+  },
+  parseLiteral(ast) {
+    if (ast.kind === Kind.OBJECT) {
+      return ast.value;
     }
+    return null;
+  },
+});
+
+const generateResolvers = async () => {
+  const db = require('./db').getDb();
+  const collections = await db.listCollections().toArray();
+
+  function buildFilterObject(filters) {
+    return filters.reduce((acc, filter) => {
+      const { field, value } = filter;
+
+      // Xử lý giá trị null
+      if (value === null) {
+        acc[field] = null;
+      } 
+      // Xử lý giá trị boolean hoặc các loại giá trị đơn giản
+      else if (typeof value === 'boolean' || typeof value === 'string' || typeof value === 'number') {
+        acc[field] = value;
+      } 
+      // Xử lý regex
+      else if (typeof value === 'string' && value.startsWith('/') && value.endsWith('/')) {
+        acc[field] = { $regex: value.slice(1, -1), $options: 'i' };
+      } 
+      // Xử lý trường hợp Object cho $elemMatch
+      else if (typeof value === 'object' && !Array.isArray(value)) {
+        acc[field] = { $elemMatch: value };
+      } 
+
+      return acc;
+    }, {});
   }
+
+  const resolvers = {
+    JSON: JSONScalar,
+    JSON: GraphQLJSON,
+    Query: {},
+    Mutation: {}
+  };
+
+  for (const collection of collections) {
+    const collectionName = collection.name;
+    if (collectionName === '_init') continue;
+
+    const typeName = capitalizeFirstLetter(collectionName);
+
+    // Query resolvers
+    resolvers.Query[collectionName] = async (_, { id }) => {
+      return await db.collection(collectionName).findOne({ _id: new ObjectId(id) });
+    };
+
+    resolvers.Query[`all${typeName}s`] = async (_, { filters, sort, pagination }) => {
+      let pipeline = [];
+
+      if (filters && filters.length > 0) {
+        const filterObject = buildFilterObject(filters);
+        console.log('Filter Object:', filterObject);
+        pipeline.push({ $match: filterObject });
+      }
+
+      if (sort) {
+        pipeline.push({ $sort: { [sort.field]: sort.order === 'DESC' ? -1 : 1 } });
+      }
+
+      if (pagination) {
+        if (pagination.skip) pipeline.push({ $skip: pagination.skip });
+        if (pagination.limit) pipeline.push({ $limit: pagination.limit });
+      }
+
+      const results = await db.collection(collectionName).aggregate(pipeline).toArray();
+      return results.map(doc => ({
+        id: doc._id.toString(),
+        ...doc
+      }));
+    };
+
+    // Mutation resolvers
+    resolvers.Mutation[`update${typeName}`] = async (_, { id, input }) => {
+      const objectId = new ObjectId(id);
+      const result = await db.collection(collectionName).findOneAndUpdate(
+        { _id: objectId },
+        { $set: input },
+        { returnDocument: 'after' }
+      );
+      return result.value; // Trả về giá trị sau khi cập nhật
+    };
+
+    resolvers.Mutation[`delete${typeName}`] = async (_, { id }) => {
+      const result = await db.collection(collectionName).deleteOne({ _id: new ObjectId(id) });
+      return result.deletedCount === 1;
+    };
+  }
+
+  return resolvers;
 };
 
-module.exports = resolvers;
+module.exports = generateResolvers;
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}

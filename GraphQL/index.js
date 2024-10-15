@@ -1,9 +1,25 @@
 const { ApolloServer } = require('apollo-server');
-const typeDefs = require('./schema');
-const resolvers = require('./resolvers');
+const generateResolvers = require('./resolvers');
+const { connectToDatabase } = require('./db');
+const generateDynamicSchema = require('./schema');
 
-const server = new ApolloServer({ typeDefs, resolvers });
+async function startServer() {
+  await connectToDatabase();
 
-server.listen().then(({ url }) => {
-  console.log(`🚀 Server ready at ${url}`);
-});
+  const typeDefs = await generateDynamicSchema();
+  const resolvers = await generateResolvers();
+
+  const server = new ApolloServer({ 
+    typeDefs, 
+    resolvers,
+    context: () => ({
+      db: require('./db').getDb()
+    })
+  });
+
+  server.listen().then(({ url }) => {
+    console.log(`🚀 Server ready at ${url}`);
+  });
+}
+
+startServer();
